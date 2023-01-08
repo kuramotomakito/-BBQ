@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1495" height="1621.86" viewBox="0 0 1495 1621.86">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ffda77;
+        stroke-miterlimit: 10;
+        stroke-width: 10px;
+      }
+
+      .cls-2 {
+        fill: #dfa350;
+        font-size: 90px;
+        font-family: Amaranth-Bold, Amaranth;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="グループ_506" data-name="グループ 506" transform="translate(-204 -6293)">
+    <g id="グループ_498" data-name="グループ 498" transform="translate(209 6311)">
+      <g id="レイヤー_1" data-name="レイヤー 1" transform="translate(0 43)">
+        <path id="パス_204" data-name="パス 204" class="cls-1" d="M1117.831,7.5H1492.5V1563.36H7.5V7.5H400.376" transform="translate(-7.5 -7.5)"/>
+      </g>
+      <text id="Drink_Menu" data-name="Drink Menu" class="cls-2" transform="translate(742 70)"><tspan x="-230.94" y="0">Drink Menu</tspan></text>
+    </g>
+  </g>
+</svg>

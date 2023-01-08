@@ -1,0 +1,98 @@
+.access {
+    background-image: url(../../asset/photo/backmarina.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+padding-bottom: 8%;
+    h2 {
+        color: #c93c27;
+    }
+
+    div {
+        width: 80%;
+        display: flex;
+
+        .googlemap {
+            // position: relative;
+            margin-left: 10%;
+            width: 60%;
+            height: 450px;
+        }
+
+        dl {
+            position: relative;
+            left: 8%;
+            color: #fff;
+
+            dt {
+                font-size: 250%;
+                margin-bottom: 15%;
+            }
+
+            dd {
+                li {
+                    font-size: 120%;
+                    list-style-type: none;
+                    margin: 5% 0;
+                }
+            }
+        }
+    }
+
+    table {
+        border-collapse: collapse;
+        height: 20%;
+        width: 70%;
+        margin: 2% 15%;
+
+        /* セルの線を重ねる */
+        tr {
+
+            // height: 120%;
+            th {
+                background-color: #deedfd;
+
+                color: #2c67ea;
+                border: 2px solid #c2dcf6;
+                width: 30%;
+                padding: 2%;
+
+            }
+
+            td {
+                background-color: #fff;
+
+                border: 2px solid #c2dcf6;
+                font-size: 100%;
+                padding: 2% 0% 2% 5%;
+
+                li {
+                    list-style-type: none;
+                    margin: 1% 0;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

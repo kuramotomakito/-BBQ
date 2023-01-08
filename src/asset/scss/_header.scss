@@ -1,0 +1,28 @@
+header{
+button{
+    position: fixed;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 3px solid #30579c;
+    top: 6%;
+    left: 85%;
+    width: 11%;
+    height: 6%;
+    a{
+    font-size: 120%;
+    color: #30579c;
+    }
+    z-index: 9999;
+}
+img{
+    width: 100%;
+    height: auto;
+
+    // position: relative;
+    // z-index: 999;
+}
+h1{
+    margin-bottom: -9px;
+}
+
+}

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="225.748" height="112.624" viewBox="0 0 225.748 112.624">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(0,0,0,0);
+        stroke: #e9ab56;
+        stroke-width: 8px;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #daeeff;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #2058a1;
+        stroke-width: 9px;
+      }
+    </style>
+  </defs>
+  <g id="cruise" transform="translate(0 4)">
+    <g id="グループ_487" data-name="グループ 487" transform="translate(27.49 0)">
+      <path id="パス_198" data-name="パス 198" class="cls-1" d="M210.3,240.012l73.429-1.214,6.493-8.375-7.646-17.174c17.72-.3,35.5-.546,53.221-.85,4.369,7.95,8.678,15.96,13.047,23.91l42.6-.182c-5.947,12.8-11.955,25.548-17.9,38.353q-74.005.273-147.95.485c-.546-1.274-1.153-2.609-1.7-3.884q-6.827-15.475-13.593-31.071Z" transform="translate(-210.3 -185.152)"/>
+      <path id="パス_199" data-name="パス 199" class="cls-1" d="M379.157,237l33.437-.546L398.758,212.6c-9.406.182-18.812.364-28.158.607,2.852,7.95,5.7,15.9,8.557,23.788Z" transform="translate(-273.322 -185.231)"/>
+      <path id="パス_200" data-name="パス 200" class="cls-1" d="M406,238.224,395.2,213.1,406,238.224Z" transform="translate(-282.994 -185.428)"/>
+      <path id="パス_201" data-name="パス 201" class="cls-1" d="M279.9,167.5h12.38l.182,54.738" transform="translate(-237.663 -167.5)"/>
+      <path id="パス_202" data-name="パス 202" class="cls-1" d="M219.3,274.425,249.46,274Z" transform="translate(-213.838 -209.371)"/>
+    </g>
+    <rect id="長方形_270" data-name="長方形 270" class="cls-2" width="201.413" height="23.849" transform="translate(13.936 84.774)"/>
+    <g id="グループ_488" data-name="グループ 488" transform="translate(0 76.706)">
+      <path id="パス_203" data-name="パス 203" class="cls-3" d="M165,293.9c18.812,0,18.812,12.137,37.625,12.137S221.437,293.9,240.249,293.9s18.812,12.137,37.625,12.137S296.686,293.9,315.5,293.9s18.812,12.137,37.625,12.137S371.936,293.9,390.748,293.9" transform="translate(-165 -293.9)"/>
+    </g>
+  </g>
+</svg>

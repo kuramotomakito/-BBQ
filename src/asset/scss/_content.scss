@@ -1,0 +1,86 @@
+.content {
+
+    h2 {
+        color: #c93c27;
+    }
+
+    h3 {
+        text-align: center;
+        color: #30579c;
+        font-size: 200%;
+    }
+
+    p {
+        text-align: center;
+        margin: 2% 0;
+        
+
+        strong {
+            font-family: amaranth, serif;
+            font-size: 500%;
+            color: #c93c27;
+        }
+    }
+    .tyui{
+text-align: center;
+    
+    }
+
+
+    button {
+        position: relative;
+        left: 41%;
+        width: 18%;
+        height: 60px;
+        border-radius: 50px;
+        background-color: #e0ad64;
+        border: none;
+        margin:2% 0 ;
+
+        a {
+            color: #fff;
+        }
+    }
+
+    .banner {
+        display: flex;
+width: 80%;
+margin: 0 0 0 20%;
+        li {
+
+            width: 15%;
+            height: auto;
+            list-style-type: none;
+            margin: 5%;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,17 +1,11 @@
 import React from 'react'
 // import './header.scss'
-
+import FirstView from '../../asset/photo/first view.jpg'
 function index() {
   return (
     <header>
-    <h1><img src='' alt='江ノ島マリーナBBQサイト'/></h1>
-    <nav>
-        <ul>
-            <li className='plan'>料金案内</li>
-            <li className='acsses'>アクセス</li>
-            <li className='content'>お問いあわせ</li>
-        </ul>
-    </nav>
+    <h1><img src={FirstView} alt='江ノ島マリーナBBQサイト'/></h1>
+    <button><a href='#'>予約する</a></button>
 </header>
   )
 }

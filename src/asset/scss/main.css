@@ -1,0 +1,252 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Zen Maru Gothic", amaranth, sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-style: regular;
+  font-size: 90%;
+  line-height: 300%;
+}
+
+h2 {
+  margin-left: 10%;
+  font-family: amaranth, serif;
+  font-size: 500%;
+}
+h2 b {
+  font-family: amaranth, serif;
+  font-size: 150%;
+}
+
+html {
+  width: 100%;
+}
+
+header button {
+  position: fixed;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 3px solid #30579c;
+  top: 6%;
+  left: 85%;
+  width: 11%;
+  height: 6%;
+  z-index: 9999;
+}
+header button a {
+  font-size: 120%;
+  color: #30579c;
+}
+header img {
+  width: 100%;
+  height: auto;
+}
+header h1 {
+  margin-bottom: -9px;
+}
+
+.servise {
+  background-image: url("../../asset/photo/backsea.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 10%;
+}
+.servise .suncafe {
+  position: relative;
+  padding-top: 6%;
+}
+.servise .suncafe h3 {
+  font-family: amaranth, Bree, serif;
+  font-size: 400%;
+  position: absolute;
+  color: #e0ad64;
+  top: 15%;
+  left: 44%;
+}
+.servise .suncafe h3 b {
+  font-family: amaranth, Bree, serif;
+  font-size: 150%;
+}
+.servise .suncafe .SuncafeParadise {
+  display: flex;
+}
+.servise .suncafe .SuncafeParadise img {
+  width: 55%;
+  height: auto;
+  padding-left: 1%;
+}
+.servise .suncafe .SuncafeParadise p {
+  margin-top: 8%;
+  margin-left: 3%;
+  color: #fff;
+}
+.servise .suncafecharm h3 {
+  color: #fff;
+  font-size: 230%;
+  text-align: center;
+  background-color: #30579c;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  left: 25%;
+  margin: 3% 0;
+}
+.servise .suncafecharm .Features {
+  display: inline-flex;
+  position: relative;
+  left: 14%;
+  width: 84%;
+}
+.servise .suncafecharm .Features .feature {
+  width: 25%;
+  padding: 1.2% 1.2% 3% 1.2%;
+  margin: 0 0.5%;
+  background-color: #fff;
+  color: #30579c;
+}
+.servise .suncafecharm .Features .feature dt {
+  font-size: 130%;
+  margin-bottom: 8%;
+}
+.servise .suncafecharm .Features .feature dd {
+  font-size: 80%;
+  line-height: 200%;
+}
+
+.situetion {
+  background-color: #deedfd;
+}
+.situetion h2 {
+  color: #e0ad64;
+}
+.situetion img {
+  width: 20%;
+  height: auto;
+}
+
+.plan h2 {
+  color: #c93c27;
+}
+
+.access {
+  background-image: url(../../asset/photo/backmarina.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-bottom: 8%;
+}
+.access h2 {
+  color: #c93c27;
+}
+.access div {
+  width: 80%;
+  display: flex;
+}
+.access div .googlemap {
+  margin-left: 10%;
+  width: 60%;
+  height: 450px;
+}
+.access div dl {
+  position: relative;
+  left: 8%;
+  color: #fff;
+}
+.access div dl dt {
+  font-size: 250%;
+  margin-bottom: 15%;
+}
+.access div dl dd li {
+  font-size: 120%;
+  list-style-type: none;
+  margin: 5% 0;
+}
+.access table {
+  border-collapse: collapse;
+  height: 20%;
+  width: 70%;
+  margin: 2% 15%;
+  /* セルの線を重ねる */
+}
+.access table tr th {
+  background-color: #deedfd;
+  color: #2c67ea;
+  border: 2px solid #c2dcf6;
+  width: 30%;
+  padding: 2%;
+}
+.access table tr td {
+  background-color: #fff;
+  border: 2px solid #c2dcf6;
+  font-size: 100%;
+  padding: 2% 0% 2% 5%;
+}
+.access table tr td li {
+  list-style-type: none;
+  margin: 1% 0;
+}
+
+.content h2 {
+  color: #c93c27;
+}
+.content h3 {
+  text-align: center;
+  color: #30579c;
+  font-size: 200%;
+}
+.content p {
+  text-align: center;
+  margin: 2% 0;
+}
+.content p strong {
+  font-family: amaranth, serif;
+  font-size: 500%;
+  color: #c93c27;
+}
+.content .tyui {
+  text-align: center;
+}
+.content button {
+  position: relative;
+  left: 41%;
+  width: 18%;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #e0ad64;
+  border: none;
+  margin: 2% 0;
+}
+.content button a {
+  color: #fff;
+}
+.content .banner {
+  display: flex;
+  width: 80%;
+  margin: 0 0 0 20%;
+}
+.content .banner li {
+  width: 15%;
+  height: auto;
+  list-style-type: none;
+  margin: 5%;
+}
+
+footer {
+  background-color: #4d9cc8;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */
