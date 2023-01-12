@@ -23,7 +23,7 @@ const plan = () => {
         <>
             <section className='plan backgro'>
                 <div className='plannai'>
-                    <h2>Plan</h2>
+                    <h2><b>P</b>lan</h2>
 
                     <p>利用時間は3つの中から選べます</p>
                     <p>※1日3組まで、1日最大10〜20名</p>
