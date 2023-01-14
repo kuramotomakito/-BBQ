@@ -40,12 +40,14 @@
         p {
             text-align: center;
             color: #30579c;
+            font-size: 110%;
         }
 
         .time {
             display: flex;
             width: 31%;
-            margin: 0 21.5%;
+            margin: 4% 21.5%;
+            
 
             dt {
                 font-family: amaranth, serif;
@@ -83,7 +85,7 @@
             color: #d75f2d;
             font-size: 400%;
             text-align: center;
-            margin: 3% 0;
+            margin: 4% 0 0 0;
         }
 
         .menugrid {

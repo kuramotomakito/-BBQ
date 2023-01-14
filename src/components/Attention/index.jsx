@@ -28,9 +28,9 @@ const attention = () => {
                         return (
                             <>
                                 <details class="c-accordion">
-                                    <summary class="c-accordion_ttl"><strong>Q</strong> {item.Q} </summary>
+                                    <summary class="c-accordion_ttl"><strong>Q</strong> <span>{item.Q}</span> </summary>
                                     <p class="c-accordion_txt">
-                                        <strong>A</strong>{item.A}
+                                        <strong>A</strong><span>{item.A}</span>
                                     </p>
                                 </details>
 

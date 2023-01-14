@@ -42,6 +42,9 @@ html {
   height: 100%;
 }
 
+header {
+  position: relative;
+}
 header button {
   position: fixed;
   background-color: #fff;
@@ -66,6 +69,7 @@ header h1 {
 }
 
 .servise {
+  position: relative;
   background-image: url("../../asset/photo/backsea.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -89,12 +93,16 @@ header h1 {
   font-weight: bold;
   font-size: 150%;
 }
+@media screen and (max-width: 1000px) {
+  .servise .suncafe h3 {
+    font-size: 250%;
+  }
+}
 .servise .suncafe .SuncafeParadise {
   display: flex;
 }
 .servise .suncafe .SuncafeParadise img {
   width: 55%;
-  height: auto;
   padding-left: 1%;
 }
 .servise .suncafe .SuncafeParadise p {
@@ -106,12 +114,10 @@ header h1 {
   color: #fff;
   font-size: 230%;
   text-align: center;
-  background-color: #30579c;
+  background: linear-gradient(transparent 40%, #30579c 40%);
   width: 50%;
   height: 100%;
-  position: relative;
-  left: 25%;
-  margin: 3% 0;
+  margin: 3% 25%;
 }
 .servise .suncafecharm .Features {
   display: inline-flex;
@@ -136,14 +142,156 @@ header h1 {
 }
 
 .situetion {
-  background-color: #deedfd;
+  background-image: url(../../asset/photo/Frame.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .situetion h2 {
+  margin-top: 3%;
   color: #e0ad64;
 }
-.situetion img {
-  width: 20%;
-  height: auto;
+.situetion h3 {
+  color: #30579c;
+  font-family: amaranth, serif;
+  font-weight: bold;
+  background: linear-gradient(transparent 40%, #fff 40%);
+  font-size: 337%;
+  position: relative;
+  width: 13%;
+  left: 30%;
+  top: 465px;
+  z-index: 99;
+}
+.situetion h3 b {
+  font-family: amaranth, serif;
+  font-weight: bold;
+  font-size: 130%;
+}
+.situetion .mySwiper {
+  width: 100%;
+  position: relative;
+  top: 10%;
+}
+.situetion .mySwiper .swiper-slide-duplicate .swiper-slide-duplicate-active {
+  -webkit-animation: fadeup 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+          animation: fadeup 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+@-webkit-keyframes fadeup {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeup {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.situetion .mySwiper .swiper-wrapper {
+  width: 80%;
+  padding-bottom: 2%;
+}
+.situetion .mySwiper .seasonslide, .situetion .mySwiper .partyslide {
+  background-color: #deedfd;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding: 0 0 5% 0;
+}
+.situetion .mySwiper .seasonslide .slideimg, .situetion .mySwiper .partyslide .slideimg {
+  text-align: center;
+  width: 30%;
+  margin-left: 10%;
+}
+.situetion .mySwiper .seasonslide .slideimg img.wave, .situetion .mySwiper .partyslide .slideimg img.wave {
+  position: relative;
+  bottom: 96px;
+}
+.situetion .mySwiper .seasonslide .slidetext, .situetion .mySwiper .partyslide .slidetext {
+  margin-left: 10%;
+}
+.situetion .mySwiper h4 {
+  font-family: amaranth, serif;
+  font-weight: 700;
+  font-size: 240%;
+  color: #6299f8;
+  background: linear-gradient(transparent 0%, #fff 0%);
+  position: absolute;
+  top: 460px;
+  z-index: 99;
+  align-items: center;
+}
+.situetion .mySwiper #Spring h4 {
+  right: 62.5%;
+}
+.situetion .mySwiper #Summer h4 {
+  right: 60.8%;
+}
+.situetion .mySwiper #Summer dl div {
+  margin: 5% 0;
+}
+.situetion .mySwiper #Autumn h4 {
+  right: 60.8%;
+}
+.situetion .mySwiper #Winter h4 {
+  right: 62%;
+}
+.situetion .mySwiper #Company h4 {
+  right: 59.5%;
+}
+.situetion .mySwiper #Family h4 {
+  right: 62.2%;
+}
+.situetion .mySwiper #Woman h4 {
+  right: 59.8%;
+}
+.situetion .mySwiper #Woman dl div {
+  margin: 10% 0;
+}
+.situetion .mySwiper h5 {
+  font-size: 180%;
+  background: linear-gradient(transparent 60%, #fff 60%);
+  color: #30579c;
+}
+.situetion .mySwiper dl div {
+  display: flex;
+  margin: 8% 0;
+  align-items: center;
+}
+.situetion .mySwiper dl div dd {
+  color: #c93c27;
+  font-size: 110%;
+}
+.situetion .mySwiper .point div {
+  background: linear-gradient(transparent 60%, #fff 60%);
+}
+.situetion .mySwiper .point div dt {
+  font-family: amaranth, serif;
+  font-size: 180%;
+  font-weight: bold;
+}
+.situetion .mySwiper .point div dd {
+  font-size: 130%;
+}
+.situetion .mySwiper li {
+  list-style-type: none;
+  font-size: 105%;
+  margin: 7% 0;
 }
 
 .plan {
@@ -179,11 +327,12 @@ header h1 {
 .plan .plannai p {
   text-align: center;
   color: #30579c;
+  font-size: 110%;
 }
 .plan .plannai .time {
   display: flex;
   width: 31%;
-  margin: 0 21.5%;
+  margin: 4% 21.5%;
 }
 .plan .plannai .time dt {
   font-family: amaranth, serif;
@@ -209,7 +358,7 @@ header h1 {
   color: #d75f2d;
   font-size: 400%;
   text-align: center;
-  margin: 3% 0;
+  margin: 4% 0 0 0;
 }
 .plan .plannai .menugrid {
   display: grid;
@@ -460,6 +609,8 @@ header h1 {
 }
 .attention summary {
   font-weight: normal;
+  display: flex;
+  align-items: center;
 }
 .attention summary strong {
   font-family: amaranth, serif;
@@ -468,11 +619,16 @@ header h1 {
   color: #30579c;
   margin-right: 5%;
 }
+.attention p {
+  display: flex;
+  align-items: center;
+}
 .attention p strong {
   font-family: amaranth, serif;
   font-weight: 700;
-  font-size: 250%;
+  font-size: 350%;
   color: #e0ad64;
+  margin: 0 3% 0 0.5%;
 }
 .attention h4 {
   text-align: center;
@@ -481,11 +637,11 @@ header h1 {
   margin: 2% 0;
 }
 .attention .goriyo {
-  width: 80%;
+  width: 70%;
   margin: 0 28%;
 }
 .attention .colona {
-  width: 70%;
+  width: 60%;
   margin: 0 35%;
   padding-bottom: 5%;
 }

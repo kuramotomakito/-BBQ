@@ -1,12 +1,201 @@
-.situetion{
-background-color: #deedfd;
+.situetion {
+    // background-color: #deedfd;
+    background-image: url(../../asset/photo/Frame.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    // overflow: hidden;
 
-h2{
-    color: #e0ad64;
+    h2 {
+        margin-top: 3%;
+        color: #e0ad64;
+    }
+
+    h3 {
+        color: #30579c;
+        font-family: amaranth, serif;
+        font-weight: bold;
+        background:linear-gradient(transparent 40%,#fff 40%);
+        font-size: 337%;
+        position: relative;
+        width: 13%;
+        left: 30%;
+        top: 465px;
+        z-index: 99;
+
+        b{
+            font-family: amaranth,serif;
+            font-weight: bold;
+            font-size: 130%;
+        }
+    }
+
+    .mySwiper {
+
+        width: 100%;
+        // margin-right: 30%;
+        position: relative;
+        top: 10%;
+        .swiper-slide-duplicate .swiper-slide-duplicate-active {
+            animation: fadeup 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+
+
+            @keyframes fadeup {
+                0% {
+                    transform: translateY(30px);
+                    opacity: 0;
+                }
+
+                80% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+        // right: 25%;
+        .swiper-wrapper {
+            width: 80%;
+            padding-bottom: 2%;
+
+        }
+
+        .seasonslide ,.partyslide{
+            background-color: #deedfd;
+            display: flex;
+            align-items: center;
+            width: 50%;
+            padding: 0 0 5% 0;
+
+            .slideimg {
+                text-align: center;
+                width: 30%;
+                margin-left: 10%;
+                img.wave {
+                    position: relative;
+                    bottom: 96px;
+            }
+        }
+
+        .slidetext {
+            margin-left: 10%;
+        }
+    }
+
+    h4 {
+        font-family: amaranth, serif;
+        font-weight: 700;
+        font-size: 240%;
+        color: #6299f8;
+        background:linear-gradient(transparent 0%,#fff 0%);
+        position: absolute;
+        top: 460px;
+        z-index: 99;
+        align-items: center;
+    }
+    #Spring{
+        h4{
+        right: 62.5%;
+        }
+    }
+    #Summer{
+        h4{
+            right: 60.8%;
+        }
+        dl div{margin: 5% 0;}
+    }
+    #Autumn{
+        h4{
+            right: 60.8%;
+        }
+    }
+    #Winter{
+        h4{
+            right:62%;
+        }
+    }
+    #Company{
+        h4{right: 59.5%;}
+    }
+    #Family{
+        h4{right: 62.2%;}
+    }
+    #Woman{
+        h4{right: 59.8%;}
+        dl div{margin: 10% 0;}
+
+
+    }
+
+h5{
+    font-size: 180%;
+    background:linear-gradient(transparent 60%,#fff 60%);
+    color: #30579c;
+}
+dl{
+    div{
+        display: flex;
+        margin: 8% 0;
+        align-items: center;
+        dd{
+            color: #c93c27;
+            font-size: 110%;
+        }
+        
+    }
+}
+.point{
+    div{
+    background:linear-gradient(transparent 60%,#fff 60%);
+
+
+    dt{
+    font-family: amaranth,serif;
+    font-size: 180%;
+    font-weight:bold;
+    }
+    dd{
+        font-size: 130%;
+    }
+}}
+li{
+    list-style-type: none;
+    font-size: 105%;
+    margin: 7% 0;
 }
 
-img{
-    width:20%;
-    height: auto;
+
+
+
+
+
+
+
+
+    }
+
 }
-}
+
+// .swiper-slide-next{
+//     left: 0%;
+//     // img{
+//     // // z-index: 3;
+// }}
+// .swiper-slide-prev{
+//     left: 9%;
+// //     img{
+// //     // z-index: 2;
+// // }}
+// .swiper-slide-active{
+//     // width: 30%;
+//     img{
+//         position: relative;
+//         // z-index: 99;
+// width:110%;
+// // margin-right: 10%;
+// }
+// }
+
+// }

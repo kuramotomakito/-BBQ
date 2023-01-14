@@ -13,7 +13,8 @@
     }
     summary {
         font-weight: normal;
-        
+        display: flex;
+        align-items: center;
         strong{
         font-family: amaranth ,serif;
         font-weight: 700;
@@ -23,12 +24,18 @@
     }}
 
 
-p strong{
+p {
+    display: flex;
+    align-items: center;
+
+    strong{
     font-family: amaranth ,serif;
     font-weight: 700;
-    font-size: 250%;
+    font-size: 350%;
     color: #e0ad64;
-}
+    margin:0 3% 0 0.5%;
+
+}}
 
 h4{
     text-align: center;
@@ -37,11 +44,11 @@ h4{
     margin: 2% 0;
 }
 .goriyo{
-    width: 80%;
+    width: 70%;
     margin: 0 28%;
 }
 .colona{
-    width: 70%;
+    width: 60%;
     margin: 0 35%;
     padding-bottom: 5%;
 }

@@ -1,8 +1,15 @@
+// $tab:768;
+@use "mixin" as m;
+// overflow: hidden;
+
 .servise {
+    position: relative;
     background-image: url("../../asset/photo/backsea.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+// overflow: hidden;
     padding-bottom: 10%;
+
 
     .suncafe {
         position: relative;
@@ -11,6 +18,7 @@
         h3 {
             font-family: amaranth, Bree, serif;
             font-size: 400%;
+
             font-weight: 700;
             position: absolute;
             color: #e0ad64;
@@ -22,6 +30,10 @@
                 font-weight:bold;
                 font-size: 150%;
             }
+            @include m.mq(tab){
+        
+                font-size:250%;
+            }
         }
 
         .SuncafeParadise {
@@ -29,7 +41,7 @@
 
             img {
                 width: 55%;
-                height: auto;
+                // height: auto;
                 padding-left: 1%;
             }
 
@@ -47,12 +59,12 @@
             color: #fff;
             font-size: 230%;
             text-align: center;
-            background-color: #30579c;
+            background:linear-gradient(transparent 40%,#30579c 40%);
             width: 50%;
             height: 100%;
-            position: relative;
-            left: 25%;
-            margin: 3% 0;
+            // position: relative;
+            // left: 25%;
+            margin: 3% 25%;
 
         }
 

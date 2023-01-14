@@ -1,3 +1,22 @@
+$breakpoint: (
+  sp: 'screen and (max-width: 767px)',
+  tab: 'screen and (max-width: 1000px)',
+  pc: 'screen and (min-width: 1025px)'
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+   @content;
+  }
+}
+
+
+
+
+
+
+
+
 
 $blue:#30579c;
 $orange:#e0ad64;
