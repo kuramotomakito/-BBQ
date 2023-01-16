@@ -10,14 +10,16 @@
         text-align: center;
         color: #30579c;
         font-size: 200%;
+
         @include m.mq(tab) {
-font-size: 150%;        }
+            font-size: 150%;
+        }
     }
 
     p {
         text-align: center;
         margin: 2% 0;
-        
+
 
         strong {
             font-family: amaranth, serif;
@@ -26,9 +28,10 @@ font-size: 150%;        }
             font-weight: 700;
         }
     }
-    .tyui{
-text-align: center;
-    
+
+    .tyui {
+        text-align: center;
+
     }
 
 
@@ -40,7 +43,8 @@ text-align: center;
         border-radius: 50px;
         background-color: #e0ad64;
         border: none;
-        margin:2% 0 ;
+        margin: 2% 0;
+
         @include m.mq(tab) {
             width: 24%;
             left: 37.5%;
@@ -50,18 +54,18 @@ text-align: center;
         a {
             color: #fff;
             font-size: 90%
-
         }
     }
 
     .banner {
         display: flex;
-width: 80%;
-margin: 0 0 0 20%;
-@include m.mq(tab) {
-width: 90%;
-margin: 0 5%;
-}
+        width: 80%;
+        margin: 0 0 0 20%;
+
+        @include m.mq(tab) {
+            width: 90%;
+            margin: 0 5%;
+        }
 
         li {
 
@@ -69,11 +73,12 @@ margin: 0 5%;
             height: auto;
             list-style-type: none;
             margin: 5%;
+
             @include m.mq(tab) {
                 width: 24%;
 
             }
-    
+
         }
     }
 
