@@ -1,3 +1,7 @@
+@use "mixin" as m;
+
+
+
 header{
     position: relative;
 button{
@@ -7,14 +11,35 @@ button{
     border: 3px solid #30579c;
     top: 6%;
     left: 85%;
-    width: 11%;
-    height: 6%;
+    min-width: 130px;
+    height: 40px;
     a{
     font-size: 120%;
     color: #30579c;
     }
     z-index: 9999;
+    @include m.mq(tab){
+        min-width: 120px;
+        height: 45px;
+        a{
+            font-size: 110%
+        }
+    }
+    // @include m.mq(sp){
+    //     min-width: 70px;
+    //     height: 70px;
+    //     a{
+    //         font-size: 0px;
+        
+    //         content: url(../../asset/photo/phone.svg);
+    //         // fill: #30579c;
+    //     width: 30px;
+    //     height: auto;
+                
+    //                 }
+    // }
 }
+
 img{
     width: 100%;
     height: auto;

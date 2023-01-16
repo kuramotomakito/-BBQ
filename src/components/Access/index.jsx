@@ -8,7 +8,7 @@ const table = JSON.parse(json);
 const Access = () => {
     return (
         <section className='access'>
-            <h2>Access</h2>
+            <h2><b>A</b>ccess</h2>
             <div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6512.179948205142!2d139.48020642549793!3d35.30374577695581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60184ee3e3635903%3A0xd025fa0157690637!2z5rGf44Gu5bO244Oe44Oq44O844OK!5e0!3m2!1sja!2sjp!4v1672658289096!5m2!1sja!2sjp" className='googlemap'></iframe>
             <dl>

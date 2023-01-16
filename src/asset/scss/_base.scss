@@ -1,3 +1,4 @@
+@use "mixin" as m;
 
 *{
     margin: 0;
@@ -30,7 +31,10 @@ h2{
         font-family: amaranth, serif;
         font-weight: 700;
         font-size: 150%;
-    }
+        }
+        @include m.mq(tab) {
+            font-size: 400%;
+        }
 }
 html{
     width: 100%;

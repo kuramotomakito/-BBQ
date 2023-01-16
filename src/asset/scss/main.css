@@ -33,6 +33,11 @@ h2 b {
   font-weight: 700;
   font-size: 150%;
 }
+@media screen and (max-width: 900px) {
+  h2 {
+    font-size: 400%;
+  }
+}
 
 html {
   width: 100%;
@@ -52,13 +57,22 @@ header button {
   border: 3px solid #30579c;
   top: 6%;
   left: 85%;
-  width: 11%;
-  height: 6%;
+  min-width: 130px;
+  height: 40px;
   z-index: 9999;
 }
 header button a {
   font-size: 120%;
   color: #30579c;
+}
+@media screen and (max-width: 900px) {
+  header button {
+    min-width: 120px;
+    height: 45px;
+  }
+  header button a {
+    font-size: 110%;
+  }
 }
 header img {
   width: 100%;
@@ -74,6 +88,12 @@ header h1 {
   background-repeat: no-repeat;
   background-size: 100%;
   padding-bottom: 10%;
+}
+@media screen and (max-width: 900px) {
+  .servise {
+    background-size: 170%;
+    padding-bottom: 1%;
+  }
 }
 .servise .suncafe {
   position: relative;
@@ -93,7 +113,7 @@ header h1 {
   font-weight: bold;
   font-size: 150%;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .servise .suncafe h3 {
     font-size: 250%;
   }
@@ -103,12 +123,23 @@ header h1 {
 }
 .servise .suncafe .SuncafeParadise img {
   width: 55%;
+  height: auto;
   padding-left: 1%;
+}
+@media screen and (max-width: 900px) {
+  .servise .suncafe .SuncafeParadise img {
+    width: 50%;
+  }
 }
 .servise .suncafe .SuncafeParadise p {
   margin-top: 8%;
   margin-left: 3%;
   color: #fff;
+}
+@media screen and (max-width: 900px) {
+  .servise .suncafe .SuncafeParadise p {
+    font-size: 80%;
+  }
 }
 .servise .suncafecharm h3 {
   color: #fff;
@@ -119,35 +150,72 @@ header h1 {
   height: 100%;
   margin: 3% 25%;
 }
+@media screen and (max-width: 900px) {
+  .servise .suncafecharm h3 {
+    font-size: 180%;
+    width: 70%;
+    margin: 3% auto;
+  }
+}
 .servise .suncafecharm .Features {
   display: inline-flex;
   position: relative;
-  left: 14%;
-  width: 84%;
+  left: 9%;
+  width: 90%;
+}
+@media screen and (max-width: 900px) {
+  .servise .suncafecharm .Features {
+    display: block;
+    width: 90%;
+    margin: 0 0 5% 0;
+  }
 }
 .servise .suncafecharm .Features .feature {
-  width: 25%;
-  padding: 1.2% 1.2% 3% 1.2%;
-  margin: 0 0.5%;
+  width: 20%;
+  padding: 1.2% 5% 3% 1.2%;
   background-color: #fff;
   color: #30579c;
+}
+@media screen and (max-width: 900px) {
+  .servise .suncafecharm .Features .feature {
+    display: flex;
+    width: 90%;
+    margin-bottom: 2%;
+    padding: 1%;
+  }
+  .servise .suncafecharm .Features .feature img {
+    width: 40%;
+    height: auto;
+    margin-right: 1%;
+  }
 }
 .servise .suncafecharm .Features .feature dt {
   font-size: 130%;
   margin-bottom: 8%;
 }
+@media screen and (max-width: 900px) {
+  .servise .suncafecharm .Features .feature dt {
+    font-size: 170%;
+    margin-bottom: 5%;
+  }
+}
 .servise .suncafecharm .Features .feature dd {
   font-size: 80%;
   line-height: 200%;
+  padding: 1.2% 1.2% 3% 1.2%;
+}
+@media screen and (max-width: 900px) {
+  .servise .suncafecharm .Features .feature dd {
+    font-size: 110%;
+    margin-bottom: 5%;
+  }
 }
 
 .situetion {
-  background-image: url(../../asset/photo/Frame.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-color: #deedfd;
+  padding-bottom: 5%;
 }
 .situetion h2 {
-  margin-top: 3%;
   color: #e0ad64;
 }
 .situetion h3 {
@@ -162,6 +230,14 @@ header h1 {
   top: 465px;
   z-index: 99;
 }
+@media screen and (max-width: 900px) {
+  .situetion h3 {
+    width: 15%;
+    font-size: 250%;
+    top: 330px;
+    left: 25%;
+  }
+}
 .situetion h3 b {
   font-family: amaranth, serif;
   font-weight: bold;
@@ -172,58 +248,51 @@ header h1 {
   position: relative;
   top: 10%;
 }
-.situetion .mySwiper .swiper-slide-duplicate .swiper-slide-duplicate-active {
-  -webkit-animation: fadeup 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
-          animation: fadeup 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
-}
-@-webkit-keyframes fadeup {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fadeup {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .situetion .mySwiper .swiper-wrapper {
   width: 80%;
-  padding-bottom: 2%;
 }
-.situetion .mySwiper .seasonslide, .situetion .mySwiper .partyslide {
+.situetion .mySwiper .seasonslide,
+.situetion .mySwiper .partyslide {
   background-color: #deedfd;
   display: flex;
   align-items: center;
   width: 50%;
   padding: 0 0 5% 0;
 }
-.situetion .mySwiper .seasonslide .slideimg, .situetion .mySwiper .partyslide .slideimg {
+.situetion .mySwiper .seasonslide .slideimg,
+.situetion .mySwiper .partyslide .slideimg {
   text-align: center;
   width: 30%;
   margin-left: 10%;
 }
-.situetion .mySwiper .seasonslide .slideimg img.wave, .situetion .mySwiper .partyslide .slideimg img.wave {
+@media screen and (max-width: 900px) {
+  .situetion .mySwiper .seasonslide .slideimg,
+.situetion .mySwiper .partyslide .slideimg {
+    width: 35%;
+  }
+}
+.situetion .mySwiper .seasonslide .slideimg img.wave,
+.situetion .mySwiper .partyslide .slideimg img.wave {
   position: relative;
   bottom: 96px;
 }
-.situetion .mySwiper .seasonslide .slidetext, .situetion .mySwiper .partyslide .slidetext {
+@media screen and (max-width: 900px) {
+  .situetion .mySwiper .seasonslide .slideimg img.wave,
+.situetion .mySwiper .partyslide .slideimg img.wave {
+    width: 110%;
+    bottom: 70px;
+    margin-left: -4%;
+  }
+}
+.situetion .mySwiper .seasonslide .slidetext,
+.situetion .mySwiper .partyslide .slidetext {
   margin-left: 10%;
+}
+@media screen and (max-width: 900px) {
+  .situetion .mySwiper .seasonslide .slidetext,
+.situetion .mySwiper .partyslide .slidetext {
+    margin-left: 4%;
+  }
 }
 .situetion .mySwiper h4 {
   font-family: amaranth, serif;
@@ -236,37 +305,107 @@ header h1 {
   z-index: 99;
   align-items: center;
 }
+@media screen and (max-width: 900px) {
+  .situetion .mySwiper h4 {
+    top: 330px;
+    font-size: 220%;
+  }
+}
 .situetion .mySwiper #Spring h4 {
   right: 62.5%;
+}
+@media screen and (max-width: 900px) {
+  .situetion .mySwiper #Spring h4 {
+    right: 62.3%;
+  }
+  .situetion .mySwiper #Spring h5 {
+    width: 70%;
+  }
+  .situetion .mySwiper #Spring .point div {
+    width: 85%;
+  }
 }
 .situetion .mySwiper #Summer h4 {
   right: 60.8%;
 }
-.situetion .mySwiper #Summer dl div {
+.situetion .mySwiper #Summer h4 dl div {
   margin: 5% 0;
+}
+@media screen and (max-width: 900px) {
+  .situetion .mySwiper #Summer h4 {
+    right: 59.4%;
+  }
+  .situetion .mySwiper #Summer .point div {
+    width: 85%;
+  }
 }
 .situetion .mySwiper #Autumn h4 {
   right: 60.8%;
 }
+@media screen and (max-width: 900px) {
+  .situetion .mySwiper #Autumn h4 {
+    right: 59.5%;
+  }
+  .situetion .mySwiper #Autumn h5 {
+    width: 100%;
+  }
+}
 .situetion .mySwiper #Winter h4 {
   right: 62%;
+}
+@media screen and (max-width: 900px) {
+  .situetion .mySwiper #Winter h4 {
+    right: 61.7%;
+  }
+  .situetion .mySwiper #Winter h5 {
+    width: 95%;
+  }
 }
 .situetion .mySwiper #Company h4 {
   right: 59.5%;
 }
+@media screen and (max-width: 900px) {
+  .situetion .mySwiper #Company h4 {
+    right: 58%;
+  }
+}
 .situetion .mySwiper #Family h4 {
   right: 62.2%;
+}
+@media screen and (max-width: 900px) {
+  .situetion .mySwiper #Family h5 {
+    width: 70%;
+  }
+  .situetion .mySwiper #Family dd {
+    font-size: 100%;
+  }
 }
 .situetion .mySwiper #Woman h4 {
   right: 59.8%;
 }
-.situetion .mySwiper #Woman dl div {
+.situetion .mySwiper #Woman h4 dl div {
   margin: 10% 0;
+}
+@media screen and (max-width: 900px) {
+  .situetion .mySwiper #Woman h4 {
+    right: 58.2%;
+  }
+  .situetion .mySwiper #Woman dl div {
+    margin: 6% 0;
+  }
+  .situetion .mySwiper #Woman h5 {
+    width: 80%;
+  }
 }
 .situetion .mySwiper h5 {
   font-size: 180%;
   background: linear-gradient(transparent 60%, #fff 60%);
   color: #30579c;
+}
+@media screen and (max-width: 900px) {
+  .situetion .mySwiper h5 {
+    font-size: 130%;
+  }
 }
 .situetion .mySwiper dl div {
   display: flex;
@@ -276,6 +415,11 @@ header h1 {
 .situetion .mySwiper dl div dd {
   color: #c93c27;
   font-size: 110%;
+}
+@media screen and (max-width: 900px) {
+  .situetion .mySwiper dl div {
+    margin: 4% 0;
+  }
 }
 .situetion .mySwiper .point div {
   background: linear-gradient(transparent 60%, #fff 60%);
@@ -287,6 +431,11 @@ header h1 {
 }
 .situetion .mySwiper .point div dd {
   font-size: 130%;
+}
+@media screen and (max-width: 900px) {
+  .situetion .mySwiper .point div dd {
+    font-size: 100%;
+  }
 }
 .situetion .mySwiper li {
   list-style-type: none;
@@ -316,6 +465,7 @@ header h1 {
   margin: 0 10%;
   background-color: #ffffff;
   overflow: hidden;
+  padding-bottom: 5%;
 }
 .plan .plannai li {
   list-style-type: none;
@@ -329,10 +479,21 @@ header h1 {
   color: #30579c;
   font-size: 110%;
 }
+@media screen and (max-width: 900px) {
+  .plan .plannai p {
+    font-size: 100%;
+  }
+}
 .plan .plannai .time {
   display: flex;
-  width: 31%;
-  margin: 4% 21.5%;
+  /* width: 80%; */
+  margin: 4% auto;
+  justify-content: center;
+}
+@media screen and (max-width: 900px) {
+  .plan .plannai .time {
+    margin: 4% 4.5%;
+  }
 }
 .plan .plannai .time dt {
   font-family: amaranth, serif;
@@ -341,7 +502,7 @@ header h1 {
 }
 .plan .plannai .time div {
   text-align: center;
-  margin: 0 10%;
+  margin: 0 5%;
 }
 .plan .plannai .time .lunch dt {
   color: #58c1f9;
@@ -363,14 +524,23 @@ header h1 {
 .plan .plannai .menugrid {
   display: grid;
   grid-template-areas: "three three" "stan prem";
+  justify-content: center;
+  align-items: baseline;
+  /* margin: 0; */
+  justify-items: center;
 }
 .plan .plannai .threehour {
   position: relative;
   border: 10px solid #f8d880;
   width: 90%;
-  margin: 5% 5% 0 5%;
+  margin: 5% 0;
   padding-bottom: 10%;
   grid-area: three;
+}
+@media screen and (max-width: 900px) {
+  .plan .plannai .threehour {
+    padding-bottom: 2%;
+  }
 }
 .plan .plannai .threehour .new {
   position: absolute;
@@ -381,6 +551,12 @@ header h1 {
   bottom: 99%;
   left: 23%;
 }
+@media screen and (max-width: 900px) {
+  .plan .plannai .threehour .new {
+    font-size: 130%;
+    bottom: 100%;
+  }
+}
 .plan .plannai .threehour .h4set {
   position: relative;
 }
@@ -388,12 +564,21 @@ header h1 {
   font-size: 250%;
   font-weight: 550;
   color: #c93c27;
-  background-color: #ffffff;
+  background-color: #fff;
   position: absolute;
   text-align: center;
   width: 40%;
   bottom: -32px;
   margin: 0 30%;
+}
+@media screen and (max-width: 900px) {
+  .plan .plannai .threehour h4 {
+    background: linear-gradient(transparent 35%, #fff 35%);
+    font-size: 200%;
+    width: 60%;
+    margin: 0 20%;
+    bottom: -18px;
+  }
 }
 .plan .plannai .threehour h5 {
   font-family: amaranth, serif;
@@ -408,43 +593,73 @@ header h1 {
   font-size: 60%;
   font-weight: 700;
 }
-.plan .plannai .threehour .drinkflex {
-  display: flex;
-  display: flex;
-  margin: 5% 0 3% 7%;
-  position: relative;
-}
-.plan .plannai .threehour .drinkflex img {
-  width: 30%;
-  margin: 0 8%;
+@media screen and (max-width: 900px) {
+  .plan .plannai .threehour h5 {
+    font-size: 450%;
+  }
 }
 .plan .plannai .threehour .menu {
   display: flex;
   margin: 0 0 0 14%;
 }
+@media screen and (max-width: 900px) {
+  .plan .plannai .threehour .menu {
+    margin: 0 0 0 12%;
+  }
+}
 .plan .plannai .threehour .menu div {
   position: relative;
 }
-.plan .plannai .threehour .menu .appetmenu {
-  margin-left: 30%;
+.plan .plannai .threehour .menu img {
+  width: 70%;
 }
-.plan .plannai .threehour .menu dt {
+@media screen and (max-width: 900px) {
+  .plan .plannai .threehour .menu {
+    margin: 5% 0 3% 4%;
+  }
+  .plan .plannai .threehour .menu img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .plan .plannai .threehour .menu .appetmenu {
+    margin-left: 10%;
+  }
+}
+.plan .plannai .threehour .menu dl dt {
   font-size: 200%;
   color: #30579c;
 }
-.plan .plannai .threehour .menu dd {
-  font-size: 120%;
+@media screen and (max-width: 900px) {
+  .plan .plannai .threehour .menu dl dt {
+    font-size: 140%;
+  }
+}
+.plan .plannai .threehour .menu dl dd {
+  font-size: 100%;
   line-height: 200%;
+  width: 90%;
+}
+@media screen and (max-width: 900px) {
+  .plan .plannai .threehour .menu dl dd {
+    font-size: 90%;
+    width: 95%;
+  }
 }
 .plan .plannai .standard {
   border: 10px solid #f8d880;
   width: 80%;
-  height: 90%;
-  margin: 10% 0 0 10%;
+  height: 85%;
+  margin: 10% 0;
   grid-area: stan;
 }
-.plan .plannai .standard .new,
-.plan .plannai .standard .drinkflex {
+@media screen and (max-width: 900px) {
+  .plan .plannai .standard {
+    height: 88%;
+  }
+}
+.plan .plannai .standard img,
+.plan .plannai .standard .new {
   display: none;
 }
 .plan .plannai .standard h4 {
@@ -459,6 +674,13 @@ header h1 {
   position: relative;
   margin: 0 30%;
 }
+@media screen and (max-width: 900px) {
+  .plan .plannai .standard h4 {
+    font-size: 250%;
+    width: 80%;
+    margin: 0 10%;
+  }
+}
 .plan .plannai .standard h5 {
   font-family: amaranth, serif;
   color: #2c67ea;
@@ -471,6 +693,11 @@ header h1 {
   font-size: 60%;
   font-weight: 700;
 }
+@media screen and (max-width: 900px) {
+  .plan .plannai .standard h5 {
+    font-size: 300%;
+  }
+}
 .plan .plannai .standard .menu {
   width: 80%;
   margin: 0 0 0 10%;
@@ -481,21 +708,35 @@ header h1 {
   font-size: 160%;
   color: #30579c;
 }
+@media screen and (max-width: 900px) {
+  .plan .plannai .standard .menu dt {
+    font-size: 140%;
+  }
+}
 .plan .plannai .standard .menu dd {
   font-size: 110%;
   line-height: 200%;
 }
+@media screen and (max-width: 900px) {
+  .plan .plannai .standard .menu dd {
+    font-size: 90%;
+  }
+}
 .plan .plannai .premium {
   border: 10px solid #f8d880;
   width: 80%;
-  height: 81%;
-  margin: 10% 5% 0 10%;
-  padding-bottom: 10%;
+  height: 85%;
+  margin: 10% 0;
   grid-area: prem;
 }
 .plan .plannai .premium .new,
-.plan .plannai .premium .drinkflex {
+.plan .plannai .premium img {
   display: none;
+}
+@media screen and (max-width: 900px) {
+  .plan .plannai .premium {
+    height: 88%;
+  }
 }
 .plan .plannai .premium h4 {
   font-family: amaranth, serif;
@@ -509,6 +750,13 @@ header h1 {
   position: relative;
   margin: 0 30%;
 }
+@media screen and (max-width: 900px) {
+  .plan .plannai .premium h4 {
+    font-size: 250%;
+    width: 80%;
+    margin: 0 10%;
+  }
+}
 .plan .plannai .premium h5 {
   font-family: amaranth, serif;
   color: #ec8756;
@@ -521,9 +769,14 @@ header h1 {
   font-size: 60%;
   font-weight: 700;
 }
+@media screen and (max-width: 900px) {
+  .plan .plannai .premium h5 {
+    font-size: 300%;
+  }
+}
 .plan .plannai .premium .menu {
   width: 80%;
-  margin: 0 0 0 20%;
+  margin: 0 0 0 10%;
   padding-bottom: 5%;
 }
 .plan .plannai .premium .menu dt {
@@ -531,35 +784,75 @@ header h1 {
   font-size: 160%;
   color: #30579c;
 }
+@media screen and (max-width: 900px) {
+  .plan .plannai .premium .menu dt {
+    font-size: 140%;
+  }
+}
 .plan .plannai .premium .menu dd {
   font-size: 110%;
   line-height: 200%;
 }
+@media screen and (max-width: 900px) {
+  .plan .plannai .premium .menu dd {
+    font-size: 90%;
+  }
+}
 .plan .plannai .softalcohol h3 {
   text-align: center;
   color: #30579c;
-  margin: 4% 0;
+  margin: 4% 0 10% 0;
+}
+@media screen and (max-width: 900px) {
+  .plan .plannai .softalcohol h3 {
+    font-size: 100%;
+  }
 }
 .plan .plannai .softalcohol .drinkmenu {
-  background-image: url(../../asset/photo/backdrink.svg);
-  background-repeat: no-repeat;
-  background-size: 90%;
-  padding-bottom: 20%;
-  margin: 0 0 0 10%;
+  border: 10px solid #f8d880;
+  width: 90%;
+  margin: 0 auto;
   display: grid;
-  grid-template-areas: "alc sof" "tyui tyui";
+  grid-template-areas: "title title" "alc sof" "tyui tyui";
+  padding-bottom: 5%;
+}
+.plan .plannai .softalcohol .drinkmenu .h4 {
+  color: #e0ad64;
+  text-align: center;
+  background: linear-gradient(transparent 35%, #fff 35%);
+  font-family: amaranth, serif;
+  font-size: 500%;
+  font-weight: bold;
+  grid-area: title;
+  position: absolute;
+  width: 38%;
+  margin: 0 17%;
+  top: 70%;
+}
+@media screen and (max-width: 900px) {
+  .plan .plannai .softalcohol .drinkmenu .h4 {
+    font-size: 400%;
+    top: 71.5%;
+    width: 44%;
+    margin: 0 14%;
+  }
 }
 .plan .plannai .softalcohol .drinkmenu img {
   width: 60%;
-  margin: 0 10%;
-  margin-top: 40%;
+  margin: 0 20%;
+  margin-top: 20%;
 }
 .plan .plannai .softalcohol .drinkmenu dt {
   font-size: 200%;
   color: #30579c;
 }
 .plan .plannai .softalcohol .drinkmenu dl {
-  margin-left: 10%;
+  margin-left: 20%;
+}
+@media screen and (max-width: 900px) {
+  .plan .plannai .softalcohol .drinkmenu dl {
+    font-size: 70%;
+  }
 }
 .plan .plannai .softalcohol .drinkmenu .alcoholmenu {
   grid-area: alc;
@@ -576,18 +869,27 @@ header h1 {
 .plan .plannai .softalcohol .drinkmenu .drinktyui {
   grid-area: tyui;
   text-align: center;
-  margin-right: 15%;
 }
 .plan .plannai .softalcohol .drinkmenu .drinktyui p {
-  margin: 5% 0 0 5%;
+  margin: 5% 0 0 0;
 }
 .plan .plannai .softalcohol .drinkmenu .drinktyui h4 {
   font-size: 200%;
   margin: 2% 0;
-  margin-left: 3%;
+}
+@media screen and (max-width: 900px) {
+  .plan .plannai .softalcohol .drinkmenu .drinktyui h4 {
+    font-size: 100%;
+  }
 }
 .plan .plannai .softalcohol .drinkmenu .drinktyui ul {
   margin-left: 23%;
+}
+@media screen and (max-width: 900px) {
+  .plan .plannai .softalcohol .drinkmenu .drinktyui ul {
+    font-size: 70%;
+    margin-left: 20%;
+  }
 }
 .plan .plannai .softalcohol .drinkmenu .drinktyui ul li {
   margin-bottom: 1%;
@@ -606,6 +908,12 @@ header h1 {
   color: #30579c;
   font-size: 150%;
   margin: 0 0 2% 0;
+}
+@media screen and (max-width: 900px) {
+  .attention h3 {
+    margin-top: 3%;
+    font-size: 120%;
+  }
 }
 .attention summary {
   font-weight: normal;
@@ -630,6 +938,11 @@ header h1 {
   color: #e0ad64;
   margin: 0 3% 0 0.5%;
 }
+@media screen and (max-width: 900px) {
+  .attention p strong {
+    font-size: 280%;
+  }
+}
 .attention h4 {
   text-align: center;
   font-size: 120%;
@@ -640,10 +953,21 @@ header h1 {
   width: 70%;
   margin: 0 28%;
 }
+@media screen and (max-width: 900px) {
+  .attention .goriyo {
+    width: 90%;
+    margin: 0 0 0 10%;
+  }
+}
 .attention .colona {
   width: 60%;
   margin: 0 35%;
   padding-bottom: 5%;
+}
+@media screen and (max-width: 900px) {
+  .attention .colona {
+    margin: 0 24%;
+  }
 }
 
 .QandA {
@@ -664,6 +988,11 @@ header h1 {
   /*開いているときに適用するスタイル*/
   /*開いときの中身のテキスト*/
 }
+@media screen and (max-width: 900px) {
+  .c-accordion {
+    max-width: 500px;
+  }
+}
 .c-accordion_ttl {
   background-image: url(../../asset/photo/prass.svg);
   background-position: right 24px center;
@@ -676,6 +1005,12 @@ header h1 {
   color: #464646;
   font-weight: bold;
 }
+@media screen and (max-width: 900px) {
+  .c-accordion_ttl {
+    padding: 2% 4%;
+    font-size: 90%;
+  }
+}
 .c-accordion[open] .c-accordion_ttl {
   background-image: url(../../asset/photo/minus.svg);
 }
@@ -685,12 +1020,22 @@ header h1 {
   margin-top: 0;
   color: #464646;
 }
+@media screen and (max-width: 900px) {
+  .c-accordion_txt {
+    padding: 2%;
+  }
+}
 
 .access {
   background-image: url(../../asset/photo/backmarina.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   padding-bottom: 8%;
+}
+@media screen and (max-width: 900px) {
+  .access {
+    background-size: 120%;
+  }
 }
 .access h2 {
   color: #c93c27;
@@ -699,24 +1044,54 @@ header h1 {
   width: 80%;
   display: flex;
 }
+@media screen and (max-width: 900px) {
+  .access div {
+    margin: 0 auto;
+  }
+}
 .access div .googlemap {
   margin-left: 10%;
   width: 60%;
   height: 450px;
+}
+@media screen and (max-width: 900px) {
+  .access div .googlemap {
+    height: 350px;
+    margin-left: 0;
+    width: 70%;
+  }
 }
 .access div dl {
   position: relative;
   left: 8%;
   color: #fff;
 }
+@media screen and (max-width: 900px) {
+  .access div dl {
+    width: 100%;
+    left: 12%;
+  }
+}
 .access div dl dt {
   font-size: 250%;
   margin-bottom: 15%;
+}
+@media screen and (max-width: 900px) {
+  .access div dl dt {
+    font-size: 180%;
+    margin-bottom: 10%;
+  }
 }
 .access div dl dd li {
   font-size: 120%;
   list-style-type: none;
   margin: 5% 0;
+}
+@media screen and (max-width: 900px) {
+  .access div dl dd li {
+    font-size: 100%;
+    width: 100%;
+  }
 }
 .access table {
   border-collapse: collapse;
@@ -725,6 +1100,12 @@ header h1 {
   margin: 2% 15%;
   /* セルの線を重ねる */
 }
+@media screen and (max-width: 900px) {
+  .access table {
+    width: 80%;
+    margin: 2% auto;
+  }
+}
 .access table tr th {
   background-color: #deedfd;
   color: #2c67ea;
@@ -732,11 +1113,21 @@ header h1 {
   width: 30%;
   padding: 2%;
 }
+@media screen and (max-width: 900px) {
+  .access table tr th {
+    font-size: 90%;
+  }
+}
 .access table tr td {
   background-color: #fff;
   border: 2px solid #c2dcf6;
   font-size: 100%;
   padding: 2% 0% 2% 5%;
+}
+@media screen and (max-width: 900px) {
+  .access table tr td {
+    font-size: 65%;
+  }
 }
 .access table tr td li {
   list-style-type: none;
@@ -750,6 +1141,11 @@ header h1 {
   text-align: center;
   color: #30579c;
   font-size: 200%;
+}
+@media screen and (max-width: 900px) {
+  .content h3 {
+    font-size: 150%;
+  }
 }
 .content p {
   text-align: center;
@@ -774,19 +1170,38 @@ header h1 {
   border: none;
   margin: 2% 0;
 }
+@media screen and (max-width: 900px) {
+  .content button {
+    width: 24%;
+    left: 37.5%;
+    height: 50px;
+  }
+}
 .content button a {
   color: #fff;
+  font-size: 90%;
 }
 .content .banner {
   display: flex;
   width: 80%;
   margin: 0 0 0 20%;
 }
+@media screen and (max-width: 900px) {
+  .content .banner {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
 .content .banner li {
   width: 15%;
   height: auto;
   list-style-type: none;
   margin: 5%;
+}
+@media screen and (max-width: 900px) {
+  .content .banner li {
+    width: 24%;
+  }
 }
 
 footer {

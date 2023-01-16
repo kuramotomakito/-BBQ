@@ -47,54 +47,56 @@ const plan = () => {
                                     return (
                                         <>
                                             <div className={item.name}>
-                                                {/* <img src={item.backsrc} alt={item.backalt} /> */}
                                                 <div className='h4set'>
                                                     <p className='new'>NEW!!</p>
                                                     <h4>{item.h4}</h4>
-
                                                 </div>
-
-
                                                 <h5>{item.prise}<b>yen</b></h5>
-                                                <div className='drinkflex'>
+                                                {/* <div className='drinkflex'>
                                                     <img src={meetphoto} alt="肉" />
                                                     <img src={appetphoto} alt="野菜" />
-                                                </div>
-                                                <dl className='menu'>
+                                                </div> */}
+                                                <div className='menu'>
                                                     <div className='meetmenu'>
-                                                        <dt>焼肉</dt>
-                                                        <dd><ul>
+                                                        <img src={meetphoto} alt="肉" />
+                                                        <dl>
+                                                            <dt>焼肉</dt>
+                                                            <dd><ul>
 
-                                                            {item.meets.map((meet, index) => {
-                                                                return (
-                                                                    <>
-                                                                        <li>・{meet}</li>
-                                                                    </>
-                                                                )
-                                                            })}</ul></dd></div>
+                                                                {item.meets.map((meet, index) => {
+                                                                    return (
+                                                                        <>
+                                                                            <li>・{meet}</li>
+                                                                        </>
+                                                                    )
+                                                                })}</ul></dd></dl></div>
                                                     <div className='appetmenu'>
-                                                        <dt>前菜</dt>
-                                                        <dd><ul>
+                                                    <img src={appetphoto} alt="前菜" />
 
-                                                            {item.appetizer.map((appet, index) => {
-                                                                return (
-                                                                    <>
-                                                                        <li>・{appet}</li>
-                                                                    </>
-                                                                )
-                                                            })}</ul></dd>
+                                                        <dl>
+                                                            <dt>前菜</dt>
+                                                            <dd><ul>
+
+                                                                {item.appetizer.map((appet, index) => {
+                                                                    return (
+                                                                        <>
+                                                                            <li>・{appet}</li>
+                                                                        </>
+                                                                    )
+                                                                })}</ul></dd></dl>
                                                     </div>
-                                                </dl>
-                                            </div>
-                                        </>
-                                    )
+                                                </div>
+                                                </div>
+                                            </>
+                                            )
                                 })
                             }
-                        </div>
+                                        </div>
                     </section>
                     <section className='softalcohol'>
                         <h3>江ノ島マリーナでは飲み放題が無料でついてきます！</h3>
                         <div className='drinkmenu'>
+                            <h4 className='h4'>Drinkmenu</h4>
                             <div className='alcoholmenu'>
                                 <img src={alcoholphoto} alt="アルコール" />
                                 <dl>
@@ -103,19 +105,19 @@ const plan = () => {
                                         {alcohol.map((al, index) => {
                                             return (
                                                 <>
-                                                <ul>
-                                                    
-                                                    {al.map((list, index) => {
-                                                        return (
-                                                            <>
-                                                                
-                                                                    <li>・{list}</li>
-                                                                
-                                                            </>
+                                                    <ul>
 
-                                                        )
-                                                    })}
-                                                    
+                                                        {al.map((list, index) => {
+                                                            return (
+                                                                <>
+
+                                                                    <li>・{list}</li>
+
+                                                                </>
+
+                                                            )
+                                                        })}
+
                                                     </ul>
                                                 </>
                                             )
@@ -134,15 +136,15 @@ const plan = () => {
                                     </ul></dd>
                                 </dl>
                             </div>
-                        <div className='drinktyui'>
-                        <p>他にも盛りだくさん！</p>
-                        <h4>※注意事項</h4>
-                        <ul>
-                            <li>・グループ全員対象となり、利用されない方との混在は不可です</li>
-                            <li>・遅れて合流した方もスタート時間は同時扱いになります</li>
-                            <li>・20歳未満の飲酒、車の運転する方の飲酒は法律により禁止されています</li>
-                        </ul>
-                        </div>
+                            <div className='drinktyui'>
+                                <p>他にも盛りだくさん！</p>
+                                <h4>※注意事項</h4>
+                                <ul>
+                                    <li>・グループ全員対象となり、利用されない方との混在は不可です</li>
+                                    <li>・遅れて合流した方もスタート時間は同時扱いになります</li>
+                                    <li>・20歳未満の飲酒、車の運転する方の飲酒は法律により禁止されています</li>
+                                </ul>
+                            </div>
                         </div>
                     </section>
                 </div>

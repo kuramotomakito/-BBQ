@@ -1,12 +1,14 @@
+@use "mixin" as m;
+
 .situetion {
-    // background-color: #deedfd;
-    background-image: url(../../asset/photo/Frame.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-color: #deedfd;
+    // background-image: url(../../asset/photo/Frame.jpg);
+    // background-repeat: no-repeat;
+    // background-size: 120%;
+    padding-bottom: 5%;
     // overflow: hidden;
 
     h2 {
-        margin-top: 3%;
         color: #e0ad64;
     }
 
@@ -14,7 +16,7 @@
         color: #30579c;
         font-family: amaranth, serif;
         font-weight: bold;
-        background:linear-gradient(transparent 40%,#fff 40%);
+        background: linear-gradient(transparent 40%, #fff 40%);
         font-size: 337%;
         position: relative;
         width: 13%;
@@ -22,8 +24,16 @@
         top: 465px;
         z-index: 99;
 
-        b{
-            font-family: amaranth,serif;
+        @include m.mq(tab) {
+            width: 15%;
+            font-size: 250%;
+            top: 330px;
+            left: 25%;
+
+        }
+
+        b {
+            font-family: amaranth, serif;
             font-weight: bold;
             font-size: 130%;
         }
@@ -35,34 +45,17 @@
         // margin-right: 30%;
         position: relative;
         top: 10%;
-        .swiper-slide-duplicate .swiper-slide-duplicate-active {
-            animation: fadeup 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
 
 
-            @keyframes fadeup {
-                0% {
-                    transform: translateY(30px);
-                    opacity: 0;
-                }
-
-                80% {
-                    opacity: 1;
-                }
-
-                100% {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-        }
         // right: 25%;
         .swiper-wrapper {
             width: 80%;
-            padding-bottom: 2%;
+            // padding-bottom: 2%;
 
         }
 
-        .seasonslide ,.partyslide{
+        .seasonslide,
+        .partyslide {
             background-color: #deedfd;
             display: flex;
             align-items: center;
@@ -73,98 +66,229 @@
                 text-align: center;
                 width: 30%;
                 margin-left: 10%;
+
+                @include m.mq(tab) {
+                    width: 35%;
+
+                }
+
                 img.wave {
                     position: relative;
                     bottom: 96px;
+
+                    @include m.mq(tab) {
+                        width: 110%;
+                        bottom: 70px;
+                        margin-left: -4%;
+                    }
+
+                }
+            }
+
+            .slidetext {
+                margin-left: 10%;
+
+                @include m.mq(tab) {
+                    margin-left: 4%;
+                }
             }
         }
 
-        .slidetext {
-            margin-left: 10%;
-        }
-    }
+        h4 {
+            font-family: amaranth, serif;
+            font-weight: 700;
+            font-size: 240%;
+            color: #6299f8;
+            background: linear-gradient(transparent 0%, #fff 0%);
+            position: absolute;
+            top: 460px;
+            z-index: 99;
+            align-items: center;
 
-    h4 {
-        font-family: amaranth, serif;
-        font-weight: 700;
-        font-size: 240%;
-        color: #6299f8;
-        background:linear-gradient(transparent 0%,#fff 0%);
-        position: absolute;
-        top: 460px;
-        z-index: 99;
-        align-items: center;
-    }
-    #Spring{
-        h4{
-        right: 62.5%;
+            @include m.mq(tab) {
+                top: 330px;
+                font-size: 220%;
+            }
+
         }
-    }
-    #Summer{
-        h4{
-            right: 60.8%;
+
+        #Spring {
+            h4 {
+                right: 62.5%;
+            }
+
+            @include m.mq(tab) {
+                h4 {
+                    right: 62.3%;
+                }
+
+                h5 {
+                    width: 70%;
+                }
+
+                .point div {
+                    width: 85%;
+                }
+            }
         }
-        dl div{margin: 5% 0;}
-    }
-    #Autumn{
-        h4{
-            right: 60.8%;
-        }
-    }
-    #Winter{
-        h4{
-            right:62%;
-        }
-    }
-    #Company{
-        h4{right: 59.5%;}
-    }
-    #Family{
-        h4{right: 62.2%;}
-    }
-    #Woman{
-        h4{right: 59.8%;}
-        dl div{margin: 10% 0;}
+
+        #Summer {
+            h4 {
+                right: 60.8%;
 
 
-    }
 
-h5{
-    font-size: 180%;
-    background:linear-gradient(transparent 60%,#fff 60%);
-    color: #30579c;
-}
-dl{
-    div{
-        display: flex;
-        margin: 8% 0;
-        align-items: center;
-        dd{
-            color: #c93c27;
-            font-size: 110%;
+                dl div {
+                    margin: 5% 0;
+                }
+            }
+
+            @include m.mq(tab) {
+                h4{right: 59.4%;}
+                .point div{width: 85%;}
+
+            }
         }
-        
-    }
-}
-.point{
-    div{
-    background:linear-gradient(transparent 60%,#fff 60%);
+
+        #Autumn {
+            h4 {
+                right: 60.8%;
+            }
+
+            @include m.mq(tab) {
+                h4 {
+                    right: 59.5%;
+                }
+
+                h5 {
+                    width: 100%;
+                }
+            }
+        }
+
+        #Winter {
+            h4 {
+                right: 62%;
+            }
+
+            @include m.mq(tab) {
+                h4 {
+                    right: 61.7%;
+                }
+
+                h5 {
+                    width: 95%;
+                }
+            }
+        }
+
+        #Company {
+            h4 {
+                right: 59.5%;
+
+                @include m.mq(tab) {
+                    right: 58%;
+                }
+            }
+        }
+
+        #Family {
+            h4 {
+                right: 62.2%;
+            }
+
+            @include m.mq(tab) {
+                h5 {
+                    width: 70%;
+                }
+
+                dd {
+                    font-size: 100%;
+                }
+            }
+        }
 
 
-    dt{
-    font-family: amaranth,serif;
-    font-size: 180%;
-    font-weight:bold;
-    }
-    dd{
-        font-size: 130%;
-    }
-}}
-li{
-    list-style-type: none;
-    font-size: 105%;
-    margin: 7% 0;
-}
+
+        #Woman {
+            h4 {
+                right: 59.8%;
+
+                dl div {
+                    margin: 10% 0;
+                }
+            }
+
+            @include m.mq(tab) {
+                h4 {
+                    right: 58.2%;
+                }
+
+                dl div {
+                    margin: 6% 0;
+                }
+
+                h5 {
+                    width: 80%;
+                }
+
+            }
+        }
+
+        h5 {
+            font-size: 180%;
+            background: linear-gradient(transparent 60%, #fff 60%);
+            color: #30579c;
+
+            @include m.mq(tab) {
+                font-size: 130%;
+            }
+        }
+
+        dl {
+            div {
+                display: flex;
+                margin: 8% 0;
+                align-items: center;
+
+                dd {
+                    color: #c93c27;
+                    font-size: 110%;
+                }
+
+                @include m.mq(tab) {
+                    margin: 4% 0;
+                }
+            }
+
+        }
+
+        .point {
+            div {
+                background: linear-gradient(transparent 60%, #fff 60%);
+
+
+                dt {
+                    font-family: amaranth, serif;
+                    font-size: 180%;
+                    font-weight: bold;
+                }
+
+                dd {
+                    font-size: 130%;
+
+                    @include m.mq(tab) {
+                        font-size: 100%;
+                    }
+                }
+            }
+        }
+
+        li {
+            list-style-type: none;
+            font-size: 105%;
+            margin: 7% 0;
+        }
 
 
 
