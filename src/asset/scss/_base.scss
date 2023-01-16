@@ -20,12 +20,14 @@ p{
     font-style: regular;
     font-size: 90%;
     line-height:300%;
+    color: #464646;
+
 
 }
 h2{
     margin-left:10% ;
     font-family: amaranth, serif;
-    font-size: 450%;
+    font-size: 4em;
     font-weight: 700;
     b{
         font-family: amaranth, serif;
@@ -36,9 +38,9 @@ h2{
             font-size: 400%;
         }
 }
-html{
-    width: 100%;
-}
-#root{
-height: 100%;
-}
+// html{
+//     // width: 100%;
+// }
+// #root{
+// height: 100%;
+// }

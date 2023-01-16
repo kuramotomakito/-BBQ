@@ -4,7 +4,7 @@ $breakpoint: (
   tabi:'screen and (max-width: 800px)',
   tab: 'screen and (max-width: 900px)',
   pc: 'screen and (max-width: 1000px)',
-  mon:'screen and (min-width: 1921px)'
+  mon:'screen and (min-width: 1000px)'
 );
 
 @mixin mq($bp) {

@@ -20,12 +20,13 @@ p {
   font-style: regular;
   font-size: 90%;
   line-height: 300%;
+  color: #464646;
 }
 
 h2 {
   margin-left: 10%;
   font-family: amaranth, serif;
-  font-size: 450%;
+  font-size: 4em;
   font-weight: 700;
 }
 h2 b {
@@ -37,14 +38,6 @@ h2 b {
   h2 {
     font-size: 400%;
   }
-}
-
-html {
-  width: 100%;
-}
-
-#root {
-  height: 100%;
 }
 
 header {
@@ -82,367 +75,580 @@ header h1 {
   margin-bottom: -9px;
 }
 
-.servise {
-  position: relative;
-  background-image: url("../../asset/photo/backsea.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  padding-bottom: 10%;
-}
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 1000px) {
   .servise {
-    background-size: 170%;
-    padding-bottom: 1%;
+    position: relative;
+    background-image: url("../../asset/photo/backsea.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    padding-bottom: 5%;
   }
-}
-.servise .suncafe {
-  position: relative;
-  padding-top: 6%;
-}
-.servise .suncafe h3 {
-  font-family: amaranth, Bree, serif;
-  font-size: 400%;
-  font-weight: 700;
-  position: absolute;
-  color: #e0ad64;
-  top: 15%;
-  left: 44%;
-}
-.servise .suncafe h3 b {
-  font-family: amaranth, Bree, serif;
-  font-weight: bold;
-  font-size: 150%;
-}
-@media screen and (max-width: 900px) {
+  .servise .suncafe {
+    position: relative;
+    padding-top: 6%;
+  }
   .servise .suncafe h3 {
-    font-size: 250%;
+    font-family: amaranth, Bree, serif;
+    font-size: 400%;
+    font-weight: 700;
+    position: absolute;
+    color: #e0ad64;
+    top: 15%;
+    left: 44%;
   }
-}
-.servise .suncafe .SuncafeParadise {
-  display: flex;
-}
-.servise .suncafe .SuncafeParadise img {
-  width: 55%;
-  height: auto;
-  padding-left: 1%;
-}
-@media screen and (max-width: 900px) {
+  .servise .suncafe h3 b {
+    font-family: amaranth, Bree, serif;
+    font-weight: bold;
+    font-size: 150%;
+  }
+  .servise .suncafe .SuncafeParadise {
+    display: flex;
+  }
   .servise .suncafe .SuncafeParadise img {
-    width: 50%;
+    width: 55%;
+    height: auto;
+    padding-left: 1%;
   }
-}
-.servise .suncafe .SuncafeParadise p {
-  margin-top: 8%;
-  margin-left: 3%;
-  color: #fff;
-}
-@media screen and (max-width: 900px) {
   .servise .suncafe .SuncafeParadise p {
-    font-size: 80%;
+    margin-top: 8%;
+    margin-left: 3%;
+    color: #fff;
   }
-}
-.servise .suncafecharm h3 {
-  color: #fff;
-  font-size: 230%;
-  text-align: center;
-  background: linear-gradient(transparent 40%, #30579c 40%);
-  width: 50%;
-  height: 100%;
-  margin: 3% 25%;
-}
-@media screen and (max-width: 900px) {
   .servise .suncafecharm h3 {
-    font-size: 180%;
+    color: #fff;
+    font-size: 230%;
+    text-align: center;
+    background: linear-gradient(transparent 40%, #30579c 40%);
+    max-width: 900px;
     width: 70%;
+    height: 100%;
     margin: 3% auto;
   }
-}
-.servise .suncafecharm .Features {
-  display: inline-flex;
-  position: relative;
-  left: 9%;
-  width: 90%;
-}
-@media screen and (max-width: 900px) {
   .servise .suncafecharm .Features {
-    display: block;
-    width: 90%;
-    margin: 0 0 5% 0;
-  }
-}
-.servise .suncafecharm .Features .feature {
-  width: 20%;
-  padding: 1.2% 5% 3% 1.2%;
-  background-color: #fff;
-  color: #30579c;
-}
-@media screen and (max-width: 900px) {
-  .servise .suncafecharm .Features .feature {
     display: flex;
+    margin: 0 auto;
     width: 90%;
+  }
+  .servise .suncafecharm .Features .feature {
+    padding: 1.2% 3%;
+    background-color: #fff;
+    color: #30579c;
+    margin: 0 2%;
     margin-bottom: 2%;
     padding: 1%;
   }
   .servise .suncafecharm .Features .feature img {
-    width: 40%;
+    width: 100%;
     height: auto;
     margin-right: 1%;
   }
-}
-.servise .suncafecharm .Features .feature dt {
-  font-size: 130%;
-  margin-bottom: 8%;
-}
-@media screen and (max-width: 900px) {
   .servise .suncafecharm .Features .feature dt {
-    font-size: 170%;
-    margin-bottom: 5%;
+    font-size: 130%;
+    margin-bottom: 1%;
   }
-}
-.servise .suncafecharm .Features .feature dd {
-  font-size: 80%;
-  line-height: 200%;
-  padding: 1.2% 1.2% 3% 1.2%;
-}
-@media screen and (max-width: 900px) {
   .servise .suncafecharm .Features .feature dd {
-    font-size: 110%;
-    margin-bottom: 5%;
+    font-size: 80%;
+    line-height: 200%;
+    padding: 1.2% 1.2% 3% 1.2%;
   }
 }
-
-.situetion {
-  background-color: #deedfd;
-  padding-bottom: 5%;
-}
-.situetion h2 {
-  color: #e0ad64;
-}
-.situetion h3 {
-  color: #30579c;
-  font-family: amaranth, serif;
-  font-weight: bold;
-  background: linear-gradient(transparent 40%, #fff 40%);
-  font-size: 337%;
-  position: relative;
-  width: 13%;
-  left: 30%;
-  top: 465px;
-  z-index: 99;
-}
-@media screen and (max-width: 900px) {
-  .situetion h3 {
-    width: 15%;
-    font-size: 250%;
-    top: 330px;
-    left: 25%;
+@media screen and (max-width: 1000px) {
+  .servise {
+    position: relative;
+    background-image: url("../../asset/photo/backsea.jpg");
+    background-repeat: no-repeat;
+    background-size: 170%;
+    padding-bottom: 1%;
   }
-}
-.situetion h3 b {
-  font-family: amaranth, serif;
-  font-weight: bold;
-  font-size: 130%;
-}
-.situetion .mySwiper {
-  width: 100%;
-  position: relative;
-  top: 10%;
-}
-.situetion .mySwiper .swiper-wrapper {
-  width: 80%;
-}
-.situetion .mySwiper .seasonslide,
-.situetion .mySwiper .partyslide {
-  background-color: #deedfd;
-  display: flex;
-  align-items: center;
-  width: 50%;
-  padding: 0 0 5% 0;
-}
-.situetion .mySwiper .seasonslide .slideimg,
-.situetion .mySwiper .partyslide .slideimg {
-  text-align: center;
-  width: 30%;
-  margin-left: 10%;
-}
-@media screen and (max-width: 900px) {
-  .situetion .mySwiper .seasonslide .slideimg,
-.situetion .mySwiper .partyslide .slideimg {
-    width: 35%;
+  .servise .suncafe {
+    position: relative;
+    padding-top: 6%;
   }
-}
-.situetion .mySwiper .seasonslide .slideimg img.wave,
-.situetion .mySwiper .partyslide .slideimg img.wave {
-  position: relative;
-  bottom: 96px;
-}
-@media screen and (max-width: 900px) {
-  .situetion .mySwiper .seasonslide .slideimg img.wave,
-.situetion .mySwiper .partyslide .slideimg img.wave {
-    width: 110%;
-    bottom: 70px;
-    margin-left: -4%;
+  .servise .suncafe h3 {
+    font-family: amaranth, Bree, serif;
+    font-size: 300%;
+    font-weight: 700;
+    position: absolute;
+    color: #e0ad64;
+    top: 15%;
+    left: 44%;
   }
-}
-.situetion .mySwiper .seasonslide .slidetext,
-.situetion .mySwiper .partyslide .slidetext {
-  margin-left: 10%;
-}
-@media screen and (max-width: 900px) {
-  .situetion .mySwiper .seasonslide .slidetext,
-.situetion .mySwiper .partyslide .slidetext {
-    margin-left: 4%;
+  .servise .suncafe h3 b {
+    font-family: amaranth, Bree, serif;
+    font-weight: bold;
+    font-size: 150%;
   }
-}
-.situetion .mySwiper h4 {
-  font-family: amaranth, serif;
-  font-weight: 700;
-  font-size: 240%;
-  color: #6299f8;
-  background: linear-gradient(transparent 0%, #fff 0%);
-  position: absolute;
-  top: 460px;
-  z-index: 99;
-  align-items: center;
-}
-@media screen and (max-width: 900px) {
-  .situetion .mySwiper h4 {
-    top: 330px;
-    font-size: 220%;
+  .servise .suncafe .SuncafeParadise {
+    display: flex;
   }
-}
-.situetion .mySwiper #Spring h4 {
-  right: 62.5%;
-}
-@media screen and (max-width: 900px) {
-  .situetion .mySwiper #Spring h4 {
-    right: 62.3%;
+  .servise .suncafe .SuncafeParadise img {
+    width: 55%;
+    height: auto;
+    padding-left: 1%;
   }
-  .situetion .mySwiper #Spring h5 {
+  .servise .suncafe .SuncafeParadise p {
+    margin-top: 8%;
+    margin-left: 3%;
+    color: #fff;
+    font-size: 88%;
+  }
+  .servise .suncafecharm h3 {
+    color: #fff;
+    font-size: 200%;
+    text-align: center;
+    background: linear-gradient(transparent 40%, #30579c 40%);
+    max-width: 900px;
     width: 70%;
+    height: 100%;
+    margin: 3% auto;
   }
-  .situetion .mySwiper #Spring .point div {
-    width: 85%;
+  .servise .suncafecharm .Features {
+    margin: 0 auto;
+    display: block;
+    width: 65%;
   }
-}
-.situetion .mySwiper #Summer h4 {
-  right: 60.8%;
-}
-.situetion .mySwiper #Summer h4 dl div {
-  margin: 5% 0;
-}
-@media screen and (max-width: 900px) {
-  .situetion .mySwiper #Summer h4 {
-    right: 59.4%;
+  .servise .suncafecharm .Features .feature {
+    display: flex;
+    /* width: 80%; */
+    padding: 1.2% 3%;
+    background-color: #fff;
+    color: #30579c;
+    /* margin: 0 2%; */
+    margin-bottom: 2%;
+    padding: 1%;
+    align-items: center;
+    margin-bottom: 2%;
+    padding: 1%;
   }
-  .situetion .mySwiper #Summer .point div {
-    width: 85%;
+  .servise .suncafecharm .Features .feature img {
+    width: 30%;
+    height: auto;
+    margin-right: 1%;
   }
-}
-.situetion .mySwiper #Autumn h4 {
-  right: 60.8%;
-}
-@media screen and (max-width: 900px) {
-  .situetion .mySwiper #Autumn h4 {
-    right: 59.5%;
+  .servise .suncafecharm .Features .feature dt {
+    font-size: 150%;
+    margin-bottom: 1%;
   }
-  .situetion .mySwiper #Autumn h5 {
+  .servise .suncafecharm .Features .feature dd {
+    font-size: 80%;
+    line-height: 200%;
+    padding: 1.2% 1.2% 3% 1.2%;
     width: 100%;
   }
 }
-.situetion .mySwiper #Winter h4 {
-  right: 62%;
-}
-@media screen and (max-width: 900px) {
-  .situetion .mySwiper #Winter h4 {
-    right: 61.7%;
+@media screen and (min-width: 1000px) {
+  .situetion {
+    background-color: #deedfd;
+    padding-bottom: 5%;
+    position: relative;
   }
-  .situetion .mySwiper #Winter h5 {
-    width: 95%;
+  .situetion h2 {
+    color: #e0ad64;
   }
-}
-.situetion .mySwiper #Company h4 {
-  right: 59.5%;
-}
-@media screen and (max-width: 900px) {
-  .situetion .mySwiper #Company h4 {
-    right: 58%;
+  .situetion h3 {
+    color: #30579c;
+    font-family: amaranth, serif;
+    font-weight: bold;
+    background: linear-gradient(transparent 40%, #fff 40%);
+    font-size: 337%;
+    position: relative;
+    width: 13%;
+    left: 30%;
+    top: 465px;
+    z-index: 99;
   }
-}
-.situetion .mySwiper #Family h4 {
-  right: 62.2%;
-}
-@media screen and (max-width: 900px) {
-  .situetion .mySwiper #Family h5 {
-    width: 70%;
+  .situetion h3 b {
+    font-family: amaranth, serif;
+    font-weight: bold;
+    font-size: 130%;
   }
-  .situetion .mySwiper #Family dd {
-    font-size: 100%;
+  .situetion .mySwiper {
+    width: 100%;
+    position: relative;
+    top: 10%;
   }
-}
-.situetion .mySwiper #Woman h4 {
-  right: 59.8%;
-}
-.situetion .mySwiper #Woman h4 dl div {
-  margin: 10% 0;
-}
-@media screen and (max-width: 900px) {
-  .situetion .mySwiper #Woman h4 {
-    right: 58.2%;
-  }
-  .situetion .mySwiper #Woman dl div {
-    margin: 6% 0;
-  }
-  .situetion .mySwiper #Woman h5 {
+  .situetion .mySwiper .swiper-wrapper {
     width: 80%;
   }
+  .situetion .mySwiper .seasonslide,
+.situetion .mySwiper .partyslide {
+    background-color: #deedfd;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 0 0 5% 0;
+    position: relative;
+  }
+  .situetion .mySwiper .seasonslide .slideimg,
+.situetion .mySwiper .partyslide .slideimg {
+    position: relative;
+    text-align: center;
+    width: 30%;
+    margin-left: 10%;
+  }
+  .situetion .mySwiper .seasonslide .slideimg img.wave,
+.situetion .mySwiper .partyslide .slideimg img.wave {
+    position: inherit;
+    bottom: 70px;
+  }
+  .situetion .mySwiper .seasonslide .slidetext,
+.situetion .mySwiper .partyslide .slidetext {
+    margin-left: 10%;
+  }
+  .situetion .mySwiper h4 {
+    font-family: amaranth, serif;
+    font-weight: 700;
+    font-size: 240%;
+    color: #6299f8;
+    background: linear-gradient(transparent 0%, #fff 0%);
+    position: absolute;
+    margin-top: 50%;
+    z-index: 99;
+    align-items: center;
+  }
+  .situetion .mySwiper #Spring h4 {
+    right: 62.5%;
+  }
+  .situetion .mySwiper #Summer h4 {
+    right: 60.8%;
+  }
+  .situetion .mySwiper #Summer h4 dl div {
+    margin: 5% 0;
+  }
+  .situetion .mySwiper #Autumn h4 {
+    right: 60.8%;
+  }
+  .situetion .mySwiper #Winter h4 {
+    right: 62%;
+  }
+  .situetion .mySwiper #Company h4 {
+    right: 59.5%;
+  }
+  .situetion .mySwiper #Family h4 {
+    right: 62.2%;
+  }
+  .situetion .mySwiper #Woman h4 {
+    right: 59.8%;
+  }
+  .situetion .mySwiper #Woman h4 dl div {
+    margin: 10% 0;
+  }
+  .situetion .mySwiper h5 {
+    font-size: 180%;
+    background: linear-gradient(transparent 60%, #fff 60%);
+    color: #30579c;
+  }
+  .situetion .mySwiper dl div {
+    display: flex;
+    margin: 8% 0;
+    align-items: center;
+  }
+  .situetion .mySwiper dl div dd {
+    color: #c93c27;
+    font-size: 110%;
+  }
+  .situetion .mySwiper .point div {
+    background: linear-gradient(transparent 60%, #fff 60%);
+  }
+  .situetion .mySwiper .point div dt {
+    font-family: amaranth, serif;
+    font-size: 180%;
+    font-weight: bold;
+  }
+  .situetion .mySwiper .point div dd {
+    font-size: 130%;
+    font-size: 100%;
+  }
+  .situetion li {
+    list-style-type: none;
+    font-size: 105%;
+    margin: 7% 0;
+  }
 }
-.situetion .mySwiper h5 {
-  font-size: 180%;
-  background: linear-gradient(transparent 60%, #fff 60%);
-  color: #30579c;
+@media screen and (max-width: 1000px) {
+  .situetion {
+    background-color: #deedfd;
+    padding-bottom: 5%;
+    position: relative;
+  }
+  .situetion h2 {
+    color: #e0ad64;
+  }
+  .situetion h3 {
+    color: #30579c;
+    font-family: amaranth, serif;
+    font-weight: bold;
+    background: linear-gradient(transparent 40%, #fff 40%);
+    font-size: 337%;
+    position: relative;
+    width: 16%;
+    left: 30%;
+    z-index: 99;
+    top: 20rem;
+    font-size: 300%;
+  }
+  .situetion h3 b {
+    font-family: amaranth, serif;
+    font-weight: bold;
+    font-size: 130%;
+  }
+  .situetion .mySwiper {
+    width: 100%;
+    position: relative;
+    top: 10%;
+  }
+  .situetion .mySwiper .swiper-wrapper {
+    width: 80%;
+  }
+  .situetion .mySwiper .seasonslide,
+.situetion .mySwiper .partyslide {
+    background-color: #deedfd;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 0 0 5% 0;
+    position: relative;
+  }
+  .situetion .mySwiper .seasonslide .slideimg,
+.situetion .mySwiper .partyslide .slideimg {
+    position: relative;
+    text-align: center;
+    width: 30%;
+    margin-left: 10%;
+  }
+  .situetion .mySwiper .seasonslide .slideimg img.wave,
+.situetion .mySwiper .partyslide .slideimg img.wave {
+    position: inherit;
+    bottom: 70px;
+    width: 110%;
+    right: 4%;
+  }
+  .situetion .mySwiper .seasonslide .slidetext,
+.situetion .mySwiper .partyslide .slidetext {
+    margin-left: 10%;
+  }
+  .situetion .mySwiper h4 {
+    font-family: amaranth, serif;
+    font-weight: 700;
+    color: #6299f8;
+    background: linear-gradient(transparent 0%, #fff 0%);
+    position: absolute;
+    z-index: 99;
+    align-items: center;
+    top: 20rem;
+    font-size: 200%;
+    padding: 0 1% 0 0;
+  }
+  .situetion .mySwiper #Spring h4 {
+    right: 59.8%;
+  }
+  .situetion .mySwiper #Summer h4 {
+    right: 57.7%;
+  }
+  .situetion .mySwiper #Summer h4 dl div {
+    margin: 4% 0;
+  }
+  .situetion .mySwiper #Autumn h4 {
+    right: 57.7%;
+  }
+  .situetion .mySwiper #Winter h4 {
+    right: 59.3%;
+  }
+  .situetion .mySwiper #Company h4 {
+    right: 56.2%;
+  }
+  .situetion .mySwiper #Family h4 {
+    right: 59.4%;
+  }
+  .situetion .mySwiper #Family dl div {
+    margin: 6% 0;
+  }
+  .situetion .mySwiper #Woman h4 {
+    right: 56.5%;
+  }
+  .situetion .mySwiper #Woman h4 dl div {
+    margin: 10% 0;
+  }
+  .situetion .mySwiper h5 {
+    font-size: 1.5rem;
+    background: linear-gradient(transparent 60%, #fff 60%);
+    color: #30579c;
+  }
+  .situetion .mySwiper dl div {
+    display: flex;
+    margin: 8% 0;
+    align-items: center;
+  }
+  .situetion .mySwiper dl div dd {
+    color: #c93c27;
+    font-size: 110%;
+  }
+  .situetion .mySwiper .point div {
+    background: linear-gradient(transparent 60%, #fff 60%);
+  }
+  .situetion .mySwiper .point div dt {
+    font-family: amaranth, serif;
+    font-size: 180%;
+    font-weight: bold;
+  }
+  .situetion .mySwiper .point div dd {
+    font-size: 130%;
+  }
+  .situetion .mySwiper li {
+    list-style-type: none;
+    font-size: 105%;
+    margin: 7% 0;
+  }
 }
 @media screen and (max-width: 900px) {
+  .situetion {
+    background-color: #deedfd;
+    padding-bottom: 5%;
+    position: relative;
+  }
+  .situetion h2 {
+    color: #e0ad64;
+  }
+  .situetion h3 {
+    color: #30579c;
+    font-family: amaranth, serif;
+    font-weight: bold;
+    background: linear-gradient(transparent 40%, #fff 40%);
+    font-size: 337%;
+    position: relative;
+    width: 13%;
+    left: 30%;
+    top: 465px;
+    z-index: 99;
+  }
+  .situetion h3 b {
+    font-family: amaranth, serif;
+    font-weight: bold;
+    font-size: 130%;
+  }
+  .situetion .mySwiper {
+    width: 100%;
+    position: relative;
+    top: 10%;
+  }
+  .situetion .mySwiper .swiper-wrapper {
+    width: 80%;
+  }
+  .situetion .mySwiper .seasonslide,
+.situetion .mySwiper .partyslide {
+    background-color: #deedfd;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 0 0 5% 0;
+    position: relative;
+  }
+  .situetion .mySwiper .seasonslide .slideimg,
+.situetion .mySwiper .partyslide .slideimg {
+    position: relative;
+    text-align: center;
+    width: 30%;
+    margin-left: 10%;
+  }
+  .situetion .mySwiper .seasonslide .slideimg img.wave,
+.situetion .mySwiper .partyslide .slideimg img.wave {
+    position: inherit;
+    bottom: 70px;
+  }
+  .situetion .mySwiper .seasonslide .slidetext,
+.situetion .mySwiper .partyslide .slidetext {
+    margin-left: 10%;
+  }
+  .situetion .mySwiper h4 {
+    font-family: amaranth, serif;
+    font-weight: 700;
+    font-size: 240%;
+    color: #6299f8;
+    background: linear-gradient(transparent 0%, #fff 0%);
+    position: absolute;
+    margin-top: 50%;
+    z-index: 99;
+    align-items: center;
+  }
+  .situetion .mySwiper #Spring h4 {
+    right: 62.5%;
+  }
+  .situetion .mySwiper #Summer h4 {
+    right: 60.8%;
+  }
+  .situetion .mySwiper #Summer h4 dl div {
+    margin: 5% 0;
+  }
+  .situetion .mySwiper #Autumn h4 {
+    right: 60.8%;
+  }
+  .situetion .mySwiper #Winter h4 {
+    right: 62%;
+  }
+  .situetion .mySwiper #Company h4 {
+    right: 59.5%;
+  }
+  .situetion .mySwiper #Family h4 {
+    right: 62.2%;
+  }
+  .situetion .mySwiper #Woman h4 {
+    right: 59.8%;
+  }
+  .situetion .mySwiper #Woman h4 dl div {
+    margin: 10% 0;
+  }
+  .situetion .mySwiper h5 {
+    font-size: 180%;
+    background: linear-gradient(transparent 60%, #fff 60%);
+    color: #30579c;
+  }
+}
+@media screen and (max-width: 900px) and (max-width: 900px) {
   .situetion .mySwiper h5 {
     font-size: 130%;
   }
 }
-.situetion .mySwiper dl div {
-  display: flex;
-  margin: 8% 0;
-  align-items: center;
-}
-.situetion .mySwiper dl div dd {
-  color: #c93c27;
-  font-size: 110%;
-}
 @media screen and (max-width: 900px) {
+  .situetion .mySwiper dl div {
+    display: flex;
+    margin: 8% 0;
+    align-items: center;
+  }
+  .situetion .mySwiper dl div dd {
+    color: #c93c27;
+    font-size: 110%;
+  }
+}
+@media screen and (max-width: 900px) and (max-width: 900px) {
   .situetion .mySwiper dl div {
     margin: 4% 0;
   }
 }
-.situetion .mySwiper .point div {
-  background: linear-gradient(transparent 60%, #fff 60%);
-}
-.situetion .mySwiper .point div dt {
-  font-family: amaranth, serif;
-  font-size: 180%;
-  font-weight: bold;
-}
-.situetion .mySwiper .point div dd {
-  font-size: 130%;
-}
 @media screen and (max-width: 900px) {
+  .situetion .mySwiper .point div {
+    background: linear-gradient(transparent 60%, #fff 60%);
+  }
+  .situetion .mySwiper .point div dt {
+    font-family: amaranth, serif;
+    font-size: 180%;
+    font-weight: bold;
+  }
+  .situetion .mySwiper .point div dd {
+    font-size: 130%;
+  }
+}
+@media screen and (max-width: 900px) and (max-width: 900px) {
   .situetion .mySwiper .point div dd {
     font-size: 100%;
   }
 }
-.situetion .mySwiper li {
-  list-style-type: none;
-  font-size: 105%;
-  margin: 7% 0;
+@media screen and (max-width: 900px) {
+  .situetion .mySwiper li {
+    list-style-type: none;
+    font-size: 105%;
+    margin: 7% 0;
+  }
 }
-
 .plan {
   position: relative;
   min-height: 100%;
@@ -1141,6 +1347,11 @@ header h1 {
   text-align: center;
   color: #30579c;
   font-size: 200%;
+}
+@media screen and (max-width: 1000px) {
+  .content h3 {
+    font-size: 180%;
+  }
 }
 @media screen and (max-width: 900px) {
   .content h3 {
