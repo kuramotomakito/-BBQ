@@ -37,6 +37,9 @@ h2{
         @include m.mq(tab) {
             font-size: 400%;
         }
+        @include m.mq(sp) {
+            font-size: 300%;
+        }
 }
 // html{
 //     // width: 100%;

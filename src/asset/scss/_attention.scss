@@ -1,25 +1,23 @@
 @use "mixin" as m;
 
-
 @include m.mq(mon) {
     .attention {
         h2 {
             color: #c93c27;
-    
         }
-    
+
         h3 {
             text-align: center;
             color: #30579c;
             font-size: 150%;
             margin: 0 0 2% 0;
         }
-    
+
         summary {
             font-weight: normal;
             display: flex;
             align-items: center;
-    
+
             strong {
                 font-family: amaranth, serif;
                 font-weight: 700;
@@ -28,12 +26,11 @@
                 margin-right: 5%;
             }
         }
-    
-    
+
         p {
             display: flex;
             align-items: center;
-    
+
             strong {
                 font-family: amaranth, serif;
                 font-weight: 700;
@@ -42,110 +39,98 @@
                 margin: 0 3% 0 0.5%;
             }
         }
-    
+
         h4 {
             text-align: center;
             font-size: 120%;
             color: #30579c;
             margin: 2% 0;
         }
-    
-        .goriyo {
-                        li{
-                            min-width: 625px;
-                            margin: 0 20%;}
 
-        padding-left: 5%;
-        font-size: 90%;
-        width: 80%;
-        margin: 0 auto;
+        .goriyo {
+            li {
+                min-width: 625px;
+                margin: 0 20%;
+            }
+
+            padding-left: 5%;
+            font-size: 90%;
+            width: 80%;
+            margin: 0 auto;
         }
-    
+
         .colona {
             width: 60%;
             margin: 0 35%;
             padding-bottom: 5%;
             font-size: 90%;
         }
-    .QandA {
-        margin: 5% 0;
-    }
-    
-    /*アコーディオン全体のスタイル*/
-    .c-accordion {
-        width: 100%;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-        // margin-top: 80px;
-        border-style: solid;
-        border-width: 4px;
-        border-color: #464646;
-        margin-bottom: 32px;
-        // padding: 1%;
-    
-        /*タイトルのデザインと「＋」ボタン*/
-        &_ttl {
-            background-image: url(../../asset/photo/prass.svg);
-            background-position: right 24px center;
-            background-size: 28px;
-            background-repeat: no-repeat;
-            list-style: none;
-            padding: 3% 5%;
-            cursor: pointer;
-            font-size: 18px;
-            color: #464646;
-            font-weight: bold;
-    
+
+        .QandA {
+            margin: 5% 0;
         }
-    
-        /*開いているときに適用するスタイル*/
-        &[open] &_ttl {
-            background-image: url(../../asset/photo/minus.svg);
-        }
-    
-        /*開いときの中身のテキスト*/
-        &_txt {
-            padding-top: 0;
-            margin-top: 0;
-            color: #464646;
+
+        /*アコーディオン全体のスタイル*/
+        .c-accordion {
+            width: 100%;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            // margin-top: 80px;
+            border-style: solid;
+            border-width: 4px;
+            border-color: #464646;
+            margin-bottom: 32px;
+            // padding: 1%;
+
+            /*タイトルのデザインと「＋」ボタン*/
+            &_ttl {
+                background-image: url(../../asset/photo/prass.svg);
+                background-position: right 24px center;
+                background-size: 28px;
+                background-repeat: no-repeat;
+                list-style: none;
+                padding: 3% 5%;
+                cursor: pointer;
+                font-size: 18px;
+                color: #464646;
+                font-weight: bold;
+            }
+
+            /*開いているときに適用するスタイル*/
+            &[open] &_ttl {
+                background-image: url(../../asset/photo/minus.svg);
+            }
+
+            /*開いときの中身のテキスト*/
+            &_txt {
+                padding-top: 0;
+                margin-top: 0;
+                color: #464646;
+            }
         }
     }
 }
-
-}
-
-
-
-
-
-
-
-
-
-
 
 @include m.mq(pc) {
     .attention {
         h2 {
             color: #c93c27;
-    
         }
-    
+
         h3 {
             text-align: center;
             color: #30579c;
             margin: 0 0 2% 0;
-                margin-top: 3%;
-                font-size: 120%;
-    
+            margin-top: 3%;
+            font-size: 120%;
         }
-    
+
         summary {
             font-weight: normal;
             display: flex;
             align-items: center;
-    
+
             strong {
                 font-family: amaranth, serif;
                 font-weight: 700;
@@ -154,12 +139,11 @@
                 margin-right: 5%;
             }
         }
-    
-    
+
         p {
             display: flex;
             align-items: center;
-    
+
             strong {
                 font-family: amaranth, serif;
                 font-weight: 700;
@@ -168,42 +152,40 @@
                 margin: 0 3% 0 0.5%;
             }
         }
-    
+
         h4 {
             text-align: center;
             font-size: 120%;
             color: #30579c;
             margin: 2% 0;
         }
-    
+
         .goriyo {
-                        li{
-                            width: 80%;
-                            margin: 0;}
+            li {
+                width: 80%;
+                margin: 0 auto;
+            }
 
             margin: 0 auto;
-            padding-left: 5%;
+            padding-left: 10%;
             font-size: 90%;
-
         }
-    
+
         .colona {
             width: 60%;
             margin: 0 26%;
             padding-bottom: 5%;
-    
+
             @include m.mq(tab) {
                 margin: 0 24%;
             }
         }
-    
     }
-    
-    
+
     .QandA {
         margin: 5% 0;
     }
-    
+
     /*アコーディオン全体のスタイル*/
     .c-accordion {
         width: 100%;
@@ -215,8 +197,7 @@
         border-width: 4px;
         border-color: #464646;
         margin-bottom: 32px;
-    
-    
+
         /*タイトルのデザインと「＋」ボタン*/
         &_ttl {
             background-image: url(../../asset/photo/prass.svg);
@@ -227,62 +208,45 @@
             cursor: pointer;
             color: #464646;
             font-weight: bold;
-                padding: 2% 4%;
-                font-size: 90%;
+            padding: 2% 4%;
+            font-size: 90%;
         }
-    
+
         /*開いているときに適用するスタイル*/
         &[open] &_ttl {
             background-image: url(../../asset/photo/minus.svg);
         }
-    
+
         /*開いときの中身のテキスト*/
         &_txt {
             padding: 3%;
             padding-top: 0;
             margin-top: 0;
             color: #464646;
-
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 @include m.mq(tab) {
     .attention {
         h2 {
             color: #c93c27;
-    
         }
-    
+
         h3 {
             text-align: center;
             color: #30579c;
             font-size: 120%;
             margin: 0 0 2% 0;
-    
 
-                margin-top: 3%;
-            
-    
+            margin-top: 3%;
         }
-    
+
         summary {
             font-weight: normal;
             display: flex;
             align-items: center;
-    
+
             strong {
                 font-family: amaranth, serif;
                 font-weight: 700;
@@ -291,54 +255,50 @@
                 margin-right: 5%;
             }
         }
-    
-    
+
         p {
             display: flex;
             align-items: center;
-    
+
             strong {
                 font-family: amaranth, serif;
                 font-weight: 700;
                 font-size: 280%;
                 color: #e0ad64;
                 margin: 0 3% 0 0.5%;
-    
             }
         }
-    
+
         h4 {
             text-align: center;
             font-size: 120%;
             color: #30579c;
             margin: 2% 0;
         }
-    
-        .goriyo {
-                        li{
-                            width: 80%;
-                            margin: 0;}
 
-        margin: 0 auto;
-        padding-left: 5%;
-        font-size: 90%;
+        .goriyo {
+            li {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            margin: 0 auto;
+            padding-left: 10%;
+            font-size: 80%;
         }
-    
+
         .colona {
             width: 60%;
             margin: 0 28%;
             padding-bottom: 5%;
             font-size: 90%;
-
         }
-    
     }
-    
-    
+
     .QandA {
         margin: 5% 0;
     }
-    
+
     /*アコーディオン全体のスタイル*/
     .c-accordion {
         width: 100%;
@@ -350,11 +310,9 @@
         border-color: #464646;
         margin-bottom: 32px;
 
-            max-width: 500px;
-            // height: ;
-    
-        
-    
+        max-width: 500px;
+        // height: ;
+
         /*タイトルのデザインと「＋」ボタン*/
         &_ttl {
             background-image: url(../../asset/photo/prass.svg);
@@ -365,27 +323,135 @@
             cursor: pointer;
             color: #464646;
             font-weight: bold;
-                padding: 2% 4%;
-                font-size: 90%;
-        
-    
+            padding: 2% 4%;
+            font-size: 90%;
         }
-    
+
         /*開いているときに適用するスタイル*/
         &[open] &_ttl {
             background-image: url(../../asset/photo/minus.svg);
         }
-    
+
         /*開いときの中身のテキスト*/
         &_txt {
             padding-top: 0;
             margin-top: 0;
             color: #464646;
-                padding: 2%;
-            }
+            padding: 2%;
+        }
     }
 }
-@include m.mq(tabi) {
-}
-@include m.mq(tabm) {
-}
+
+@include m.mq(tabi) {}
+
+@include m.mq(sp) {
+        .attention {
+            h3 {
+                text-align: center;
+                font-size: 120%;
+                margin: 0 0 2% 0;
+    
+                margin-top: 3%;
+            }
+    
+            summary {
+                font-weight: normal;
+                display: flex;
+                align-items: center;
+    
+                strong {
+                    font-family: amaranth, serif;
+                    font-weight: 700;
+                    font-size: 200%;
+                    color: #30579c;
+                    margin-right: 5%;
+                }
+            }
+    
+            p {
+                display: flex;
+                align-items: center;
+    
+                strong {
+                    font-family: amaranth, serif;
+                    font-weight: 700;
+                    font-size: 280%;
+                    color: #e0ad64;
+                    margin: 0 3% 0 0.5%;
+                }
+            }
+    
+            h4 {
+                text-align: center;
+                font-size: 120%;
+                color: #30579c;
+                margin: 2% 0;
+            }
+    
+            .goriyo {
+                li {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+    
+                margin: 0 auto;
+                padding-left: 5%;
+                font-size: 70%;
+            }
+    
+            .colona {
+                width: 90%;
+                margin: 0 auto;
+                padding-bottom: 5%;
+                padding-left: 10%;
+
+                font-size: 70%;
+            }
+        }
+    
+        .QandA {
+            margin: 5% 0;
+        }
+    
+        /*アコーディオン全体のスタイル*/
+        .c-accordion {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            // margin-top: 80px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #464646;
+            margin-bottom: 32px;
+    
+            max-width: 500px;
+            // height: ;
+    
+            /*タイトルのデザインと「＋」ボタン*/
+            &_ttl {
+                background-image: url(../../asset/photo/prass.svg);
+                background-position: right 8px center;
+                background-size: 18px;
+                background-repeat: no-repeat;
+                list-style: none;
+                cursor: pointer;
+                color: #464646;
+                font-weight: bold;
+                padding: 2% 4%;
+                font-size: 16px;
+            }
+    
+            /*開いているときに適用するスタイル*/
+            &[open] &_ttl {
+                background-image: url(../../asset/photo/minus.svg);
+            }
+    
+            /*開いときの中身のテキスト*/
+            &_txt {
+                padding-top: 0;
+                margin-top: 0;
+                color: #464646;
+                padding: 2%;
+            }
+        }
+    }

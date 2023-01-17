@@ -5,7 +5,7 @@
 @include m.mq(mon) {
 
     .servise {
-                background-image: url("../../asset/photo/backsea.jpg");
+        background-image: url("../../asset/photo/backsea.jpg");
         background-repeat: no-repeat;
         background-size: 110%;
         // overflow: hidden;
@@ -46,19 +46,22 @@
 
 
                 .Suncafe_img {
-                                        width: 55%;
-                                        min-width: 400px;
-                                        height: auto;
-                                    max-height: 400px;
-                                        margin-right: 1%;
-                                        padding-left: 10%;
+                    width: 55%;
+                    min-width: 400px;
+                    height: auto;
+                    max-height: 400px;
+                    margin-right: 1%;
+                    padding-left: 10%;
                 }
 
                 .Suncafe_p {
                     position: absolute;
-                    p{
 
-                        color: #fff;}
+                    p {
+
+                        color: #fff;
+                    }
+
                     margin-top: 8%;
                     left: 70%;
                     font-size:16px;
@@ -249,10 +252,14 @@
                 .Suncafe_p {
                     margin-top: 8%;
                     margin-left: 3%;
-                    p{color: #fff;}
-                font-size: 88%;
 
-        }
+                    p {
+                        color: #fff;
+                    }
+
+                    font-size: 88%;
+
+                }
             }
         }
 
@@ -270,9 +277,9 @@
 
             .Features {
                 margin: 0 auto;
-                    display: block;
-                    width: 65%;
-                    
+                display: block;
+                width: 65%;
+
 
                 .feature {
                     display: flex;
@@ -284,12 +291,14 @@
                     margin-bottom: 2%;
                     padding: 1%;
                     align-items: center;
+
                     // justify-content: ;
                     .img {
                         width: 30%;
                         height: auto;
                         margin-right: 1%;
                     }
+
                     margin-bottom: 2%;
                     padding: 1%;
 
@@ -304,7 +313,7 @@
                         font-size: 80%;
                         line-height: 200%;
                         padding: 1.2% 1.2% 3% 1.2%;
-                            width: 100%;
+                        width: 100%;
                     }
                 }
             }
@@ -318,87 +327,92 @@
 
 @include m.mq(tab) {
     .servise {
-        position: relative;
-        background-image: url("../../asset/photo/backsea.jpg");
-        background-repeat: no-repeat;
-        background-size: 170%;
-        padding-bottom: 1%;
+        // position: relative;
+        // background-image: url("../../asset/photo/backsea.jpg");
+        // background-repeat: no-repeat;
+        // background-size: 170%;
+        // padding-bottom: 1%;
 
         .suncafe {
-            position: relative;
-            padding-top: 6%;
+            // position: relative;
+            // padding-top: 6%;
 
 
-            h3 {
-                font-family: amaranth, Bree, serif;
-                font-size: 300%;
-                font-weight: 700;
-                position: absolute;
-                color: #e0ad64;
-                top: 15%;
-                left: 44%;
-
-                b {
-                    font-family: amaranth, Bree, serif;
-                    font-weight: bold;
-                    font-size: 150%;
-                }
-            }
+            // h3 {
+            //     // font-family: amaranth, Bree, serif;
+            //     // font-size: 300%;
+            //     // font-weight: 700;
+            //     // position: absolute;
+            //     // color: #e0ad64;
+            //     // top: 15%;
+            //     // left: 44%;
+            //     // b {
+            //     //     font-family: amaranth, Bree, serif;
+            //     //     font-weight: bold;
+            //     //     font-size: 150%;
+            //     // }
+            // }
 
             .SuncafeParadise {
-                display: flex;
+                // display: flex;
 
-                .Suncafe_img {
-                    width: 55%;
-                    height: auto;
-                    padding-left: 1%;
-                }
+                // .Suncafe_img {
+                //     // width: 55%;
+                //     // height: auto;
+                //     // padding-left: 1%;
+                // }
 
                 .Suncafe_p {
-                    margin-top: 8%;
-                    margin-left: 3%;
-                    p{color: #fff;}
-                font-size: 78%;
-        }
+                    // margin-top: 8%;
+                    // margin-left: 3%;
+
+                    // p {
+                    //     color: #fff;
+                    // }
+
+                    font-size: 78%;
+                }
             }
         }
 
         .suncafecharm {
             h3 {
-                color: #fff;
+                // color: #fff;
                 font-size: 150%;
-                text-align: center;
-                background: linear-gradient(transparent 40%, #30579c 40%);
-                max-width: 900px;
+                // text-align: center;
+                // background: linear-gradient(transparent 40%, #30579c 40%);
+                // max-width: 900px;
                 width: 60%;
-                height: 100%;
+                // height: 100%;
                 margin: 3% auto;
             }
 
             .Features {
-                margin: 0 auto;
-                    display: block;
-                    width: 65%;
-                    
+                // margin: 0 auto;
+                // display: block;
+                width: 65%;
+
 
                 .feature {
-                    display: flex;
+                    // display: flex;
                     /* width: 80%; */
-                    padding: 1.2% 3%;
-                    background-color: #fff;
-                    color: #30579c;
+                    // padding: 1.2% 3%;
+                    // background-color: #fff;
+                    // color: #30579c;
                     /* margin: 0 2%; */
-                    margin-bottom: 2%;
-                    padding: 1%;
-                    align-items: center;
+                    // margin-bottom: 2%;
+                    // padding: 1%;
+                    // align-items: center;
+
                     // justify-content: ;
-                    .img {
-                        width: 30%;
-                        height: auto;
-                        margin-right: 1%;
-                    }
-                    margin-bottom: 2%;
-                    padding: 1%;
+                    // .img {
+                    //     width: 30%;
+                    //     height: auto;
+                    //     margin-right: 1%;
+                    // }
+
+                    // margin-bottom: 2%;
+                    // padding: 1%;
 
                     dt {
                         font-size: 150%;
@@ -411,7 +425,7 @@
                         font-size: 80%;
                         line-height: 200%;
                         padding: 1.2% 1.2% 3% 1.2%;
-                            width: 100%;
+                        width: 100%;
                     }
                 }
             }
@@ -423,6 +437,126 @@
     }
 }
 
-@include m.mq(tabi) {}
+@include m.mq(tabi) {
+        .servise {
+            .suncafe {
+                h3{font-size: 270%;}
+                .SuncafeParadise {
+                    .Suncafe_p {
+                        font-size: 75%;
+                    }
+                }
+            }
+            .suncafecharm {
+                .Features {
+                    width: 65%;
+                    .feature {
+                        dt {
+                            font-size: 130%;
+                        }
+                        dd {
+                            font-size: 75%;
+                        }}}}}}
 
 @include m.mq(tabm) {}
+
+
+@include m.mq(sp) {
+    .servise {
+        // position: relative;
+        // background-image: url("../../asset/photo/backsea.jpg");
+        // background-repeat: no-repeat;
+        background-size: 600%;
+        padding-bottom: 1%;
+
+        .suncafe {
+            // position: relative;
+            // padding-top: 6%;
+
+            h3 {
+                font-size: 250%;
+                position: relative;
+                top: 230px;
+                left: 0;
+            }
+
+            .SuncafeParadise {
+                display: block;
+
+                .Suncafe_img {
+                    width: 95%;
+                    // height: auto;
+                    // padding-left: 1%;
+                }
+
+                .Suncafe_p {
+                    margin-top: 15%;
+                    // margin-left: 3%;
+
+                    // p {
+                    //     color: #fff;
+                    // }
+
+                    font-size: 95%;
+                }
+            }
+        }
+
+        .suncafecharm {
+            h3 {
+                // color: #fff;
+                font-size: 120%;
+                // text-align: left;
+                // background: linear-gradient(transparent 40%, #30579c 40%);
+                max-width: 900px;
+                width: 90%;
+                // height: 100%;
+                margin: 3% 0 3% 1%;
+            }
+
+            .Features {
+                margin: 10% auto;
+                // display: block;
+                width: 90%;
+
+
+                .feature {
+                    display: block;
+                    /* width: 80%; */
+                    // padding: 1.2% 3%;
+                    // background-color: #fff;
+                    // color: #30579c;
+                    /* margin: 0 2%; */
+                    // margin-bottom: 2%;
+                    // padding: 1%;
+                    // align-items: center;
+
+                    // justify-content: ;
+                    .img {
+                        width: 90%;
+                        // height: auto;
+                        margin: 0 auto;
+
+                    }
+
+                    // margin-bottom: 2%;
+                    // padding: 1%;
+
+                    // dt {
+                    //     font-size: 130%;
+                    //     margin-bottom: 1%;
+                    // }
+
+
+
+                    // dd {
+                    //     font-size: 80%;
+                    //     line-height: 200%;
+                    //     padding: 1.2% 1.2% 3% 1.2%;
+                    //     width: 100%;
+                    // }
+                }
+            }
+        }
+    }
+}

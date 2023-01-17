@@ -47,10 +47,10 @@ const plan = () => {
                                     return (
                                         <>
                                             <div className={item.name}>
-                                                <div className='h4set'>
-                                                    <p className='new'>NEW!!</p>
-                                                    <h4>{item.h4}</h4>
-                                                </div>
+                                                {/* <div className='h4set'> */}
+                                                <p className='new'>NEW!!</p>
+                                                <h4>{item.h4}</h4>
+                                                {/* </div> */}
                                                 <h5>{item.prise}<b>yen</b></h5>
                                                 {/* <div className='drinkflex'>
                                                     <img src={meetphoto} alt="肉" />
@@ -140,7 +140,7 @@ const plan = () => {
 
                             <div className='drinktyui'>
                                 <p>他にも盛りだくさん！</p>
-                                <h4>※注意事項</h4>
+                                <h4>※注意事項※</h4>
                                 <ul>
                                     <li>・グループ全員対象となり、利用されない方との混在は不可です</li>
                                     <li>・遅れて合流した方もスタート時間は同時扱いになります</li>

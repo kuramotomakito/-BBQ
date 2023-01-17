@@ -3,23 +3,24 @@
 .plan.backgro {
     background-image: url(../../asset/photo/whitewood.jpg);
 }
-.plan{
-        position: relative;
-        min-height: 100%;
-        height: 100%;
-        /*--スクロールをさせるため 高さ指定--*/
-        background-size: cover;
-        /*--背景画像のサイズ--*/
-        background-attachment: fixed;
-        /*--背景画像の固定--*/
-        background-repeat: no-repeat;
-        /*--背景画像の繰り返し--*/
-        background-position: center center;
-        /*--背景画像の位置--*/
-        z-index: 2;
-        padding: 5em 0;
 
-        background-image: url(../../asset/photo/whitewood.jpg);
+.plan {
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+    /*--スクロールをさせるため 高さ指定--*/
+    background-size: cover;
+    /*--背景画像のサイズ--*/
+    background-attachment: fixed;
+    /*--背景画像の固定--*/
+    background-repeat: no-repeat;
+    /*--背景画像の繰り返し--*/
+    background-position: center center;
+    /*--背景画像の位置--*/
+    z-index: 2;
+    padding: 5em 0;
+
+    background-image: url(../../asset/photo/whitewood.jpg);
 }
 
 
@@ -139,7 +140,7 @@
                     font-weight: bold;
                     font-size: 200%;
                     font-family: amaranth, serif;
-                    bottom: 99%;
+                    bottom: 100%;
                     left: 23%;
 
                     @include m.mq(tab) {
@@ -157,12 +158,15 @@
                     font-size: 250%;
                     font-weight: 550;
                     color: #c93c27;
-                    background-color: #fff;
                     position: absolute;
                     text-align: center;
-                    width: 40%;
-                    bottom: -32px;
-                    margin: 0 30%;
+                    background: linear-gradient(transparent 35%, #fff 35%);
+                    // background-color: #fff;
+                    max-height: 50px;
+                        width: 50%;
+                        margin: 5% auto;
+                        left: 25%;
+                        top: -88px;
 
                     @include m.mq(tab) {
                         background: linear-gradient(transparent 35%, #fff 35%);
@@ -347,11 +351,6 @@
                 }
 
             }
-
-
-
-
-
             .premium {
                 // background-image: url(../../asset/photo/stanprem.svg);
                 // background-repeat: no-repeat;
@@ -673,15 +672,19 @@
 
 
                 h4 {
-                    font-size: 190%;
+                    font-size: 200%;
                     font-weight: 550;
                     color: #c93c27;
-                    background-color: #fff;
                     position: absolute;
                     text-align: center;
-                    width: 60%;
-                    bottom: -20px;
-                    margin: 0 20%;
+                    background: linear-gradient(transparent 35%, #fff 35%);
+                    // background-color: #fff;
+                    max-height: 50px;
+                        width: 50%;
+                        margin: 5% auto;
+                        left: 25%;
+                        top: -30px;
+                    margin: 0 auto;
                 }
 
                 h5 {
@@ -853,6 +856,7 @@
                         font-size: 130%;
                         color: #30579c;
                     }
+
                     dd {
                         font-size: 100%;
                         line-height: 200%;
@@ -916,7 +920,9 @@
                         margin-left: 20%;
                         font-size: 70%;
                     }
-                    dd{font-size: 120%;
+
+                    dd {
+                        font-size: 120%;
                     }
 
                     .alcoholmenu {
@@ -953,6 +959,7 @@
 
                         ul {
                             margin-left: 25%;
+
                             li {
                                 margin-bottom: 1%;
                                 text-align: left;
@@ -1102,24 +1109,19 @@
                 }
 
                 h4 {
-                    font-size: 250%;
+                    font-size: 200%;
                     font-weight: 550;
                     color: #c93c27;
-                    background-color: #fff;
                     position: absolute;
                     text-align: center;
-                    width: 40%;
-                    bottom: -32px;
-                    margin: 0 30%;
-
-                    @include m.mq(tab) {
-                        background: linear-gradient(transparent 35%, #fff 35%);
-
-                        font-size: 200%;
+                    background: linear-gradient(transparent 35%, #fff 35%);
+                    // background-color: #fff;
+                    max-height: 50px;
                         width: 60%;
-                        margin: 0 20%;
-                        bottom: -18px;
-                    }
+                        margin: 5% auto;
+                        left: 20%;
+                        top: -58px;
+                    
                 }
 
                 h5 {
@@ -1204,6 +1206,7 @@
                     }
                 }
             }
+
             .standard {
                 // background-image: url(../../asset/photo/stanprem.svg);
                 // position: relative;
@@ -1214,8 +1217,8 @@
                 margin: 10% 0;
                 // padding-bottom: 23%;
                 grid-area: stan;
-                    height: 88%;
-                
+                height: 88%;
+
 
                 img,
                 .new {
@@ -1234,7 +1237,7 @@
                     font-size: 250%;
                     width: 80%;
                     margin: 0 10%;
-                    
+
                 }
 
                 h5 {
@@ -1249,8 +1252,9 @@
                         font-size: 60%;
                         font-weight: 700;
                     }
-                        font-size: 300%;
-                    
+
+                    font-size: 300%;
+
                 }
 
                 .menu {
@@ -1408,11 +1412,11 @@
                         grid-area: title;
                         position: absolute;
 
-                            font-size: 400%;
-                            top: 69.5%;
-                            width: 44%;
-                            margin: 0 14%;
-                        
+                        font-size: 400%;
+                        top: 69.5%;
+                        width: 44%;
+                        margin: 0 14%;
+
                     }
 
                     img {
@@ -1429,8 +1433,8 @@
                     dl {
                         margin-left: 20%;
 
-                            font-size: 70%;
-                        
+                        font-size: 70%;
+
                     }
 
                     .alcoholmenu {
@@ -1439,6 +1443,7 @@
                         dd {
                             display: flex;
                             width: 120%;
+
                             ul:last-child {
                                 margin-left: 2%;
                             }
@@ -1470,9 +1475,9 @@
                         }
 
                         ul {
-                                font-size: 70%;
-                                margin-left: 20%;
-                            
+                            font-size: 70%;
+                            margin-left: 20%;
+
 
                             li {
                                 margin-bottom: 1%;
@@ -1501,4 +1506,439 @@
 
 
 
-            }}}}
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include m.mq(sp) {
+    .plan {
+        .plannai {
+            width: 90%;
+            margin: 0 5%;
+            // padding: 10em 0;
+            // text-align: center;
+            background-color: #ffffff;
+            overflow: hidden;
+            padding-bottom: 5%;
+            // ------------------------------------------------------------
+
+            li {
+                list-style-type: none;
+            }
+
+            h2 {
+                color: #c93c27;
+                margin: 2% 0 0 2%;
+            }
+
+            p {
+                text-align: center;
+                color: #30579c;
+                font-size: 100%;
+
+            }
+
+            .time {
+                display: block;
+                /* width: 80%; */
+                justify-content: center;
+                    margin: 4% auto;
+                
+
+                dt {
+                    font-family: amaranth, serif;
+                    font-weight: 700;
+                    font-size: 300%;
+                }
+
+                div {
+                    text-align: center;
+                    margin: 0 5%;
+                }
+
+                .lunch {
+                    dt {
+                        color: #58c1f9;
+                    }
+                }
+
+                .afternoon {
+                    dt {
+                        color: #d75f2d;
+                    }
+                }
+
+                .dinner {
+                    dt {
+                        color: #2c67ea;
+                    }
+                }
+            }
+
+            .h3menu {
+                font-family: amaranth, serif;
+                font-weight: 700;
+                color: #d75f2d;
+                font-size: 400%;
+                text-align: center;
+                margin:25% 0 ;
+            }
+
+            .menugrid {
+                display: block;
+                justify-content: center;
+                /* margin: 0; */
+                justify-items: center;
+            }
+
+            .threehour {
+                position: relative;
+                // background-image: url(../../asset/photo/sanzikan.svg);
+                // background-repeat: no-repeat;
+                // background-size: 100%;
+                border: 6px solid #f8d880;
+                width: 90%;
+                margin: 5% auto;
+                grid-area: three;
+                    padding-bottom: 2%;
+                .new {
+                    position: absolute;
+                    color: #c93c27;
+                    font-weight: bold;
+                    font-family: amaranth, serif;
+                    left: 0;
+                        font-size: 130%;
+                        top: -75px;
+                    }
+                h4 {
+                    font-size: 150%;
+                    font-weight: 550;
+                    color: #c93c27;
+                    position: absolute;
+                    text-align: center;
+                    // background: linear-gradient(transparent 35%, #fff 35%);
+                    background-color: #fff;
+                    max-height: 30px;
+                        width: 90%;
+                        margin: 5% auto;
+                        left: 5%;
+                        top: -40px;
+                    
+                }
+
+                h5 {
+                    font-family: amaranth, serif;
+                    color: #d15e4a;
+                    font-weight: 800;
+                    font-size: 350%;
+                    text-align: center;
+                    padding: 3% 0;
+
+                    b {
+                        font-family: amaranth, serif;
+                        font-size: 60%;
+                        font-weight: 700;
+                    }
+                }
+
+                .menu {
+                    display: block;
+                    // width: 82%;
+                    margin: 0 0 0 10%;
+
+                    div {
+                        // margin: 0 10%
+                        position: relative;
+                    }
+
+                    img {
+                        width: 90%;
+                        // margin: 0 8%;
+                    }
+
+                    .appetmenu {
+                            margin-left: 0;
+                        
+                    }
+
+                    ;
+
+
+                    dl {
+                        dt {
+                            color: #30579c;
+                                font-size: 140%;
+                        }
+
+                        dd {
+                            line-height: 200%;
+                                font-size: 90%;
+                                width: 95%;
+                        }
+                    }
+                }
+            }
+
+            .standard {
+                // background-image: url(../../asset/photo/stanprem.svg);
+                // position: relative;
+                // background-repeat: no-repeat;
+                // background-size: 98%;
+                border: 6px solid #f8d880;
+                width: 90%;
+                margin: 10% auto;
+                // padding-bottom: 23%;
+                grid-area: stan;
+                height: 88%;
+
+
+                img,
+                .new {
+                    display: none;
+                }
+
+
+                h4 {
+                    font-family: amaranth, serif;
+                    font-weight: 700;
+                    color: #30579c;
+                    background-color: #ffffff;
+                    text-align: center;
+                    bottom: 25px;
+                    position: relative;
+                    font-size: 250%;
+                    width: 80%;
+                    margin: 0 10%;
+
+                }
+
+                h5 {
+                    font-family: amaranth, serif;
+                    color: #2c67ea;
+                    font-weight: 800;
+
+                    text-align: center;
+
+                    b {
+                        font-family: amaranth, serif;
+                        font-size: 60%;
+                        font-weight: 700;
+                    }
+
+                    font-size: 300%;
+
+                }
+
+                .menu {
+                    width: 80%;
+                    margin: 0 0 0 10%;
+                    padding-bottom: 5%;
+
+                    dt {
+                        margin: 5% 0 0 0;
+                        color: #30579c;
+
+                            font-size: 140%;
+                        
+                    }
+
+                    dd {
+                        font-size: 90%;
+                        line-height: 200%;
+
+                    }
+
+                }
+
+            }
+
+
+
+
+
+            .premium {
+                // background-image: url(../../asset/photo/stanprem.svg);
+                // background-repeat: no-repeat;
+                // background-size: 100%;
+                border: 6px solid #f8d880;
+                width: 90%;
+                margin: 10% auto;
+                // padding-bottom: 10%;
+                grid-area: prem;
+
+                .new,
+                img {
+                    display: none;
+                }
+                    height: 88%;
+                
+
+                h4 {
+                    font-family: amaranth, serif;
+                    font-weight: 700;
+                    color: #d75f2d;
+                    background-color: #ffffff;
+                    font-size: 250%;
+                    text-align: center;
+                    bottom: 25px;
+                    width: 80%;
+                    position: relative;
+                    margin: 0 auto;
+                }
+
+                h5 {
+                    font-family: amaranth, serif;
+                    color: #ec8756;
+                    font-weight: 800;
+                    font-size: 300%;
+                    text-align: center;
+
+                    b {
+                        font-family: amaranth, serif;
+                        font-size: 60%;
+                        font-weight: 700;
+                    }
+                }
+
+                .menu {
+                    width: 80%;
+                    margin: 0 0 0 10%;
+                    padding-bottom: 5%;
+
+                    dt {
+                        margin: 5% 0 0 0;
+                        font-size: 140%;
+                        color: #30579c;
+                    }
+
+                    dd {
+
+                        font-size: 90%;
+                        line-height: 200%;
+                    }
+                }
+            }
+
+
+            .softalcohol {
+                h3 {
+                    text-align: center;
+                    color: #30579c;
+                    margin: 4% 0 10% 0;
+                        font-size: 80%;
+                }
+
+                .drinkmenu {
+                    // background-image: url(../../asset/photo/backdrink.svg);
+                    // background-repeat: no-repeat;
+                    // background-size: 90%;
+                    border: 6px solid #f8d880;
+                    width: 90%;
+                    margin: 5% auto;
+                    // padding-bottom: 20%;
+                    // margin: 0 0 0 10%;
+                    display: block;
+                    padding-bottom: 5%;
+
+                    .h4 {
+                        color: #e0ad64;
+                        text-align: center;
+                        background: linear-gradient(transparent 35%, #fff 35%);
+
+                        font-family: amaranth, serif;
+                        font-weight: bold;
+                        grid-area: title;
+                        position: relative;
+
+                        font-size: 250%;
+                        top: -30px;
+                        width: 70%;
+                        margin: 0 15%;
+
+                    }
+
+                    img {
+                        width: 90%;
+                        margin: 0 5%;
+                        margin-top: 20%;
+                    }
+
+                    dt {
+                        font-size: 200%;
+                        color: #30579c;
+                    }
+
+                    dl {
+                        margin-left: 5%;
+
+                        font-size: 70%;
+
+                    }
+
+                    .alcoholmenu {
+                        grid-area: alc;
+
+                        dd {
+                            display: flex;
+                            width: 120%;
+
+                            ul:last-child {
+                                margin-left: 2%;
+                            }
+
+                        }
+                    }
+
+                    .softmenu {
+                        grid-area: sof;
+                    }
+
+                    .drinktyui {
+                        grid-area: tyui;
+                        text-align: center;
+                        // margin-right: 5%;
+
+                        p {
+                            margin: 5% 0 0 0;
+                        }
+
+                        h4 {
+                            margin: 2% 0;
+                                font-size: 100%;
+                                text-align: center;
+                            
+                        }
+
+                        ul {
+                            font-size: 60%;
+                            margin-left: 0%;
+
+                            li {
+                                margin-bottom: 1%;
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
