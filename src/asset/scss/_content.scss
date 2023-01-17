@@ -1,27 +1,22 @@
 @use "mixin" as m;
 
 .content {
-
     h2 {
         color: #c93c27;
     }
 
+
+@include m.mq(mon) {
+
     h3 {
         text-align: center;
         color: #30579c;
-        font-size: 200%;
-        @include m.mq(pc) {
-            font-size: 180%;
-        }
-        @include m.mq(tab) {
-            font-size: 150%;
-        }
+        font-size: 180%;
     }
 
     p {
         text-align: center;
         margin: 2% 0;
-
 
         strong {
             font-family: amaranth, serif;
@@ -33,83 +28,139 @@
 
     .tyui {
         text-align: center;
-
     }
 
-
     button {
-        position: relative;
-        left: 41%;
-        width: 18%;
+        width: 20%;
+        max-width: 600px;
+        max-height: 100px;
         height: 60px;
         border-radius: 50px;
         background-color: #e0ad64;
         border: none;
-        margin: 2% 0;
-
-        @include m.mq(tab) {
-            width: 24%;
-            left: 37.5%;
-            height: 50px;
-        }
+        margin: 2% 40%;
+        
 
         a {
             color: #fff;
-            font-size: 90%
+            font-size: 90%;
+            padding: 2%;
         }
     }
 
     .banner {
         display: flex;
-        width: 80%;
-        margin: 0 0 0 20%;
-
-        @include m.mq(tab) {
-            width: 90%;
-            margin: 0 5%;
-        }
+        justify-content: center;
 
         li {
-
-            width: 15%;
+            width: 20%;
             height: auto;
             list-style-type: none;
             margin: 5%;
+        }
+    }
+}
 
-            @include m.mq(tab) {
-                width: 24%;
+@include m.mq(pc) {
+    h3 {
+        text-align: center;
+        color: #30579c;
+        font-size: 180%;
+    }
 
-            }
+    p {
+        text-align: center;
+        margin: 2% 0;
 
+        strong {
+            font-family: amaranth, serif;
+            font-size: 500%;
+            color: #c93c27;
+            font-weight: 700;
         }
     }
 
+    .tyui {
+        text-align: center;
+    }
 
+    button {
+        width: 20%;
+        min-width: 200px;
+        max-height: 100px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: #e0ad64;
+        border: none;
+        margin: 2% 40%;
+        
 
+        a {
+            color: #fff;
+            font-size: 90%;
+            padding: 2%;
+        }
+    }
 
+    .banner {
+        display: flex;
+        justify-content: center;
 
+        li {
+            list-style-type: none;
+            margin: 5%;
+        }
+    }
+}
 
+@include m.mq(tab) {
+    h3 {
+        text-align: center;
+        color: #30579c;
+        font-size: 180%;
+    }
 
+    p {
+        text-align: center;
+        margin: 2% 0;
 
+        strong {
+            font-family: amaranth, serif;
+            font-size: 500%;
+            color: #c93c27;
+            font-weight: 700;
+        }
+    }
 
+    .tyui {
+        text-align: center;
+    }
 
+    button {
+        position: relative;
+        left: 41%;
+        width: 40%;
+        min-width: 400px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: #e0ad64;
+        border: none;
+        margin: 2% 0;
 
+        a {
+            color: #fff;
+            font-size: 90%;
+        }
+    }
 
+    .banner {
+        display: flex;
+        justify-content: center;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        li {
+            list-style-type: none;
+            margin: 3%;
+        }
+    }
+}
 }

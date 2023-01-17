@@ -3,8 +3,8 @@ $breakpoint: (
   tabm:'screen and (max-width: 700px)',
   tabi:'screen and (max-width: 800px)',
   tab: 'screen and (max-width: 900px)',
-  pc: 'screen and (max-width: 1000px)',
-  mon:'screen and (min-width: 1000px)'
+  pc: 'screen and (max-width: 1200px)',
+  mon:'screen and (min-width: 1201px)'
 );
 
 @mixin mq($bp) {

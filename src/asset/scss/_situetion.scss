@@ -46,11 +46,9 @@
         }
 
         .mySwiper {
-
-            width: 100%;
             // margin-right: 30%;
-            position: relative;
-            top: 10%;
+            // position: relative;
+            max-width: 1400px;
 
 
             // right: 25%;
@@ -609,22 +607,12 @@
             background: linear-gradient(transparent 40%, #fff 40%);
             font-size: 337%;
             position: relative;
-            width: 13%;
-            left: 30%;
-            top: 465px;
             z-index: 99;
 
-            //     top: 330px;
-            //     font-size: 300%;
-
-
-            // @include m.mq(tab) {
-            //     width: 15%;
-            //     font-size: 250%;
-            //     top: 330px;
-            //     left: 25%;
-
-            // }
+                width: 15%;
+                font-size: 250%;
+                top: 290px;
+                left: 25%;
 
             b {
                 font-family: amaranth, serif;
@@ -634,8 +622,7 @@
         }
 
         .mySwiper {
-
-            width: 100%;
+            max-width: 1200px;
             // margin-right: 30%;
             position: relative;
             top: 10%;
@@ -670,7 +657,7 @@
 
                     img.wave {
                         position: inherit;
-                        bottom: 70px;
+                        bottom: 63px;
 
                         // @include m.mq(pc) {
                         //     bottom: 70px;
@@ -703,20 +690,10 @@
                 color: #6299f8;
                 background: linear-gradient(transparent 0%, #fff 0%);
                 position: absolute;
-                margin-top: 50%;
                 z-index: 99;
                 align-items: center;
-
-                // @include m.mq(pc) {
-                //     top: 330px;
-                //     font-size: 200%;
-
-                // }
-
-                // @include m.mq(tab) {
-                //     top: 330px;
-                //     font-size: 220%;
-                // }
+                    top: 290px;
+                    font-size: 220%;
 
             }
 
@@ -724,153 +701,106 @@
                 h4 {
                     right: 62.5%;
                 }
-
-                // @include m.mq(tab) {
-                //     h4 {
-                //         right: 62.3%;
-                //     }
-
-                //     h5 {
-                //         width: 70%;
-                //     }
-
-                //     .point div {
-                //         width: 85%;
-                //     }
-                // }
+                h5{width: 70%;}
+                    .point div {
+                        width: 85%;
+                    }
             }
 
             #Summer {
-                h4 {
-                    right: 60.8%;
 
 
-
-                    dl div {
-                        margin: 5% 0;
+                    h4 {
+                        right: 60%;
                     }
-                }
 
-                // @include m.mq(tab) {
-                //     h4 {
-                //         right: 59.4%;
-                //     }
+                    .point div {
+                        width: 85%;
+                    }
 
-                //     .point div {
-                //         width: 85%;
-                //     }
-
-                // }
+                
             }
 
             #Autumn {
-                h4 {
-                    right: 60.8%;
+                    h4 {
+                        right: 59.5%;
+                    }
+
+                    h5 {
+                        width: 100%;
+                    }
+                    dl div{margin: 6% 0;}
                 }
-
-                // @include m.mq(tab) {
-                //     h4 {
-                //         right: 59.5%;
-                //     }
-
-                //     h5 {
-                //         width: 100%;
-                //     }
-                // }
-            }
+            
 
             #Winter {
-                h4 {
-                    right: 62%;
-                }
+                    h4 {
+                        right: 61.7%;
+                    }
 
-                // @include m.mq(tab) {
-                //     h4 {
-                //         right: 61.7%;
-                //     }
-
-                //     h5 {
-                //         width: 95%;
-                //     }
-                // }
+                    h5 {
+                        width: 95%;
+                    }
             }
 
             #Company {
                 h4 {
-                    right: 59.5%;
 
-                    // @include m.mq(tab) {
-                    //     right: 58%;
-                    // }
-                }
+                        right: 58%;
+                    }
+                
             }
 
             #Family {
                 h4 {
                     right: 62.2%;
                 }
+                    h5 {
+                        width: 70%;
+                    }
 
-                // @include m.mq(tab) {
-                //     h5 {
-                //         width: 70%;
-                //     }
-
-                //     dd {
-                //         font-size: 100%;
-                //     }
-                // }
+                    dd {
+                        font-size: 100%;
+                    }
+                
             }
 
 
 
             #Woman {
-                h4 {
-                    right: 59.8%;
+                
+                    h4 {
+                        right: 57%;
+                    }
 
                     dl div {
-                        margin: 10% 0;
+                        margin: 6% 0;
                     }
-                }
 
-                // @include m.mq(tab) {
-                //     h4 {
-                //         right: 58.2%;
-                //     }
+                    h5 {
+                        width: 80%;
+                    }
 
-                //     dl div {
-                //         margin: 6% 0;
-                //     }
-
-                //     h5 {
-                //         width: 80%;
-                //     }
-
-                // }
+                
             }
 
             h5 {
-                font-size: 180%;
+            
                 background: linear-gradient(transparent 60%, #fff 60%);
                 color: #30579c;
-
-                @include m.mq(tab) {
                     font-size: 130%;
-                }
+                
             }
 
             dl {
                 div {
                     display: flex;
-                    margin: 8% 0;
+                    margin:4% 0;
                     align-items: center;
 
                     dd {
                         color: #c93c27;
                         font-size: 110%;
-                    }
-
-                    @include m.mq(tab) {
-                        margin: 4% 0;
                     }
                 }
 
@@ -879,20 +809,13 @@
             .point {
                 div {
                     background: linear-gradient(transparent 60%, #fff 60%);
-
-
                     dt {
                         font-family: amaranth, serif;
                         font-size: 180%;
                         font-weight: bold;
                     }
-
                     dd {
-                        font-size: 130%;
-
-                        @include m.mq(tab) {
                             font-size: 100%;
-                        }
                     }
                 }
             }
@@ -902,39 +825,7 @@
                 font-size: 105%;
                 margin: 7% 0;
             }
-
-
-
-
-
-
-
-
-
         }
 
     }
-
-    // .swiper-slide-next{
-    //     left: 0%;
-    //     // img{
-    //     // // z-index: 3;
-    // }}
-    // .swiper-slide-prev{
-    //     left: 9%;
-    // //     img{
-    // //     // z-index: 2;
-    // // }}
-    // .swiper-slide-active{
-    //     // width: 30%;
-    //     img{
-    //         position: relative;
-    //         // z-index: 99;
-    // width:110%;
-    // // margin-right: 10%;
-    // }
-    // }
-
-    // }
-
 }

@@ -71,7 +71,7 @@ const plan = () => {
                                                                     )
                                                                 })}</ul></dd></dl></div>
                                                     <div className='appetmenu'>
-                                                    <img src={appetphoto} alt="前菜" />
+                                                        <img src={appetphoto} alt="前菜" />
 
                                                         <dl>
                                                             <dt>前菜</dt>
@@ -86,17 +86,18 @@ const plan = () => {
                                                                 })}</ul></dd></dl>
                                                     </div>
                                                 </div>
-                                                </div>
-                                            </>
-                                            )
+                                            </div>
+                                        </>
+                                    )
                                 })
                             }
-                                        </div>
+                        </div>
                     </section>
                     <section className='softalcohol'>
                         <h3>江ノ島マリーナでは飲み放題が無料でついてきます！</h3>
                         <div className='drinkmenu'>
                             <h4 className='h4'>Drinkmenu</h4>
+
                             <div className='alcoholmenu'>
                                 <img src={alcoholphoto} alt="アルコール" />
                                 <dl>
@@ -136,6 +137,7 @@ const plan = () => {
                                     </ul></dd>
                                 </dl>
                             </div>
+
                             <div className='drinktyui'>
                                 <p>他にも盛りだくさん！</p>
                                 <h4>※注意事項</h4>

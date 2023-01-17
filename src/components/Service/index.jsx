@@ -1,8 +1,8 @@
-import React from 'react'
-import serviceTerrace from '../../asset/photo/serviceTerrace.jpg'
-import serviseFood from '../../asset/photo/serviceFood.jpg'
-import servuseToul from '../../asset/photo/serviceToul.jpg'
-import marina from '../../asset/photo/marina.jpg'
+import React from "react";
+import serviceTerrace from "../../asset/photo/serviceTerrace.jpg";
+import serviseFood from "../../asset/photo/serviceFood.jpg";
+import servuseToul from "../../asset/photo/serviceToul.jpg";
+import marina from "../../asset/photo/marina.jpg";
 const json = `[
   {
   "dt":"こだわりのオープンテラス",
@@ -25,43 +25,59 @@ const json = `[
 ]`;
 const charm = JSON.parse(json);
 function Service() {
-
     return (
         <>
-            <section className='servise'>
-                <section className='suncafe'>
-                    <h3><b>S</b>un<b>C</b>afe<b>P</b>aradise</h3>
-                    <div className='SuncafeParadise'>
-                    <img src={marina} alt="サンカフェのテラス" className='marinaSun'/>
-                    <p>神奈川県藤沢市の江ノ島にある<br />
-                        海と自然を愛し、人々が自由に心から楽しみ、くつろぎ、<br />
-                        本来の自分に戻れる場所を作りたいという<br />
-                        想いから誕生したのが「江ノ島マリーナ」です。</p></div>
+            <section className="servise">
+                <section className="suncafe">
+                    <h3>
+                        <b>S</b>un<b>C</b>afe<b>P</b>aradise
+                    </h3>
+                    <div className="SuncafeParadise">
+                        <div className="Suncafe_img">
+                            <img
+                                src={marina}
+                                alt="サンカフェのテラス"
+                                className="marinaSun"
+                            />
+                        </div>
+                        <div className="Suncafe_p">
+                            <p>
+                                神奈川県藤沢市の江ノ島にある
+                                <br />
+                                海と自然を愛し、人々が自由に心から楽しみ、くつろぎ、
+                                <br />
+                                本来の自分に戻れる場所を作りたいという
+                                <br />
+                                想いから誕生したのが「江ノ島マリーナ」です。
+                            </p></div>
+
+                    </div>
                 </section>
-                <section className='suncafecharm'>
+                <section className="suncafecharm">
                     <h3>江ノ島マリーナのバーベキューの魅力</h3>
-                    <div className='Features'>
-                    {
-                        
-                        charm.map((item, index) => {
+                    <div className="Features">
+                        {charm.map((item, index) => {
                             return (
                                 <>
-                                    <div className='feature'>
-                                        <img src={item.src} alt={item.alt} />
+                                    <div className="feature">
+                                        <div className="feature img"><img src={item.src} alt={item.alt} /></div>
                                         <dl>
                                             <dt>{item.dt}</dt>
-                                            <dd>{item.dd1}<br/>{item.dd2}</dd>
+                                            <dd>
+                                                {item.dd1}
+                                                <br />
+                                                {item.dd2}
+                                            </dd>
                                         </dl>
                                     </div>
                                 </>
-                            )
-                        })
-                    }
+                            );
+                        })}
                     </div>
                 </section>
             </section>
         </>
-    )
+    );
 }
 
 export default Service;

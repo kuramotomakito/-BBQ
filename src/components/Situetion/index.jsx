@@ -103,7 +103,7 @@ const Situetion = () => {
             {Situ.party.map((item, index) => {
               return (
                 <>
-                  <SwiperSlide className="partyslide"  id={item.id}>
+                  <SwiperSlide className="partyslide" id={item.id}>
                     <div className="slideimg">
                       <img src={item.src} alt={item.alt} />
                       <img src={wave} alt="波" className="wave" />
@@ -114,10 +114,10 @@ const Situetion = () => {
                       <dl>
                         <div>
                           <dt>プラン・・・</dt>
-                        <dd>{item.plan}</dd></div>
+                          <dd>{item.plan}</dd></div>
                         <div>
                           <dt>時間帯・・・</dt>
-                        <dd>{item.time}</dd></div>
+                          <dd>{item.time}</dd></div>
                       </dl>
                       <dl className="point"><div><dt>Point:</dt><dd>{item.point}</dd></div></dl>
                       <ul>
