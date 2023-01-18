@@ -6,7 +6,7 @@ import banner3 from '../../asset/photo/banner3.jpg'
 
 const Content = () => {
     return (
-        <section className='content'>
+        <section className='content' id='content'>
             <h2><b>C</b>ontent</h2>
             <h3>完全予約制</h3>
             <p>お問い合わせはフォームまたはお電話をご利用ください</p>

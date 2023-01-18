@@ -795,11 +795,10 @@ margin-left: 5%;                    }
             font-size: 300%;
             position: relative;
             z-index: 3;
-
-            width: 45%;
-            top: 290px;
-            left: 15%;
-
+            width: 30%;
+            min-width: 160px;
+            top: 430px;
+            left: 25%;
            
 
 
@@ -879,7 +878,7 @@ margin-left: 5%;                    }
                 // position: absolute;
                 z-index: 999;
                 align-items: center;
-                // top: 250px;
+                top: 400px;
                 font-size: 220%;
             }
 

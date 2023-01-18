@@ -440,7 +440,11 @@
 @include m.mq(tabi) {
         .servise {
             .suncafe {
-                h3{font-size: 270%;}
+                h3{
+                    font-size: 250%;
+                                    top: 3%;
+
+                }
                 .SuncafeParadise {
                     .Suncafe_p {
                         font-size: 75%;
@@ -448,6 +452,7 @@
                 }
             }
             .suncafecharm {
+                h3{width: 70%;}
                 .Features {
                     width: 65%;
                     .feature {
@@ -458,7 +463,31 @@
                             font-size: 75%;
                         }}}}}}
 
-@include m.mq(tabm) {}
+@include m.mq(tabm) {
+    .servise {
+    .suncafe {
+        h3{
+            font-size: 250%;
+                            top: 5%;
+
+        }
+        .SuncafeParadise {
+            .Suncafe_p {
+                font-size: 50%;
+            }
+        }
+    }
+
+    .suncafecharm {
+        .Features {
+            width: 70%;
+            .feature {
+                dt {
+                    font-size: 130%;
+                }
+                dd {
+                    font-size: 75%;
+                }}}}}}
 
 
 @include m.mq(sp) {
