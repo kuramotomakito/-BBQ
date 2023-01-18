@@ -30,7 +30,6 @@
             //     top: 330px;
             //     font-size: 300%;
 
-
             // @include m.mq(tab) {
             //     width: 15%;
             //     font-size: 250%;
@@ -51,12 +50,10 @@
             // position: relative;
             max-width: 1400px;
 
-
             // right: 25%;
             .swiper-wrapper {
                 width: 80%;
                 // padding-bottom: 2%;
-
             }
 
             .seasonslide,
@@ -94,7 +91,6 @@
                         //     bottom: 70px;
                         //     margin-left: -4%;
                         // }
-
                     }
                 }
 
@@ -128,7 +124,6 @@
                 //     top: 330px;
                 //     font-size: 220%;
                 // }
-
             }
 
             #Spring {
@@ -154,8 +149,6 @@
             #Summer {
                 h4 {
                     right: 60.8%;
-
-
 
                     dl div {
                         margin: 5% 0;
@@ -232,8 +225,6 @@
                 // }
             }
 
-
-
             #Woman {
                 h4 {
                     right: 59.8%;
@@ -284,13 +275,11 @@
                     //     margin: 4% 0;
                     // }
                 }
-
             }
 
             .point {
                 div {
                     background: linear-gradient(transparent 60%, #fff 60%);
-
 
                     dt {
                         font-family: amaranth, serif;
@@ -312,17 +301,7 @@
             font-size: 105%;
             margin: 7% 0;
         }
-
-
-
-
-
-
-
-
-
     }
-
 }
 
 // .swiper-slide-next{
@@ -347,18 +326,7 @@
 
 // }
 
-
-
-
-
-
-
-
-
-
-
 @include m.mq(pc) {
-
     .situetion {
         background-color: #deedfd;
         padding-bottom: 5%;
@@ -380,10 +348,8 @@
             left: 30%;
             z-index: 99;
 
-            top:20rem;
+            top: 20rem;
             font-size: 300%;
-
-
 
             b {
                 font-family: amaranth, serif;
@@ -391,18 +357,17 @@
                 font-size: 130%;
             }
         }
+
         .mySwiper {
             width: 100%;
             // margin-right: 30%;
             position: relative;
             top: 10%;
 
-
             // right: 25%;
             .swiper-wrapper {
                 width: 80%;
                 // padding-bottom: 2%;
-
             }
 
             .seasonslide,
@@ -419,7 +384,6 @@
                     text-align: center;
                     width: 30%;
                     margin-left: 10%;
-
 
                     img.wave {
                         position: inherit;
@@ -457,8 +421,6 @@
                 h4 {
                     right: 57.7%;
 
-
-
                     dl div {
                         margin: 4% 0;
                     }
@@ -479,13 +441,13 @@
                 h4 {
                     right: 57.7%;
                 }
-
             }
 
             #Winter {
                 h4 {
                     right: 59.3%;
                 }
+
                 // }
             }
 
@@ -499,7 +461,10 @@
                 h4 {
                     right: 59.4%;
                 }
-                dl div{margin: 6% 0;}
+
+                dl div {
+                    margin: 6% 0;
+                }
             }
 
             #Woman {
@@ -528,16 +493,12 @@
                         color: #c93c27;
                         font-size: 110%;
                     }
-
-
                 }
-
             }
 
             .point {
                 div {
                     background: linear-gradient(transparent 60%, #fff 60%);
-
 
                     dt {
                         font-family: amaranth, serif;
@@ -547,7 +508,6 @@
 
                     dd {
                         font-size: 130%;
-
                     }
                 }
             }
@@ -557,35 +517,9 @@
                 font-size: 105%;
                 margin: 7% 0;
             }
-
-
-
-
-
-
-
-
-
         }
-
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @include m.mq(tab) {
     .situetion {
@@ -610,10 +544,13 @@
             position: relative;
             z-index: 99;
 
-                width: 15%;
-                font-size: 250%;
-                top: 290px;
-                left: 25%;
+            width: 15%;
+            font-size: 250%;
+            top: 290px;
+            left: 25%;
+            @include m.mq(tabi) {
+                top: 270px;
+            }
 
             b {
                 font-family: amaranth, serif;
@@ -628,12 +565,10 @@
             position: relative;
             top: 10%;
 
-
             // right: 25%;
             .swiper-wrapper {
                 width: 80%;
                 // padding-bottom: 2%;
-
             }
 
             .seasonslide,
@@ -644,6 +579,9 @@
                 width: 50%;
                 padding: 0 0 5% 0;
                 position: relative;
+                 @include m.mq(tabi) {
+                padding-bottom: 10%;
+            }
 
                 .slideimg {
                     position: relative;
@@ -660,23 +598,23 @@
                         position: inherit;
                         bottom: 63px;
 
-                        // @include m.mq(pc) {
-                        //     bottom: 70px;
-                        //     width: 110%;
-                        //     right: 4%;
-                        // }
+                        @include m.mq(tabi) {
+                            bottom: 50px;
+                            width: 110%;
+                        }
 
                         // @include m.mq(tab) {
                         //     width: 110%;
                         //     bottom: 70px;
                         //     margin-left: -4%;
                         // }
-
                     }
                 }
 
                 .slidetext {
                     margin-left: 10%;
+                    @include m.mq(tabi) {
+margin-left: 5%;                    }
 
                     // @include m.mq(tab) {
                     //     margin-left: 4%;
@@ -693,110 +631,113 @@
                 position: absolute;
                 z-index: 99;
                 align-items: center;
-                    top: 290px;
-                    font-size: 220%;
-
+                top: 290px;
+                font-size: 220%;
+                @include m.mq(tabi) {
+                    top: 270px;
+                }
             }
 
             #Spring {
                 h4 {
                     right: 62.5%;
                 }
-                h5{width: 70%;}
-                    .point div {
-                        width: 85%;
-                    }
+
+                h5 {
+                    width: 70%;
+                }
+
+                .point div {
+                    width: 100%;
+                }
             }
 
             #Summer {
+                h4 {
+                    right: 60%;
+                }
 
-
-                    h4 {
-                        right: 60%;
-                    }
-
-                    .point div {
-                        width: 85%;
-                    }
-
-                
+                .point div {
+                    width: 100%;
+                }
             }
 
             #Autumn {
-                    h4 {
-                        right: 59.5%;
-                    }
-
-                    h5 {
-                        width: 100%;
-                    }
-                    dl div{margin: 6% 0;}
+                h4 {
+                    right: 59.5%;
                 }
-            
+
+                h5 {
+                    width: 100%;
+                }
+
+                dl div {
+                    margin: 6% 0;
+
+                    @include m.mq(tabi) {
+                        margin: 4% 0;
+                    }
+                }
+            }
 
             #Winter {
-                    h4 {
-                        right: 61.7%;
-                    }
+                h4 {
+                    right: 61.7%;
+                }
 
-                    h5 {
-                        width: 95%;
-                    }
+                h5 {
+                    width: 95%;
+                }
             }
 
             #Company {
                 h4 {
-
-                        right: 58%;
-                    }
-                
+                    right: 58%;
+                }
             }
 
             #Family {
                 h4 {
                     right: 62.2%;
                 }
-                    h5 {
-                        width: 70%;
-                    }
 
-                    dd {
-                        font-size: 100%;
-                    }
-                
+                h5 {
+                    width: 70%;
+                }
+
+                dd {
+                    font-size: 100%;
+                }
             }
 
-
-
             #Woman {
-                
-                    h4 {
-                        right: 57%;
-                    }
+                h4 {
+                    right: 57%;
+                }
 
-                    dl div {
-                        margin: 6% 0;
-                    }
+                dl div {
+                    margin: 6% 0;
+                }
 
-                    h5 {
-                        width: 80%;
-                    }
-
-                
+                h5 {
+                    width: 80%;
+                }
             }
 
             h5 {
-            
                 background: linear-gradient(transparent 60%, #fff 60%);
                 color: #30579c;
-                    font-size: 130%;
-                
+                font-size: 130%;
+
+                @include m.mq(tabi) {
+                    font-size: 110%;
+                }
             }
 
             dl {
                 div {
                     display: flex;
-                    margin:4% 0;
+                    margin: 4% 0;
                     align-items: center;
 
                     dd {
@@ -804,19 +745,20 @@
                         font-size: 110%;
                     }
                 }
-
             }
 
             .point {
                 div {
                     background: linear-gradient(transparent 60%, #fff 60%);
+
                     dt {
                         font-family: amaranth, serif;
                         font-size: 180%;
                         font-weight: bold;
                     }
+
                     dd {
-                            font-size: 100%;
+                        font-size: 100%;
                     }
                 }
             }
@@ -825,15 +767,15 @@
                 list-style-type: none;
                 font-size: 105%;
                 margin: 7% 0;
+
+                @include m.mq(tabi) {
+                    bottom: 50px;
+                    font-size: 90%;
+                }
             }
         }
-
     }
 }
-
-
-
-
 
 @include m.mq(sp) {
     .situetion {
@@ -854,9 +796,12 @@
             position: relative;
             z-index: 3;
 
-                width: 45%;
-                                top: 290px;
-                left: 15%;
+            width: 45%;
+            top: 290px;
+            left: 15%;
+
+           
+
 
             b {
                 font-family: amaranth, serif;
@@ -871,12 +816,10 @@
             position: relative;
             top: 0%;
 
-
             // right: 25%;
             .swiper-wrapper {
                 width: 80%;
                 // padding-bottom: 2%;
-
             }
 
             .seasonslide,
@@ -915,7 +858,6 @@
                         //     bottom: 70px;
                         //     margin-left: -4%;
                         // }
-
                     }
                 }
 
@@ -932,118 +874,109 @@
             h4 {
                 font-family: amaranth, serif;
                 font-weight: 700;
-                                // color: #6299f8;
+                // color: #6299f8;
                 // background: linear-gradient(transparent 0%, #fff 0%);
                 // position: absolute;
                 z-index: 999;
                 align-items: center;
-                    // top: 250px;
-                    font-size: 220%;
-                    
-
+                // top: 250px;
+                font-size: 220%;
             }
 
             #Spring {
                 h4 {
                     right: 22.5%;
                 }
-                h5{width: 70%;}
-                    .point div {
-                        width: 100%;
-                    }
+
+                h5 {
+                    width: 70%;
+                }
+
+                .point div {
+                    width: 100%;
+                }
             }
 
             #Summer {
+                h4 {
+                    right: 20%;
+                }
 
-
-                    h4 {
-                        right: 20%;
-                    }
-
-                    .point div {
-                        width: 100%;
-                    }
-
-                
+                .point div {
+                    width: 100%;
+                }
             }
 
             #Autumn {
-                    h4 {
-                        right: 19.5%;
-                    }
-
-                    h5 {
-                        width: 100%;
-                    }
-                    dl div{margin: 6% 0;}
+                h4 {
+                    right: 19.5%;
                 }
-            
+
+                h5 {
+                    width: 100%;
+                }
+
+                dl div {
+                    margin: 6% 0;
+                }
+            }
 
             #Winter {
-                    h4 {
-                        right: 21.7%;
-                    }
+                h4 {
+                    right: 21.7%;
+                }
 
-                    h5 {
-                        width: 95%;
-                    }
+                h5 {
+                    width: 95%;
+                }
             }
 
             #Company {
                 h4 {
-
-                        right: 14%;
-                    }
-                
+                    right: 14%;
+                }
             }
 
             #Family {
                 h4 {
                     right: 22.2%;
                 }
-                    h5 {
-                        width: 70%;
-                    }
 
-                    dd {
-                        font-size: 100%;
-                    }
-                
+                h5 {
+                    width: 70%;
+                }
+
+                dd {
+                    font-size: 100%;
+                }
             }
 
-
-
             #Woman {
-                
-                    h4 {
-                        right: 14%;
-                    }
+                h4 {
+                    right: 14%;
+                }
 
-                    dl div {
-                        margin: 6% 0;
-                    }
+                dl div {
+                    margin: 6% 0;
+                }
 
-                    h5 {
-                        width: 80%;
-                    }
-
-                
+                h5 {
+                    width: 80%;
+                }
             }
 
             h5 {
-            
                 background: linear-gradient(transparent 60%, #fff 60%);
                 color: #30579c;
-                    font-size: 115%;
-                    margin-top: 10%;
-                    text-align: left;
-                
+                font-size: 115%;
+                margin-top: 10%;
+                text-align: left;
             }
 
             dl {
                 div {
                     display: flex;
-                    margin:4% 0;
+                    margin: 4% 0;
                     align-items: center;
 
                     dd {
@@ -1051,19 +984,20 @@
                         font-size: 110%;
                     }
                 }
-
             }
 
             .point {
                 div {
                     background: linear-gradient(transparent 60%, #fff 60%);
+
                     dt {
                         font-family: amaranth, serif;
                         font-size: 180%;
                         font-weight: bold;
                     }
+
                     dd {
-                            font-size: 110%;
+                        font-size: 110%;
                     }
                 }
             }
@@ -1074,6 +1008,5 @@
                 margin: 7% 0;
             }
         }
-
     }
 }

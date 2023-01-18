@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +17,6 @@ a {
 }
 
 p {
-  font-family: "Zen Maru Gothic", sans-serif;
   font-style: regular;
   font-size: 90%;
   line-height: 300%;
@@ -627,11 +628,20 @@ header h1 {
     top: 290px;
     left: 25%;
   }
+}
+@media screen and (max-width: 900px) and (max-width: 800px) {
+  .situetion h3 {
+    top: 270px;
+  }
+}
+@media screen and (max-width: 900px) {
   .situetion h3 b {
     font-family: amaranth, serif;
     font-weight: bold;
     font-size: 130%;
   }
+}
+@media screen and (max-width: 900px) {
   .situetion .mySwiper {
     max-width: 1200px;
     position: relative;
@@ -649,6 +659,14 @@ header h1 {
     padding: 0 0 5% 0;
     position: relative;
   }
+}
+@media screen and (max-width: 900px) and (max-width: 800px) {
+  .situetion .mySwiper .seasonslide,
+.situetion .mySwiper .partyslide {
+    padding-bottom: 10%;
+  }
+}
+@media screen and (max-width: 900px) {
   .situetion .mySwiper .seasonslide .slideimg,
 .situetion .mySwiper .partyslide .slideimg {
     position: relative;
@@ -661,10 +679,27 @@ header h1 {
     position: inherit;
     bottom: 63px;
   }
+}
+@media screen and (max-width: 900px) and (max-width: 800px) {
+  .situetion .mySwiper .seasonslide .slideimg img.wave,
+.situetion .mySwiper .partyslide .slideimg img.wave {
+    bottom: 50px;
+    width: 110%;
+  }
+}
+@media screen and (max-width: 900px) {
   .situetion .mySwiper .seasonslide .slidetext,
 .situetion .mySwiper .partyslide .slidetext {
     margin-left: 10%;
   }
+}
+@media screen and (max-width: 900px) and (max-width: 800px) {
+  .situetion .mySwiper .seasonslide .slidetext,
+.situetion .mySwiper .partyslide .slidetext {
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 900px) {
   .situetion .mySwiper h4 {
     font-family: amaranth, serif;
     font-weight: 700;
@@ -677,6 +712,13 @@ header h1 {
     top: 290px;
     font-size: 220%;
   }
+}
+@media screen and (max-width: 900px) and (max-width: 800px) {
+  .situetion .mySwiper h4 {
+    top: 270px;
+  }
+}
+@media screen and (max-width: 900px) {
   .situetion .mySwiper #Spring h4 {
     right: 62.5%;
   }
@@ -684,14 +726,18 @@ header h1 {
     width: 70%;
   }
   .situetion .mySwiper #Spring .point div {
-    width: 85%;
+    width: 100%;
   }
+}
+@media screen and (max-width: 900px) {
   .situetion .mySwiper #Summer h4 {
     right: 60%;
   }
   .situetion .mySwiper #Summer .point div {
-    width: 85%;
+    width: 100%;
   }
+}
+@media screen and (max-width: 900px) {
   .situetion .mySwiper #Autumn h4 {
     right: 59.5%;
   }
@@ -701,15 +747,26 @@ header h1 {
   .situetion .mySwiper #Autumn dl div {
     margin: 6% 0;
   }
+}
+@media screen and (max-width: 900px) and (max-width: 800px) {
+  .situetion .mySwiper #Autumn dl div {
+    margin: 4% 0;
+  }
+}
+@media screen and (max-width: 900px) {
   .situetion .mySwiper #Winter h4 {
     right: 61.7%;
   }
   .situetion .mySwiper #Winter h5 {
     width: 95%;
   }
+}
+@media screen and (max-width: 900px) {
   .situetion .mySwiper #Company h4 {
     right: 58%;
   }
+}
+@media screen and (max-width: 900px) {
   .situetion .mySwiper #Family h4 {
     right: 62.2%;
   }
@@ -719,6 +776,8 @@ header h1 {
   .situetion .mySwiper #Family dd {
     font-size: 100%;
   }
+}
+@media screen and (max-width: 900px) {
   .situetion .mySwiper #Woman h4 {
     right: 57%;
   }
@@ -728,11 +787,20 @@ header h1 {
   .situetion .mySwiper #Woman h5 {
     width: 80%;
   }
+}
+@media screen and (max-width: 900px) {
   .situetion .mySwiper h5 {
     background: linear-gradient(transparent 60%, #fff 60%);
     color: #30579c;
     font-size: 130%;
   }
+}
+@media screen and (max-width: 900px) and (max-width: 800px) {
+  .situetion .mySwiper h5 {
+    font-size: 110%;
+  }
+}
+@media screen and (max-width: 900px) {
   .situetion .mySwiper dl div {
     display: flex;
     margin: 4% 0;
@@ -742,6 +810,8 @@ header h1 {
     color: #c93c27;
     font-size: 110%;
   }
+}
+@media screen and (max-width: 900px) {
   .situetion .mySwiper .point div {
     background: linear-gradient(transparent 60%, #fff 60%);
   }
@@ -753,10 +823,18 @@ header h1 {
   .situetion .mySwiper .point div dd {
     font-size: 100%;
   }
+}
+@media screen and (max-width: 900px) {
   .situetion .mySwiper li {
     list-style-type: none;
     font-size: 105%;
     margin: 7% 0;
+  }
+}
+@media screen and (max-width: 900px) and (max-width: 800px) {
+  .situetion .mySwiper li {
+    bottom: 50px;
+    font-size: 90%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1766,14 +1844,13 @@ header h1 {
   }
   .plan .plannai .time {
     display: flex;
-    /* width: 80%; */
     margin: 4% auto;
     justify-content: center;
   }
 }
-@media screen and (max-width: 900px) and (max-width: 900px) {
+@media screen and (max-width: 900px) and (max-width: 800px) {
   .plan .plannai .time {
-    margin: 4% 4.5%;
+    width: 60%;
   }
 }
 @media screen and (max-width: 900px) {
@@ -1814,6 +1891,11 @@ header h1 {
     margin: 4% 0 0 0;
   }
 }
+@media screen and (max-width: 900px) and (max-width: 800px) {
+  .plan .plannai .h3menu {
+    margin: 6% 0;
+  }
+}
 @media screen and (max-width: 900px) {
   .plan .plannai .menugrid {
     display: grid;
@@ -1830,30 +1912,22 @@ header h1 {
     border: 10px solid #f8d880;
     width: 90%;
     margin: 5% 0;
-    padding-bottom: 10%;
+    padding-bottom: 2%;
     grid-area: three;
   }
-}
-@media screen and (max-width: 900px) and (max-width: 900px) {
-  .plan .plannai .threehour {
-    padding-bottom: 2%;
-  }
-}
-@media screen and (max-width: 900px) {
   .plan .plannai .threehour .new {
     position: absolute;
     color: #c93c27;
     font-weight: bold;
-    font-size: 200%;
     font-family: amaranth, serif;
-    bottom: 99%;
     left: 23%;
-  }
-}
-@media screen and (max-width: 900px) and (max-width: 900px) {
-  .plan .plannai .threehour .new {
     font-size: 130%;
     bottom: 100%;
+  }
+}
+@media screen and (max-width: 900px) and (max-width: 800px) {
+  .plan .plannai .threehour .new {
+    bottom: 101%;
   }
 }
 @media screen and (max-width: 900px) {
@@ -1876,12 +1950,17 @@ header h1 {
     top: -58px;
   }
 }
+@media screen and (max-width: 900px) and (max-width: 800px) {
+  .plan .plannai .threehour h4 {
+    font-size: 180%;
+  }
+}
 @media screen and (max-width: 900px) {
   .plan .plannai .threehour h5 {
     font-family: amaranth, serif;
     color: #d15e4a;
     font-weight: 800;
-    font-size: 700%;
+    font-size: 450%;
     text-align: center;
     padding-top: 3%;
   }
@@ -1891,65 +1970,26 @@ header h1 {
     font-weight: 700;
   }
 }
-@media screen and (max-width: 900px) and (max-width: 900px) {
-  .plan .plannai .threehour h5 {
-    font-size: 450%;
-  }
-}
 @media screen and (max-width: 900px) {
   .plan .plannai .threehour .menu {
     display: flex;
-    margin: 0 0 0 14%;
+    margin: 5% 0 3% 4%;
   }
-}
-@media screen and (max-width: 900px) and (max-width: 900px) {
-  .plan .plannai .threehour .menu {
-    margin: 0 0 0 12%;
-  }
-}
-@media screen and (max-width: 900px) {
   .plan .plannai .threehour .menu div {
     position: relative;
   }
-}
-@media screen and (max-width: 900px) {
-  .plan .plannai .threehour .menu img {
-    width: 70%;
-  }
-}
-@media screen and (max-width: 900px) and (max-width: 900px) {
-  .plan .plannai .threehour .menu {
-    margin: 5% 0 3% 4%;
-  }
   .plan .plannai .threehour .menu img {
     width: 90%;
   }
-}
-@media screen and (max-width: 900px) and (max-width: 900px) {
   .plan .plannai .threehour .menu .appetmenu {
     margin-left: 10%;
   }
-}
-@media screen and (max-width: 900px) {
   .plan .plannai .threehour .menu dl dt {
-    font-size: 200%;
     color: #30579c;
-  }
-}
-@media screen and (max-width: 900px) and (max-width: 900px) {
-  .plan .plannai .threehour .menu dl dt {
     font-size: 140%;
   }
-}
-@media screen and (max-width: 900px) {
   .plan .plannai .threehour .menu dl dd {
-    font-size: 100%;
     line-height: 200%;
-    width: 90%;
-  }
-}
-@media screen and (max-width: 900px) and (max-width: 900px) {
-  .plan .plannai .threehour .menu dl dd {
     font-size: 90%;
     width: 95%;
   }
@@ -1997,23 +2037,12 @@ header h1 {
   }
   .plan .plannai .standard .menu dt {
     margin: 5% 0 0 0;
-    font-size: 160%;
+    font-size: 140%;
     color: #30579c;
-  }
-}
-@media screen and (max-width: 900px) and (max-width: 900px) {
-  .plan .plannai .standard .menu dt {
     font-size: 140%;
   }
-}
-@media screen and (max-width: 900px) {
   .plan .plannai .standard .menu dd {
-    font-size: 110%;
     line-height: 200%;
-  }
-}
-@media screen and (max-width: 900px) and (max-width: 900px) {
-  .plan .plannai .standard .menu dd {
     font-size: 90%;
   }
 }
@@ -2021,61 +2050,38 @@ header h1 {
   .plan .plannai .premium {
     border: 10px solid #f8d880;
     width: 80%;
-    height: 85%;
     margin: 10% 0;
     grid-area: prem;
+    height: 88%;
   }
   .plan .plannai .premium .new,
 .plan .plannai .premium img {
     display: none;
   }
-}
-@media screen and (max-width: 900px) and (max-width: 900px) {
-  .plan .plannai .premium {
-    height: 88%;
-  }
-}
-@media screen and (max-width: 900px) {
   .plan .plannai .premium h4 {
     font-family: amaranth, serif;
     font-weight: 700;
     color: #d75f2d;
     background-color: #ffffff;
-    font-size: 300%;
     text-align: center;
     bottom: 25px;
-    width: 40%;
     position: relative;
-    margin: 0 30%;
-  }
-}
-@media screen and (max-width: 900px) and (max-width: 900px) {
-  .plan .plannai .premium h4 {
     font-size: 250%;
     width: 80%;
     margin: 0 10%;
   }
-}
-@media screen and (max-width: 900px) {
   .plan .plannai .premium h5 {
     font-family: amaranth, serif;
     color: #ec8756;
     font-weight: 800;
-    font-size: 350%;
     text-align: center;
+    font-size: 300%;
   }
   .plan .plannai .premium h5 b {
     font-family: amaranth, serif;
     font-size: 60%;
     font-weight: 700;
   }
-}
-@media screen and (max-width: 900px) and (max-width: 900px) {
-  .plan .plannai .premium h5 {
-    font-size: 300%;
-  }
-}
-@media screen and (max-width: 900px) {
   .plan .plannai .premium .menu {
     width: 80%;
     margin: 0 0 0 10%;
@@ -2083,23 +2089,11 @@ header h1 {
   }
   .plan .plannai .premium .menu dt {
     margin: 5% 0 0 0;
-    font-size: 160%;
     color: #30579c;
-  }
-}
-@media screen and (max-width: 900px) and (max-width: 900px) {
-  .plan .plannai .premium .menu dt {
     font-size: 140%;
   }
-}
-@media screen and (max-width: 900px) {
   .plan .plannai .premium .menu dd {
-    font-size: 110%;
     line-height: 200%;
-  }
-}
-@media screen and (max-width: 900px) and (max-width: 900px) {
-  .plan .plannai .premium .menu dd {
     font-size: 90%;
   }
 }
@@ -2108,14 +2102,8 @@ header h1 {
     text-align: center;
     color: #30579c;
     margin: 4% 0 10% 0;
-  }
-}
-@media screen and (max-width: 900px) and (max-width: 900px) {
-  .plan .plannai .softalcohol h3 {
     font-size: 100%;
   }
-}
-@media screen and (max-width: 900px) {
   .plan .plannai .softalcohol .drinkmenu {
     border: 10px solid #f8d880;
     width: 90%;
@@ -2137,19 +2125,39 @@ header h1 {
     width: 44%;
     margin: 0 14%;
   }
+}
+@media screen and (max-width: 900px) and (max-width: 800px) {
+  .plan .plannai .softalcohol .drinkmenu .h4 {
+    top: 71.5%;
+    width: 50%;
+    margin: 0 12%;
+  }
+}
+@media screen and (max-width: 900px) {
   .plan .plannai .softalcohol .drinkmenu img {
     width: 60%;
     margin: 0 20%;
     margin-top: 20%;
   }
+}
+@media screen and (max-width: 900px) {
   .plan .plannai .softalcohol .drinkmenu dt {
     font-size: 200%;
     color: #30579c;
   }
+}
+@media screen and (max-width: 900px) {
   .plan .plannai .softalcohol .drinkmenu dl {
     margin-left: 20%;
     font-size: 70%;
   }
+}
+@media screen and (max-width: 900px) and (max-width: 800px) {
+  .plan .plannai .softalcohol .drinkmenu dl {
+    font-size: 65%;
+  }
+}
+@media screen and (max-width: 900px) {
   .plan .plannai .softalcohol .drinkmenu .alcoholmenu {
     grid-area: alc;
   }
@@ -2160,9 +2168,13 @@ header h1 {
   .plan .plannai .softalcohol .drinkmenu .alcoholmenu dd ul:last-child {
     margin-left: 2%;
   }
+}
+@media screen and (max-width: 900px) {
   .plan .plannai .softalcohol .drinkmenu .softmenu {
     grid-area: sof;
   }
+}
+@media screen and (max-width: 900px) {
   .plan .plannai .softalcohol .drinkmenu .drinktyui {
     grid-area: tyui;
     text-align: center;
@@ -2171,16 +2183,9 @@ header h1 {
     margin: 5% 0 0 0;
   }
   .plan .plannai .softalcohol .drinkmenu .drinktyui h4 {
-    font-size: 200%;
     margin: 2% 0;
-  }
-}
-@media screen and (max-width: 900px) and (max-width: 900px) {
-  .plan .plannai .softalcohol .drinkmenu .drinktyui h4 {
     font-size: 100%;
   }
-}
-@media screen and (max-width: 900px) {
   .plan .plannai .softalcohol .drinkmenu .drinktyui ul {
     font-size: 70%;
     margin-left: 20%;
