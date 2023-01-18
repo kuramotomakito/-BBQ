@@ -507,7 +507,16 @@
                 position: relative;
                 top: 230px;
                 left: 0;
-            }
+                @include m.mq(spl) {
+                    font-size:260%;
+                top: 250px;}
+                @include m.mq(spm) {
+                        font-size:230%;
+                        top: 220px;}
+                        @include m.mq(sps) {
+                            font-size:220%;
+                        top: 210px;}
+                    }
 
             .SuncafeParadise {
                 display: block;
@@ -527,6 +536,9 @@
                     // }
 
                     font-size: 95%;
+                    @include m.mq(spm) {
+                        font-size:70%;
+                    margin-bottom: 5%;}
                 }
             }
         }
@@ -541,6 +553,9 @@
                 width: 90%;
                 // height: 100%;
                 margin: 3% 0 3% 1%;
+                @include m.mq(spm) {
+                    font-size:100%;
+                margin-bottom: 5%;}
             }
 
             .Features {
@@ -570,12 +585,12 @@
 
                     // margin-bottom: 2%;
                     // padding: 1%;
-
-                    // dt {
-                    //     font-size: 130%;
-                    //     margin-bottom: 1%;
-                    // }
-
+                    @include m.mq(sps) {
+                    dt {
+                        font-size: 120%;
+                        margin-bottom: 1%;
+                    }
+                }
 
 
                     // dd {

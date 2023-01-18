@@ -687,9 +687,15 @@ background-size: 120%;}
         background-image: url(../../asset/photo/backmarina.jpg);
         background-repeat: no-repeat;
         background-position: center;
-        padding-bottom: 8%;
+        padding: 8% 0;
     background-size: 320%;
-h2{padding-top: 10%;}
+    @include m.mq(sps) {
+        background-size: 390%;
+    }
+h2{padding-top: 10%;
+    @include m.mq(sps) {
+        padding-top: 30%;
+    }}
     
         div {
             width: 80%;

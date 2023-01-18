@@ -1400,7 +1400,7 @@
 
       .time {
         display: block;
-        /* width: 80%; */
+        width: 80%; 
         justify-content: center;
         margin: 4% auto;
 
@@ -1709,18 +1709,30 @@
           dl {
             margin-left: 5%;
 
-            font-size: 70%;
+            font-size: 80%;
+
+
           }
 
           .alcoholmenu {
             grid-area: alc;
 
+
             dd {
               display: flex;
               width: 120%;
+              @include m.mq(spm) {
+                font-size: 110%;
+        }
+              @include m.mq(sps) {
+                font-size: 110%;
+        }
 
               ul:last-child {
                 margin-left: 2%;
+                @include m.mq(spl) {
+                  margin-left: 4%;
+          }
               }
             }
           }

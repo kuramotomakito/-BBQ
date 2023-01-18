@@ -369,23 +369,23 @@
             }
     
             p {
-                display: flex;
-                align-items: center;
+
     
                 strong {
                     font-family: amaranth, serif;
                     font-weight: 700;
                     font-size: 280%;
-                    color: #e0ad64;
                     margin: 0 3% 0 0.5%;
                 }
             }
     
             h4 {
-                text-align: center;
                 font-size: 120%;
-                color: #30579c;
                 margin: 2% 0;
+
+                @include m.mq(sps) {
+                    font-size: 100%;
+                }
             }
     
             .goriyo {
@@ -416,10 +416,7 @@
         /*アコーディオン全体のスタイル*/
         .c-accordion {
             width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-            // margin-top: 80px;
-            border-style: solid;
+            
             border-width: 2px;
             border-color: #464646;
             margin-bottom: 32px;
@@ -429,22 +426,20 @@
     
             /*タイトルのデザインと「＋」ボタン*/
             &_ttl {
-                background-image: url(../../asset/photo/prass.svg);
                 background-position: right 8px center;
                 background-size: 18px;
-                background-repeat: no-repeat;
-                list-style: none;
+                list-style-type: none;
                 cursor: pointer;
                 color: #464646;
                 font-weight: bold;
                 padding: 2% 4%;
                 font-size: 16px;
+                @include m.mq(sps) {
+                    font-size: 10px;
+            }
             }
     
             /*開いているときに適用するスタイル*/
-            &[open] &_ttl {
-                background-image: url(../../asset/photo/minus.svg);
-            }
     
             /*開いときの中身のテキスト*/
             &_txt {
@@ -452,6 +447,14 @@
                 margin-top: 0;
                 color: #464646;
                 padding: 2%;
+                @include m.mq(sps) {
+                    font-size: 10px;
             }
+            }
+            @include m.mq(spl) {
+                strong{font-size: 100%;}
+            span{padding-right: 10%;}
+        }
+            
         }
     }

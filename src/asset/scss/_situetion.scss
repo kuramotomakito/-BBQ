@@ -799,7 +799,14 @@ margin-left: 5%;                    }
             min-width: 160px;
             top: 430px;
             left: 25%;
-           
+            @include m.mq(spl) {
+                top: 330px;}
+            @include m.mq(spm) {
+                font-size: 270%;
+                top: 290px;
+            left: 20%;}
+                @include m.mq(sps) {
+                    top: 250px;}
 
 
             b {
@@ -845,6 +852,10 @@ margin-left: 5%;                    }
                     img.wave {
                         position: inherit;
                         bottom: 63px;
+                        @include m.mq(spm) {
+                            bottom: 61px;}
+                        @include m.mq(sps) {
+                            bottom: 60px;}
 
                         // @include m.mq(pc) {
                         //     bottom: 70px;
@@ -880,6 +891,12 @@ margin-left: 5%;                    }
                 align-items: center;
                 top: 400px;
                 font-size: 220%;
+                @include m.mq(spl) {
+                    top: 330px;}
+                @include m.mq(spm) {
+                    top: 290px;}
+                    @include m.mq(sps) {
+                        top: 250px;}
             }
 
             #Spring {
@@ -945,9 +962,9 @@ margin-left: 5%;                    }
                     width: 70%;
                 }
 
-                dd {
-                    font-size: 100%;
-                }
+                // dd {
+                //     font-size: 100%;
+                // }
             }
 
             #Woman {
@@ -970,6 +987,8 @@ margin-left: 5%;                    }
                 font-size: 115%;
                 margin-top: 10%;
                 text-align: left;
+                @include m.mq(sps) {
+                    font-size: 100%;}
             }
 
             dl {
@@ -997,6 +1016,8 @@ margin-left: 5%;                    }
 
                     dd {
                         font-size: 110%;
+                        @include m.mq(sps) {
+                            font-size: 90%;}
                     }
                 }
             }
@@ -1005,6 +1026,8 @@ margin-left: 5%;                    }
                 list-style-type: none;
                 font-size: 90%;
                 margin: 7% 0;
+                @include m.mq(spm) {
+                    font-size: 80%;}
             }
         }
     }

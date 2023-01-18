@@ -181,6 +181,9 @@
     p {
         text-align: center;
         margin: 2% 0;
+        @include m.mq(sps) {
+            font-size: 70%;
+        }
 
         strong {
             font-family: amaranth, serif;
@@ -193,6 +196,9 @@
     .tyui {
         text-align: center;
         font-size: 70%;
+        @include m.mq(sps) {
+        font-size: 60%;
+        }
     }
 
     div{
@@ -206,10 +212,16 @@
         // margin: 2% ;
         text-align: center;
         justify-content: center;
+        // @include m.mq(sps) {
+        //     width: 54%;
+        // }
 a {
             color: #fff;
             font-size: 80%;
             margin: auto;
+            @include m.mq(spm) {
+                font-size: 65%;
+            }
         }
     }
 
