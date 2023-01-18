@@ -50,5 +50,11 @@ img{
 }
 h1{
     margin-bottom: -9px;
+    .firstviewsp{display: none;}
+    @include m.mq(sp) {
+        .firstviewsp{
+display: block;}
+.firstview{display: none;}
+}
 }
 

@@ -100,6 +100,17 @@ img {
 h1 {
   margin-bottom: -9px;
 }
+h1 .firstviewsp {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  h1 .firstviewsp {
+    display: block;
+  }
+  h1 .firstview {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 1201px) {
   .servise {
