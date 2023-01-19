@@ -16,7 +16,7 @@ header {
     }
     z-index: 9999;
     @include m.mq(pc) {
-      left: 75%;
+      left: 82%;
     }
 
     @include m.mq(sp) {
@@ -37,6 +37,7 @@ header {
       margin: auto;
       padding-top: 10%;
     }
+
     @include m.mq(sp) {
       display: block;
     }
@@ -71,48 +72,63 @@ h1 {
     position: absolute;
     top: 55%;
     left: 3%;
+      width: 40%;
+    
     @include m.mq(sp) {
       width: 60%;
-      top: 55%;
+      top: 60%;
     }
   }
   .catchcopy {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 3%;
+
     @include m.mq(sp) {
-      top: 33%;
+      top: 53%;
     }
-    
+
     @include m.mq(spl) {
       top: 45%;
     }
 
     p {
       color: #fff;
+    //   -webkit-text-stroke: 0.05px #ddd; /* webkitのベンダープレフィックス */
+    //   text-stroke: 1px #464646;         /*　ベンダープレフィックスのない指定方法 */
+        // background: linear-gradient(transparent 20%, #fff 20%);
+
       font-size: 110%;
-      b{font-weight: bold}
-        .enosima {
-          color: #30579c;
-        }
-        .BBQ {
-          color: #c93c27;
-        }
-      
+      b {
+        font-size: 140%;
+        font-weight: 800;
+      }
+      .enosima {
+        color: #30579c;
+        background: linear-gradient(transparent 40%, #fff 40%);
+
+      }
+      .BBQ {
+        color: #c93c27;
+        background: linear-gradient(transparent 40%, #fff 40%);
+
+      }
 
       @include m.mq(tab) {
-        font-size: 62%;
+        font-size: 80%;
       }
       @include m.mq(sp) {
-        font-size: 70%;
+        .enosima {
+            color: #58c1f9;
+          }
+        font-size: 80%;
       }
       @include m.mq(spll) {
-        font-size: 60%;
+        font-size: 70%;
       }
       @include m.mq(spm) {
         font-size: 55%;
       }
-    //   background: linear-gradient(transparent 50%, #464646 50%);
 
       b {
         font-size: 130%;

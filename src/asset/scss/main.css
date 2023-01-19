@@ -64,7 +64,7 @@ header button a {
 }
 @media screen and (max-width: 1200px) {
   header button {
-    left: 75%;
+    left: 82%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -122,21 +122,22 @@ h1 .logo {
   position: absolute;
   top: 55%;
   left: 3%;
+  width: 40%;
 }
 @media screen and (max-width: 600px) {
   h1 .logo {
     width: 60%;
-    top: 55%;
+    top: 60%;
   }
 }
 h1 .catchcopy {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 3%;
 }
 @media screen and (max-width: 600px) {
   h1 .catchcopy {
-    top: 33%;
+    top: 53%;
   }
 }
 @media screen and (max-width: 428px) {
@@ -149,27 +150,33 @@ h1 .catchcopy p {
   font-size: 110%;
 }
 h1 .catchcopy p b {
-  font-weight: bold;
+  font-size: 140%;
+  font-weight: 800;
 }
 h1 .catchcopy p .enosima {
   color: #30579c;
+  background: linear-gradient(transparent 40%, #fff 40%);
 }
 h1 .catchcopy p .BBQ {
   color: #c93c27;
+  background: linear-gradient(transparent 40%, #fff 40%);
 }
 @media screen and (max-width: 900px) {
   h1 .catchcopy p {
-    font-size: 62%;
+    font-size: 80%;
   }
 }
 @media screen and (max-width: 600px) {
   h1 .catchcopy p {
-    font-size: 70%;
+    font-size: 80%;
+  }
+  h1 .catchcopy p .enosima {
+    color: #58c1f9;
   }
 }
 @media screen and (max-width: 500px) {
   h1 .catchcopy p {
-    font-size: 60%;
+    font-size: 70%;
   }
 }
 @media screen and (max-width: 375px) {
