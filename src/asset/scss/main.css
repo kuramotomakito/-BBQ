@@ -125,12 +125,7 @@ h1 .logo {
 }
 @media screen and (max-width: 600px) {
   h1 .logo {
-    top: 40%;
     width: 60%;
-  }
-}
-@media screen and (max-width: 428px) {
-  h1 .logo {
     top: 55%;
   }
 }
@@ -160,7 +155,7 @@ h1 .catchcopy p .enosima {
   color: #30579c;
 }
 h1 .catchcopy p .BBQ {
-  color: #e0ad64;
+  color: #c93c27;
 }
 @media screen and (max-width: 900px) {
   h1 .catchcopy p {
@@ -169,7 +164,17 @@ h1 .catchcopy p .BBQ {
 }
 @media screen and (max-width: 600px) {
   h1 .catchcopy p {
+    font-size: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  h1 .catchcopy p {
     font-size: 60%;
+  }
+}
+@media screen and (max-width: 375px) {
+  h1 .catchcopy p {
+    font-size: 55%;
   }
 }
 h1 .catchcopy p b {
@@ -1024,6 +1029,11 @@ h1 .catchcopy p b {
     left: 25%;
   }
 }
+@media screen and (max-width: 600px) and (max-width: 500px) {
+  .situetion h3 {
+    top: 375px;
+  }
+}
 @media screen and (max-width: 600px) and (max-width: 428px) {
   .situetion h3 {
     top: 330px;
@@ -1107,6 +1117,12 @@ h1 .catchcopy p b {
     align-items: center;
     top: 400px;
     font-size: 220%;
+    font-size: 220%;
+  }
+}
+@media screen and (max-width: 600px) and (max-width: 500px) {
+  .situetion .mySwiper h4 {
+    top: 370px;
   }
 }
 @media screen and (max-width: 600px) and (max-width: 428px) {
@@ -1151,7 +1167,7 @@ h1 .catchcopy p b {
     width: 100%;
   }
   .situetion .mySwiper #Autumn dl div {
-    margin: 6% 0;
+    margin: 4% 0;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1195,9 +1211,9 @@ h1 .catchcopy p b {
     text-align: left;
   }
 }
-@media screen and (max-width: 600px) and (max-width: 320px) {
+@media screen and (max-width: 600px) and (max-width: 375px) {
   .situetion .mySwiper h5 {
-    font-size: 100%;
+    font-size: 105%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1224,7 +1240,7 @@ h1 .catchcopy p b {
     font-size: 110%;
   }
 }
-@media screen and (max-width: 600px) and (max-width: 320px) {
+@media screen and (max-width: 600px) and (max-width: 375px) {
   .situetion .mySwiper .point div dd {
     font-size: 90%;
   }

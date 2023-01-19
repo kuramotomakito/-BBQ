@@ -72,10 +72,7 @@ h1 {
     top: 55%;
     left: 3%;
     @include m.mq(sp) {
-      top: 40%;
       width: 60%;
-    }
-    @include m.mq(spl) {
       top: 55%;
     }
   }
@@ -86,6 +83,7 @@ h1 {
     @include m.mq(sp) {
       top: 33%;
     }
+    
     @include m.mq(spl) {
       top: 45%;
     }
@@ -98,7 +96,7 @@ h1 {
           color: #30579c;
         }
         .BBQ {
-          color: #e0ad64;
+          color: #c93c27;
         }
       
 
@@ -106,9 +104,15 @@ h1 {
         font-size: 62%;
       }
       @include m.mq(sp) {
+        font-size: 70%;
+      }
+      @include m.mq(spll) {
         font-size: 60%;
       }
-      // background: linear-gradient(transparent 50%, #30579c 50%);
+      @include m.mq(spm) {
+        font-size: 55%;
+      }
+    //   background: linear-gradient(transparent 50%, #464646 50%);
 
       b {
         font-size: 130%;

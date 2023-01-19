@@ -799,6 +799,8 @@ margin-left: 5%;                    }
             min-width: 160px;
             top: 430px;
             left: 25%;
+            @include m.mq(spll) {
+                top: 375px;}
             @include m.mq(spl) {
                 top: 330px;}
             @include m.mq(spm) {
@@ -891,6 +893,9 @@ margin-left: 5%;                    }
                 align-items: center;
                 top: 400px;
                 font-size: 220%;
+                font-size: 220%;
+                @include m.mq(spll) {
+                    top: 370px;}
                 @include m.mq(spl) {
                     top: 330px;}
                 @include m.mq(spm) {
@@ -933,7 +938,7 @@ margin-left: 5%;                    }
                 }
 
                 dl div {
-                    margin: 6% 0;
+                    margin: 4% 0;
                 }
             }
 
@@ -987,8 +992,8 @@ margin-left: 5%;                    }
                 font-size: 115%;
                 margin-top: 10%;
                 text-align: left;
-                @include m.mq(sps) {
-                    font-size: 100%;}
+                @include m.mq(spm) {
+                    font-size: 105%;}
             }
 
             dl {
@@ -1016,8 +1021,10 @@ margin-left: 5%;                    }
 
                     dd {
                         font-size: 110%;
-                        @include m.mq(sps) {
+                        @include m.mq(spm) {
                             font-size: 90%;}
+                        // @include m.mq(sps) {
+                        //     font-size: 90%;}
                     }
                 }
             }
