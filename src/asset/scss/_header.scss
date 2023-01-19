@@ -1,7 +1,7 @@
 @use "mixin" as m;
-header{
-    position: relative;
-button{
+header {
+  position: relative;
+  button {
     position: fixed;
     background-color: #fff;
     border-radius: 10px;
@@ -10,51 +10,109 @@ button{
     left: 85%;
     min-width: 130px;
     height: 40px;
-    a{
-    font-size: 120%;
-    color: #30579c;
+    a {
+      font-size: 120%;
+      color: #30579c;
     }
     z-index: 9999;
-    @include m.mq(pc){
-left: 75%;                        }
-
-    @include m.mq(sp){
-    display: none;
-                    }
+    @include m.mq(pc) {
+      left: 75%;
     }
-    .phone{
-        display: none;
-        top: 1%;
-        left: 80%;
-        min-width: 50px;
-        width: 50px;
-        height: 50px;
-        img{
-            width: 60%;
-        text-align: center;
-        margin: auto;
-        padding-top: 10%;
-    }
-        @include m.mq(sp){
-            display: block;
-                            }
-    }
-}
 
-img{
-    width: 100%;
-    height: auto;
-
-    // position: relative;
-    // z-index: 999;
-}
-h1{
-    margin-bottom: -9px;
-    .firstviewsp{display: none;}
     @include m.mq(sp) {
-        .firstviewsp{
-display: block;}
-.firstview{display: none;}
-}
+      display: none;
+    }
+  }
+  .phone {
+    display: none;
+    top: 3%;
+    left: 80%;
+    min-width: 40px;
+    min-height: 40px;
+    width: 70px;
+    height: 70px;
+    img {
+      width: 60%;
+      text-align: center;
+      margin: auto;
+      padding-top: 10%;
+    }
+    @include m.mq(sp) {
+      display: block;
+    }
+    @include m.mq(spm) {
+      width: 50px;
+      height: 50px;
+    }
+  }
 }
 
+img {
+  width: 100%;
+  height: auto;
+
+  // position: relative;
+  // z-index: 999;
+}
+h1 {
+  margin-bottom: -9px;
+  .firstviewsp {
+    display: none;
+  }
+  @include m.mq(sp) {
+    .firstviewsp {
+      display: block;
+    }
+    .firstview {
+      display: none;
+    }
+  }
+  .logo {
+    position: absolute;
+    top: 55%;
+    left: 3%;
+    @include m.mq(sp) {
+      top: 40%;
+      width: 60%;
+    }
+    @include m.mq(spl) {
+      top: 55%;
+    }
+  }
+  .catchcopy {
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    @include m.mq(sp) {
+      top: 33%;
+    }
+    @include m.mq(spl) {
+      top: 45%;
+    }
+
+    p {
+      color: #fff;
+      font-size: 110%;
+      b{font-weight: bold}
+        .enosima {
+          color: #30579c;
+        }
+        .BBQ {
+          color: #e0ad64;
+        }
+      
+
+      @include m.mq(tab) {
+        font-size: 62%;
+      }
+      @include m.mq(sp) {
+        font-size: 60%;
+      }
+      // background: linear-gradient(transparent 50%, #30579c 50%);
+
+      b {
+        font-size: 130%;
+      }
+    }
+  }
+}

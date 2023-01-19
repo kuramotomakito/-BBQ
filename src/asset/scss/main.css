@@ -74,11 +74,12 @@ header button a {
 }
 header .phone {
   display: none;
-  top: 1%;
+  top: 3%;
   left: 80%;
-  min-width: 50px;
-  width: 50px;
-  height: 50px;
+  min-width: 40px;
+  min-height: 40px;
+  width: 70px;
+  height: 70px;
 }
 header .phone img {
   width: 60%;
@@ -89,6 +90,12 @@ header .phone img {
 @media screen and (max-width: 600px) {
   header .phone {
     display: block;
+  }
+}
+@media screen and (max-width: 375px) {
+  header .phone {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -110,6 +117,63 @@ h1 .firstviewsp {
   h1 .firstview {
     display: none;
   }
+}
+h1 .logo {
+  position: absolute;
+  top: 55%;
+  left: 3%;
+}
+@media screen and (max-width: 600px) {
+  h1 .logo {
+    top: 40%;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 428px) {
+  h1 .logo {
+    top: 55%;
+  }
+}
+h1 .catchcopy {
+  position: absolute;
+  top: 40%;
+  left: 3%;
+}
+@media screen and (max-width: 600px) {
+  h1 .catchcopy {
+    top: 33%;
+  }
+}
+@media screen and (max-width: 428px) {
+  h1 .catchcopy {
+    top: 45%;
+  }
+}
+h1 .catchcopy p {
+  color: #fff;
+  font-size: 110%;
+}
+h1 .catchcopy p b {
+  font-weight: bold;
+}
+h1 .catchcopy p .enosima {
+  color: #30579c;
+}
+h1 .catchcopy p .BBQ {
+  color: #e0ad64;
+}
+@media screen and (max-width: 900px) {
+  h1 .catchcopy p {
+    font-size: 62%;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 .catchcopy p {
+    font-size: 60%;
+  }
+}
+h1 .catchcopy p b {
+  font-size: 130%;
 }
 
 @media screen and (min-width: 1201px) {
@@ -363,10 +427,16 @@ h1 .firstviewsp {
     padding-bottom: 1%;
   }
   .servise .suncafe h3 {
-    font-size: 250%;
+    font-size: 380%;
     position: relative;
-    top: 230px;
+    top: 330px;
     left: 0;
+  }
+}
+@media screen and (max-width: 600px) and (max-width: 500px) {
+  .servise .suncafe h3 {
+    font-size: 300%;
+    top: 286px;
   }
 }
 @media screen and (max-width: 600px) and (max-width: 428px) {
@@ -408,6 +478,8 @@ h1 .firstviewsp {
 @media screen and (max-width: 600px) {
   .servise .suncafecharm h3 {
     font-size: 120%;
+    text-align: left;
+    padding-left: 2%;
     max-width: 900px;
     width: 90%;
     margin: 3% 0 3% 1%;
@@ -2694,6 +2766,10 @@ h1 .firstviewsp {
     text-align: left;
   }
 }
+details summary::-webkit-details-marker {
+  display: none;
+}
+
 @media screen and (min-width: 1201px) {
   .attention {
     /*アコーディオン全体のスタイル*/
@@ -2880,6 +2956,7 @@ h1 .firstviewsp {
     font-weight: bold;
     padding: 2% 4%;
     font-size: 90%;
+    cursor: pointer;
   }
   .c-accordion[open] .c-accordion_ttl {
     background-image: url(../../asset/photo/minus.svg);

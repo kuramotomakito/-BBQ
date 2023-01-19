@@ -1,5 +1,9 @@
 @use "mixin" as m;
 
+details summary::-webkit-details-marker {
+    display: none;
+}
+
 @include m.mq(mon) {
     .attention {
         h2 {
@@ -110,6 +114,7 @@
             }
         }
     }
+    
 }
 
 @include m.mq(pc) {
@@ -210,6 +215,8 @@
             font-weight: bold;
             padding: 2% 4%;
             font-size: 90%;
+            cursor: pointer;
+
         }
 
         /*開いているときに適用するスタイル*/
