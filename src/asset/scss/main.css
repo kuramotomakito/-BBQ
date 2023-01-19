@@ -3161,9 +3161,14 @@ details summary::-webkit-details-marker {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 600px) and (max-width: 320px) {
+@media screen and (max-width: 600px) and (max-width: 375px) {
   .c-accordion_ttl {
-    font-size: 10px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .c-accordion[open] .c-accordion_ttl {
+    background-image: url(../../asset/photo/minus.svg);
   }
 }
 @media screen and (max-width: 600px) {
@@ -3172,6 +3177,11 @@ details summary::-webkit-details-marker {
     margin-top: 0;
     color: #464646;
     padding: 2%;
+  }
+}
+@media screen and (max-width: 600px) and (max-width: 375px) {
+  .c-accordion_txt {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 600px) and (max-width: 320px) {
@@ -3185,6 +3195,13 @@ details summary::-webkit-details-marker {
   }
   .c-accordion span {
     padding-right: 10%;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .c-accordion span {
+    padding-right: 10%;
+    font-size: 10px;
   }
 }
 .access {
