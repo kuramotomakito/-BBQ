@@ -23,8 +23,9 @@ import company1 from '../../asset/photo/company1.png'
 // import company2 from '../../asset/photo/company2.png'
 import company3 from '../../asset/photo/company3.png'
 import company4 from '../../asset/photo/company4.png'
-
-import wave from '../../asset/photo/nami.svg'
+import cruisesvg from '../../asset/photo/cruise.svg'
+import wave from '../../asset/photo/path.svg'
+import nami from '../../asset/photo/nami.svg'
 const json = `{
 "season":[{"name":"Spring","h5":"お花見をBBQで賑やかに!","plan":"プレミアム","time":"10:00~14:00","point":"暖かくなってきた昼から楽しもう！","hash1":"旬の食材を食材を焼いて楽しむ","hash2":"種類豊富なカクテルでカクテルで昼から乾杯しよう!","src":"${spring}","alt":"春"},
   {"name":"Summer","h5":"BBQといえば夏!海を眺めながら楽しもう！","plan":"3時間食べ飲み放題","time":"14:30~17:30","point":"夜はクルーズ船でゆったりしても◉","hash1":"本格BBQ","hash2":"王人数でに賑やかなBBQに!","src":"${summer}","alt":"夏"},
@@ -40,6 +41,21 @@ const Situetion = () => {
   return (
     <>
       <section className='situetion'>
+        {/* 
+        <svg class="svg" width="720" height="10">
+          <path d="M 0 5 Q 10 10 20 5 Q 30 0 40 5" fill="none" stroke="#845080" stroke-width="2">
+            <animate
+              attributeName="d"
+              dur="2s"
+              repeatCount="indefinite"
+              values="M 0 5 Q 10 10 20 5 Q 30  0 40 5;
+              M 0 5 Q 10  0 20 5 Q 30 10 40 5;
+              M 0 5 Q 10 10 20 5 Q 30  0 40 5" />
+          </path>
+        </svg> */}
+        <div id="wave1">aaaaaaaaaa</div>
+        <div id="wave2">aaaaaaaaaa</div>
+
         <h2><b>S</b>ituetion</h2>
         <section>
           <h3><b>S</b>eason</h3>
@@ -60,7 +76,7 @@ const Situetion = () => {
                   <SwiperSlide className="seasonslide" id={item.name}>
                     <div className="slideimg">
                       <img src={item.src} alt={item.alt} />
-                      <img src={wave} alt="波" className="wave" />
+                      <img src={nami} alt="波" className="wave" />
                     </div>
                     <div className="slidetext">
                       <h4>{item.name}</h4>
@@ -87,6 +103,8 @@ const Situetion = () => {
             })}
           </Swiper>
         </section>
+        <div className="cruise">aaaa</div>
+        {/* <div id="wave3">aaaa</div> */}
         <section>
           <h3><b>P</b>arty</h3>
           <Swiper
@@ -106,7 +124,7 @@ const Situetion = () => {
                   <SwiperSlide className="partyslide" id={item.id}>
                     <div className="slideimg">
                       <img src={item.src} alt={item.alt} />
-                      <img src={wave} alt="波" className="wave" />
+                      <img src={nami} alt="波" className="wave" />
                     </div>
                     <div className="slidetext">
                       <h4>{item.name}</h4>

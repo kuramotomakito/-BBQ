@@ -1,10 +1,10 @@
 import React from 'react'
 import frame3hour from '../../asset/photo/sanzikan.svg'
 import frame from '../../asset/photo/stanprem.svg'
-import framedrink from '../../asset/photo/backdrink.svg'
+// import framedrink from '../../asset/photo/backdrink.svg'
 import alcoholphoto from '../../asset/photo/alcohol.jpg'
 import SoftDrinkPhoto from '../../asset/photo/softdrink.jpg'
-import meetphoto from '../../asset/photo/meet.jpg'
+import meetphoto from '../../asset/photo/meet.png'
 import appetphoto from '../../asset/photo/vegetable.jpg'
 const json = `[{"name":"threehour","h4":"3時間食べ放題プラン","prise":"8,000","meets":["牛カルビ","豚ロース","豚バラ","鶏もも開き(カット)","鶏ささみ"],"appetizer":["フランクフルト","カット野菜3種(カボチャ・人参・ピーマン)","ソース焼きそば"],"backsrc":"${frame3hour}","backalt":"囲い"},
 {"name":"standard","h4":"Standard","prise":"5,000","meets":["牛カルビ  200g","豚ロース  200g","豚バラ  200g","鶏もも開き(カット)  200g","鶏ささみ  200g"],"appetizer":["フランクフルト  4本","カット野菜3種  各4切(カボチャ・人参・ピーマン)","ソース焼きそば(麺2玉+粉ソース)"],"backsrc":"${frame}","backalt":"囲い"},
@@ -97,7 +97,6 @@ const plan = () => {
                         <h3>江ノ島マリーナでは飲み放題が無料でついてきます！</h3>
                         <div className='drinkmenu'>
                             <h4 className='h4'>Drinkmenu</h4>
-
                             <div className='alcoholmenu'>
                                 <img src={alcoholphoto} alt="アルコール" />
                                 <dl>
@@ -107,18 +106,13 @@ const plan = () => {
                                             return (
                                                 <>
                                                     <ul>
-
                                                         {al.map((list, index) => {
                                                             return (
                                                                 <>
-
                                                                     <li>・{list}</li>
-
                                                                 </>
-
                                                             )
                                                         })}
-
                                                     </ul>
                                                 </>
                                             )

@@ -6,9 +6,9 @@ import firstviewsp from '../../asset/photo/cruisesp.png'
 import logo from '../../asset/photo/logo.svg'
 
 
-const returnTop = () => {
+const returncon = () => {
   window.scrollTo({
-    top: 6200,
+    top: 10000,
     behavior: "smooth",
   });
 };
@@ -22,8 +22,8 @@ function index() {
         <div className='catchcopy'><p><b className='enosima'>江ノ島</b>でちょっとかわった<b className='BBQ'>BBQ</b>を</p></div>
       </h1>
 
-      <button className='yoyaku' onClick={returnTop}><a href='#'>予約する</a></button>
-      <button className='phone' onClick={returnTop}><a href='#'><img src={phonephoto} alt='phone' /></a></button>
+      <button className='yoyaku' onClick={returncon}><a href='#'>予約する</a></button>
+      <button className='phone' onClick={returncon}><a href='#'><img src={phonephoto} alt='phone' /></a></button>
     </header>
   )
 }

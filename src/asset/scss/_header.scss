@@ -100,19 +100,19 @@ h1 {
 
       font-size: 110%;
       b {
-        font-size: 140%;
-        font-weight: 800;
+        font-size: 180%;
+        // font-weight: 750;
       }
-      .enosima {
-        color: #30579c;
-        background: linear-gradient(transparent 40%, #fff 40%);
+      // .enosima {
+      //   color: #30579c;
+      //   background: linear-gradient(transparent 40%, #fff 40%);
 
-      }
-      .BBQ {
-        color: #c93c27;
-        background: linear-gradient(transparent 40%, #fff 40%);
+      // }
+      // .BBQ {
+      //   color: #c93c27;
+      //   background: linear-gradient(transparent 40%, #fff 40%);
 
-      }
+      // }
 
       @include m.mq(tab) {
         font-size: 80%;
@@ -131,7 +131,7 @@ h1 {
       }
 
       b {
-        font-size: 130%;
+        font-size: 150%;
       }
     }
   }

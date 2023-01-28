@@ -20,8 +20,23 @@
 footer{
 
     background-color: #6992b7;
+    display: flex;
+    justify-content: center;
     p{
         color: #fff;
         text-align: center;
+    }
+
+    .backtop{
+        display: none;
+        position: absolute;
+        background-color: transparent;
+        // // color: #464646;
+        // // font-size: 300%;
+        border: none;
+        right: 3%;
+        // bottom: 10%;
+        width: 10%;
+        
     }
 }

@@ -237,7 +237,7 @@ details summary::-webkit-details-marker {
 @include m.mq(tab) {
     .attention {
         h2 {
-            color: #c93c27;
+            color: #e09d3d;
         }
 
         h3 {
@@ -358,7 +358,7 @@ details summary::-webkit-details-marker {
                 font-size: 120%;
                 margin: 0 0 2% 0;
     
-                margin-top: 3%;
+                // margin-top: 3%;
             }
     
             summary {

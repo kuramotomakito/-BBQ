@@ -150,16 +150,7 @@ h1 .catchcopy p {
   font-size: 110%;
 }
 h1 .catchcopy p b {
-  font-size: 140%;
-  font-weight: 800;
-}
-h1 .catchcopy p .enosima {
-  color: #30579c;
-  background: linear-gradient(transparent 40%, #fff 40%);
-}
-h1 .catchcopy p .BBQ {
-  color: #c93c27;
-  background: linear-gradient(transparent 40%, #fff 40%);
+  font-size: 180%;
 }
 @media screen and (max-width: 900px) {
   h1 .catchcopy p {
@@ -185,7 +176,7 @@ h1 .catchcopy p .BBQ {
   }
 }
 h1 .catchcopy p b {
-  font-size: 130%;
+  font-size: 150%;
 }
 
 @media screen and (min-width: 1201px) {
@@ -205,7 +196,7 @@ h1 .catchcopy p b {
     font-size: 400%;
     font-weight: 700;
     position: relative;
-    color: #e0ad64;
+    color: #e09d3d;
     top: 100px;
     left: 55%;
     max-width: 600px;
@@ -298,7 +289,7 @@ h1 .catchcopy p b {
     font-size: 300%;
     font-weight: 700;
     position: absolute;
-    color: #e0ad64;
+    color: #c93c27;
     top: 15%;
     left: 44%;
   }
@@ -524,6 +515,99 @@ h1 .catchcopy p b {
     margin-bottom: 1%;
   }
 }
+.situetion #wave1 {
+  background-image: url(../photo/nami.svg);
+  background-position: 0 100%;
+  background-size: auto 50px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+  width: 12%;
+  color: transparent;
+  position: absolute;
+  right: 10%;
+  top: 4%;
+  z-index: 99;
+  -webkit-animation: loopwave 15s linear infinite;
+          animation: loopwave 15s linear infinite;
+}
+.situetion #wave2 {
+  background-image: url(../photo/nami.svg);
+  background-position: 0 100%;
+  background-size: auto 50px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+  width: 12%;
+  color: transparent;
+  position: absolute;
+  left: 10%;
+  z-index: 99;
+  bottom: 4%;
+  -webkit-animation: loopwave 10s linear infinite;
+          animation: loopwave 10s linear infinite;
+}
+.situetion #wave3 {
+  background-image: url(../photo/nami.svg);
+  background-position: 0 100%;
+  background-size: auto 40px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+  -webkit-animation: loopwave 20s linear infinite;
+          animation: loopwave 20s linear infinite;
+  margin-bottom: 2%;
+  color: transparent;
+}
+@-webkit-keyframes loop {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 120% 0; /* 画像のマイナス幅 */
+  }
+}
+@keyframes loop {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 120% 0; /* 画像のマイナス幅 */
+  }
+}
+@-webkit-keyframes loopwave {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000% 0; /* 画像のマイナス幅 */
+  }
+}
+@keyframes loopwave {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000% 0; /* 画像のマイナス幅 */
+  }
+}
+.situetion .cruise {
+  background-image: url(/src/asset/photo/cruise.svg);
+  background-position: 0 107%;
+  background-size: auto 75px;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  -webkit-animation: loop 40s linear infinite;
+          animation: loop 40s linear infinite;
+  padding-bottom: 50px;
+  color: transparent;
+}
+.situetion .swiper-button-next:after, .situetion .swiper-rtl .swiper-button-prev:after {
+  content: "next";
+  color: #395697;
+}
+.situetion .swiper-button-prev:after, .situetion .swiper-rtl .swiper-button-next:after {
+  content: "prev";
+  color: #30579c;
+}
+
 @media screen and (min-width: 1201px) {
   .situetion {
     background-color: #deedfd;
@@ -531,7 +615,7 @@ h1 .catchcopy p b {
     position: relative;
   }
   .situetion h2 {
-    color: #e0ad64;
+    color: #c9274f;
   }
   .situetion h3 {
     color: #30579c;
@@ -658,7 +742,7 @@ h1 .catchcopy p b {
     position: relative;
   }
   .situetion h2 {
-    color: #e0ad64;
+    color: #c93c27;
   }
   .situetion h3 {
     color: #30579c;
@@ -793,7 +877,7 @@ h1 .catchcopy p b {
     position: relative;
   }
   .situetion h2 {
-    color: #e0ad64;
+    color: #c93c27;
   }
   .situetion h3 {
     color: #30579c;
@@ -1024,7 +1108,7 @@ h1 .catchcopy p b {
     position: relative;
   }
   .situetion h2 {
-    color: #e0ad64;
+    color: #c93c27;
   }
   .situetion h3 {
     font-size: 300%;
@@ -1340,24 +1424,24 @@ h1 .catchcopy p b {
 }
 @media screen and (min-width: 1201px) {
   .plan .plannai .time .lunch dt {
-    color: #58c1f9;
+    color: #e0ad64;
   }
 }
 @media screen and (min-width: 1201px) {
   .plan .plannai .time .afternoon dt {
-    color: #d75f2d;
+    color: #ea4c33;
   }
 }
 @media screen and (min-width: 1201px) {
   .plan .plannai .time .dinner dt {
-    color: #2c67ea;
+    color: #30579c;
   }
 }
 @media screen and (min-width: 1201px) {
   .plan .plannai .h3menu {
     font-family: amaranth, serif;
     font-weight: 700;
-    color: #d75f2d;
+    color: #e0ad64;
     font-size: 400%;
     text-align: center;
     margin: 4% 0 0 0;
@@ -1376,7 +1460,7 @@ h1 .catchcopy p b {
 @media screen and (min-width: 1201px) {
   .plan .plannai .threehour {
     position: relative;
-    border: 10px solid #f8d880;
+    border: 10px solid #ecdeba;
     width: 90%;
     margin: 5% 0;
     padding-bottom: 10%;
@@ -1391,7 +1475,7 @@ h1 .catchcopy p b {
 @media screen and (min-width: 1201px) {
   .plan .plannai .threehour .new {
     position: absolute;
-    color: #c93c27;
+    color: #de432b;
     font-weight: bold;
     font-size: 200%;
     font-family: amaranth, serif;
@@ -1413,8 +1497,8 @@ h1 .catchcopy p b {
 @media screen and (min-width: 1201px) {
   .plan .plannai .threehour h4 {
     font-size: 250%;
-    font-weight: 550;
-    color: #c93c27;
+    font-weight: bold;
+    color: #ef681a;
     position: absolute;
     text-align: center;
     background: linear-gradient(transparent 35%, #fff 35%);
@@ -1437,7 +1521,7 @@ h1 .catchcopy p b {
 @media screen and (min-width: 1201px) {
   .plan .plannai .threehour h5 {
     font-family: amaranth, serif;
-    color: #d15e4a;
+    color: #98592d;
     font-weight: 800;
     font-size: 700%;
     text-align: center;
@@ -1514,7 +1598,7 @@ h1 .catchcopy p b {
 }
 @media screen and (min-width: 1201px) {
   .plan .plannai .standard {
-    border: 10px solid #f8d880;
+    border: 10px solid #ecdeba;
     width: 80%;
     height: 85%;
     margin: 10% 0;
@@ -1602,7 +1686,7 @@ h1 .catchcopy p b {
 }
 @media screen and (min-width: 1201px) {
   .plan .plannai .premium {
-    border: 10px solid #f8d880;
+    border: 10px solid #ecdeba;
     width: 80%;
     height: 85%;
     margin: 10% 0;
@@ -1622,7 +1706,7 @@ h1 .catchcopy p b {
   .plan .plannai .premium h4 {
     font-family: amaranth, serif;
     font-weight: 700;
-    color: #d75f2d;
+    color: #e0ad64;
     background-color: #ffffff;
     font-size: 300%;
     text-align: center;
@@ -1700,7 +1784,7 @@ h1 .catchcopy p b {
 }
 @media screen and (min-width: 1201px) {
   .plan .plannai .softalcohol .drinkmenu {
-    border: 10px solid #f8d880;
+    border: 10px solid #ecdeba;
     width: 90%;
     margin: 0 auto;
     display: grid;
@@ -1815,7 +1899,7 @@ h1 .catchcopy p b {
     list-style-type: none;
   }
   .plan .plannai h2 {
-    color: #c93c27;
+    color: #98592d;
     margin: 2% 0 0 2%;
   }
   .plan .plannai p {
@@ -1842,15 +1926,15 @@ h1 .catchcopy p b {
     color: #58c1f9;
   }
   .plan .plannai .time .afternoon dt {
-    color: #d75f2d;
+    color: #c93c27;
   }
   .plan .plannai .time .dinner dt {
-    color: #2c67ea;
+    color: #30579c;
   }
   .plan .plannai .h3menu {
     font-family: amaranth, serif;
     font-weight: 700;
-    color: #d75f2d;
+    color: #e0ad64;
     font-size: 400%;
     text-align: center;
     margin: 4% 0 0 0;
@@ -1865,7 +1949,7 @@ h1 .catchcopy p b {
   }
   .plan .plannai .threehour {
     position: relative;
-    border: 10px solid #f8d880;
+    border: 10px solid #ecdeba;
     width: 90%;
     margin: 5% 0;
     padding-bottom: 10%;
@@ -1874,7 +1958,7 @@ h1 .catchcopy p b {
   }
   .plan .plannai .threehour .new {
     position: absolute;
-    color: #c93c27;
+    color: #de432b;
     font-weight: bold;
     font-family: amaranth, serif;
     left: 23%;
@@ -1884,7 +1968,7 @@ h1 .catchcopy p b {
   .plan .plannai .threehour h4 {
     font-size: 200%;
     font-weight: 550;
-    color: #c93c27;
+    color: #98592d;
     position: absolute;
     text-align: center;
     background: linear-gradient(transparent 35%, #fff 35%);
@@ -1894,10 +1978,11 @@ h1 .catchcopy p b {
     left: 25%;
     top: -30px;
     margin: 0 auto;
+    font-weight: bold;
   }
   .plan .plannai .threehour h5 {
     font-family: amaranth, serif;
-    color: #d15e4a;
+    color: #98592d;
     font-weight: 800;
     font-size: 500%;
     text-align: center;
@@ -1928,7 +2013,7 @@ h1 .catchcopy p b {
     width: 100%;
   }
   .plan .plannai .standard {
-    border: 10px solid #f8d880;
+    border: 10px solid #ecdeba;
     width: 80%;
     height: 85%;
     margin: 10% 0;
@@ -1977,7 +2062,7 @@ h1 .catchcopy p b {
     line-height: 200%;
   }
   .plan .plannai .premium {
-    border: 10px solid #f8d880;
+    border: 10px solid #ecdeba;
     width: 80%;
     height: 85%;
     margin: 10% 0;
@@ -1990,7 +2075,7 @@ h1 .catchcopy p b {
   .plan .plannai .premium h4 {
     font-family: amaranth, serif;
     font-weight: 700;
-    color: #d75f2d;
+    color: #e0ad64;
     background-color: #ffffff;
     font-size: 300%;
     text-align: center;
@@ -2032,7 +2117,7 @@ h1 .catchcopy p b {
     margin-bottom: 6%;
   }
   .plan .plannai .softalcohol .drinkmenu {
-    border: 10px solid #f8d880;
+    border: 10px solid #ecdeba;
     width: 90%;
     margin: 0 auto;
     display: grid;
@@ -2113,7 +2198,7 @@ h1 .catchcopy p b {
     list-style-type: none;
   }
   .plan .plannai h2 {
-    color: #c93c27;
+    color: #98592d;
     margin: 2% 0 0 2%;
   }
   .plan .plannai p {
@@ -2152,19 +2237,19 @@ h1 .catchcopy p b {
 }
 @media screen and (max-width: 900px) {
   .plan .plannai .time .afternoon dt {
-    color: #d75f2d;
+    color: #c93c27;
   }
 }
 @media screen and (max-width: 900px) {
   .plan .plannai .time .dinner dt {
-    color: #2c67ea;
+    color: #30579c;
   }
 }
 @media screen and (max-width: 900px) {
   .plan .plannai .h3menu {
     font-family: amaranth, serif;
     font-weight: 700;
-    color: #d75f2d;
+    color: #e0ad64;
     font-size: 400%;
     text-align: center;
     margin: 4% 0 0 0;
@@ -2188,7 +2273,7 @@ h1 .catchcopy p b {
 @media screen and (max-width: 900px) {
   .plan .plannai .threehour {
     position: relative;
-    border: 10px solid #f8d880;
+    border: 10px solid #ecdeba;
     width: 90%;
     margin: 5% 0;
     padding-bottom: 2%;
@@ -2196,7 +2281,7 @@ h1 .catchcopy p b {
   }
   .plan .plannai .threehour .new {
     position: absolute;
-    color: #c93c27;
+    color: #de432b;
     font-weight: bold;
     font-family: amaranth, serif;
     left: 23%;
@@ -2218,7 +2303,7 @@ h1 .catchcopy p b {
   .plan .plannai .threehour h4 {
     font-size: 200%;
     font-weight: 550;
-    color: #c93c27;
+    color: #98592d;
     position: absolute;
     text-align: center;
     background: linear-gradient(transparent 35%, #fff 35%);
@@ -2237,7 +2322,7 @@ h1 .catchcopy p b {
 @media screen and (max-width: 900px) {
   .plan .plannai .threehour h5 {
     font-family: amaranth, serif;
-    color: #d15e4a;
+    color: #aa622e;
     font-weight: 800;
     font-size: 450%;
     text-align: center;
@@ -2275,7 +2360,7 @@ h1 .catchcopy p b {
 }
 @media screen and (max-width: 900px) {
   .plan .plannai .standard {
-    border: 10px solid #f8d880;
+    border: 10px solid #ecdeba;
     width: 80%;
     margin: 10% 0;
     grid-area: stan;
@@ -2327,7 +2412,7 @@ h1 .catchcopy p b {
 }
 @media screen and (max-width: 900px) {
   .plan .plannai .premium {
-    border: 10px solid #f8d880;
+    border: 10px solid #ecdeba;
     width: 80%;
     margin: 10% 0;
     grid-area: prem;
@@ -2340,7 +2425,7 @@ h1 .catchcopy p b {
   .plan .plannai .premium h4 {
     font-family: amaranth, serif;
     font-weight: 700;
-    color: #d75f2d;
+    color: #e0ad64;
     background-color: #ffffff;
     text-align: center;
     bottom: 25px;
@@ -2384,7 +2469,7 @@ h1 .catchcopy p b {
     font-size: 100%;
   }
   .plan .plannai .softalcohol .drinkmenu {
-    border: 10px solid #f8d880;
+    border: 10px solid #ecdeba;
     width: 90%;
     margin: 0 auto;
     display: grid;
@@ -2486,7 +2571,7 @@ h1 .catchcopy p b {
     list-style-type: none;
   }
   .plan .plannai h2 {
-    color: #c93c27;
+    color: #98592d;
     margin: 2% 0 0 2%;
   }
   .plan .plannai p {
@@ -2513,15 +2598,15 @@ h1 .catchcopy p b {
     color: #58c1f9;
   }
   .plan .plannai .time .afternoon dt {
-    color: #d75f2d;
+    color: #c93c27;
   }
   .plan .plannai .time .dinner dt {
-    color: #2c67ea;
+    color: #30579c;
   }
   .plan .plannai .h3menu {
     font-family: amaranth, serif;
     font-weight: 700;
-    color: #d75f2d;
+    color: #e0ad64;
     font-size: 400%;
     text-align: center;
     margin: 25% 0;
@@ -2534,7 +2619,7 @@ h1 .catchcopy p b {
   }
   .plan .plannai .threehour {
     position: relative;
-    border: 6px solid #f8d880;
+    border: 6px solid #a0d196;
     width: 90%;
     margin: 5% auto;
     grid-area: three;
@@ -2542,7 +2627,7 @@ h1 .catchcopy p b {
   }
   .plan .plannai .threehour .new {
     position: absolute;
-    color: #c93c27;
+    color: #de432b;
     font-weight: bold;
     font-family: amaranth, serif;
     left: 0;
@@ -2552,7 +2637,7 @@ h1 .catchcopy p b {
   .plan .plannai .threehour h4 {
     font-size: 150%;
     font-weight: 550;
-    color: #c93c27;
+    color: #98592d;
     position: absolute;
     text-align: center;
     background-color: #fff;
@@ -2564,7 +2649,7 @@ h1 .catchcopy p b {
   }
   .plan .plannai .threehour h5 {
     font-family: amaranth, serif;
-    color: #d15e4a;
+    color: #98592d;
     font-weight: 800;
     font-size: 350%;
     text-align: center;
@@ -2598,7 +2683,7 @@ h1 .catchcopy p b {
     width: 95%;
   }
   .plan .plannai .standard {
-    border: 6px solid #f8d880;
+    border: 6px solid #a0d196;
     width: 90%;
     margin: 10% auto;
     grid-area: stan;
@@ -2647,7 +2732,7 @@ h1 .catchcopy p b {
     line-height: 200%;
   }
   .plan .plannai .premium {
-    border: 6px solid #f8d880;
+    border: 6px solid #a0d196;
     width: 90%;
     margin: 10% auto;
     grid-area: prem;
@@ -2660,7 +2745,7 @@ h1 .catchcopy p b {
   .plan .plannai .premium h4 {
     font-family: amaranth, serif;
     font-weight: 700;
-    color: #d75f2d;
+    color: #e0ad64;
     background-color: #ffffff;
     font-size: 250%;
     text-align: center;
@@ -2702,7 +2787,7 @@ h1 .catchcopy p b {
     font-size: 80%;
   }
   .plan .plannai .softalcohol .drinkmenu {
-    border: 6px solid #f8d880;
+    border: 6px solid #a0d196;
     width: 90%;
     margin: 5% auto;
     display: block;
@@ -2993,7 +3078,7 @@ details summary::-webkit-details-marker {
 }
 @media screen and (max-width: 900px) {
   .attention h2 {
-    color: #c93c27;
+    color: #e09d3d;
   }
   .attention h3 {
     text-align: center;
@@ -3090,7 +3175,6 @@ details summary::-webkit-details-marker {
     text-align: center;
     font-size: 120%;
     margin: 0 0 2% 0;
-    margin-top: 3%;
   }
   .attention summary {
     font-weight: normal;
@@ -4060,8 +4144,18 @@ details summary::-webkit-details-marker {
 
 footer {
   background-color: #6992b7;
+  display: flex;
+  justify-content: center;
 }
 footer p {
   color: #fff;
   text-align: center;
+}
+footer .backtop {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  right: 3%;
+  width: 10%;
 }/*# sourceMappingURL=main.css.map */

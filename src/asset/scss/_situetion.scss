@@ -1,5 +1,79 @@
 @use "mixin" as m;
+.situetion{
+    #wave1{
+        background-image: url(../photo/nami.svg);
+        background-position: 0 100%;
+        background-size: auto 50px;
+        background-repeat: repeat-x;
+        text-decoration: none;
+        width: 12%;
+        color: transparent;
+        position: absolute;
+        right:10%;
+            top: 4%;
+            z-index: 99;
+            animation: loopwave 15s linear infinite;
+        }
+#wave2{
+    background-image: url(../photo/nami.svg);
+    background-position: 0 100%;
+    background-size: auto 50px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+    width: 12%;
+    color: transparent;
+    position: absolute;
+    left:10%;
+    z-index: 99;
+        bottom: 4%;
+        animation: loopwave 10s linear infinite;
 
+}
+#wave3{
+    background-image: url(../photo/nami.svg);
+    background-position: 0 100%;
+    background-size: auto 40px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+    animation: loopwave 20s linear infinite;
+    margin-bottom: 2%;
+    color: transparent;
+}
+@keyframes loop {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 120% 0; /* 画像のマイナス幅 */
+    }
+}
+@keyframes loopwave {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 1000% 0; /* 画像のマイナス幅 */
+    }
+}
+.cruise{
+    background-image: url(/src/asset/photo/cruise.svg);
+    background-position: 0 107%;
+    background-size: auto 75px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    animation: loop 40s linear infinite;
+    padding-bottom: 50px;
+    color: transparent;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: 'next';
+    color: #395697;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    color: #30579c;
+}
+}
 @include m.mq(mon) {
     .situetion {
         background-color: #deedfd;
@@ -11,8 +85,8 @@
         position: relative;
 
         h2 {
-            color: #e0ad64;
-        }
+            color: #c9274f;  
+            }
 
         h3 {
             color: #30579c;
@@ -334,7 +408,7 @@
         position: relative;
 
         h2 {
-            color: #e0ad64;
+            color: #c93c27;  
         }
 
         h3 {
@@ -532,7 +606,7 @@
         position: relative;
 
         h2 {
-            color: #e0ad64;
+            color: #c93c27;  
         }
 
         h3 {
@@ -788,7 +862,7 @@ margin-left: 5%;                    }
         position: relative;
 
         h2 {
-            color: #e0ad64;
+            color: #c93c27;  
         }
 
         h3 {
