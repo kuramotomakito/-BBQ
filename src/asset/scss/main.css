@@ -2619,7 +2619,7 @@ h1 .catchcopy p b {
   }
   .plan .plannai .threehour {
     position: relative;
-    border: 6px solid #a0d196;
+    border: 6px solid #ecdeba;
     width: 90%;
     margin: 5% auto;
     grid-area: three;
@@ -2683,7 +2683,7 @@ h1 .catchcopy p b {
     width: 95%;
   }
   .plan .plannai .standard {
-    border: 6px solid #a0d196;
+    border: 6px solid #ecdeba;
     width: 90%;
     margin: 10% auto;
     grid-area: stan;
@@ -2732,7 +2732,7 @@ h1 .catchcopy p b {
     line-height: 200%;
   }
   .plan .plannai .premium {
-    border: 6px solid #a0d196;
+    border: 6px solid #ecdeba;
     width: 90%;
     margin: 10% auto;
     grid-area: prem;
@@ -2787,7 +2787,7 @@ h1 .catchcopy p b {
     font-size: 80%;
   }
   .plan .plannai .softalcohol .drinkmenu {
-    border: 6px solid #a0d196;
+    border: 6px solid #ecdeba;
     width: 90%;
     margin: 5% auto;
     display: block;
