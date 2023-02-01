@@ -3,18 +3,22 @@
 details summary::-webkit-details-marker {
     display: none;
 }
+   
+
+
 
 @include m.mq(mon) {
     .attention {
         h2 {
-            color: #c93c27;
+            color: #d6a050;
         }
 
         h3 {
             text-align: center;
             color: #30579c;
-            font-size: 150%;
             margin: 0 0 2% 0;
+            margin-top: 3%;
+            font-size: 120%;
         }
 
         summary {
@@ -38,7 +42,7 @@ details summary::-webkit-details-marker {
             strong {
                 font-family: amaranth, serif;
                 font-weight: 700;
-                font-size: 350%;
+                font-size: 300%;
                 color: #e0ad64;
                 margin: 0 3% 0 0.5%;
             }
@@ -52,75 +56,91 @@ details summary::-webkit-details-marker {
         }
 
         .goriyo {
-            li {
-                min-width: 625px;
-                margin: 0 20%;
-            }
-
-            padding-left: 5%;
-            font-size: 90%;
-            width: 80%;
+                    // width: 50%;
+            text-align: center;
             margin: 0 auto;
+            // padding-left: 10%;
+            font-size: 90%;
         }
 
         .colona {
-            width: 60%;
-            margin: 0 35%;
+            // width: 60%;
+            margin: 0 auto;
             padding-bottom: 5%;
-            font-size: 90%;
+            text-align: center;
+            @include m.mq(tab) {
+                margin: 0 24%;
+            }
         }
-
-        .QandA {
-            margin: 5% 0;
-        }
-
-        /*アコーディオン全体のスタイル*/
-        .c-accordion {
-            width: 100%;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            // margin-top: 80px;
-            border-style: solid;
-            border-width: 4px;
-            border-color: #464646;
-            margin-bottom: 32px;
-            // padding: 1%;
-
-            /*タイトルのデザインと「＋」ボタン*/
-            &_ttl {
-                background-image: url(../../asset/photo/prass.svg);
-                background-position: right 24px center;
-                background-size: 28px;
-                background-repeat: no-repeat;
-                list-style: none;
-                padding: 3% 5%;
-                cursor: pointer;
-                font-size: 18px;
-                color: #464646;
-                font-weight: bold;
-            }
-
-            /*開いているときに適用するスタイル*/
-            &[open] &_ttl {
-                background-image: url(../../asset/photo/minus.svg);
-            }
-
-            /*開いときの中身のテキスト*/
-            &_txt {
-                padding-top: 0;
-                margin-top: 0;
-                color: #464646;
-            }
+        ul{
+            
+                display: inline-block;
+                text-align: left;
         }
     }
-    
+
+    .QandA {
+        margin: 5% 0;
+    }
+
+    /*アコーディオン全体のスタイル*/
+    .c-accordion {
+        width: 100%;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        // margin-top: 80px;
+        border-style: solid;
+        border-width: 4px;
+        border-color: #464646;
+        margin-bottom: 32px;
+
+        /*タイトルのデザインと「＋」ボタン*/
+        &_ttl {
+            background-image: url(../../asset/photo/prass.svg);
+            background-position: right 24px center;
+            background-size: 28px;
+            background-repeat: no-repeat;
+            list-style: none;
+            cursor: pointer;
+            color: #464646;
+            font-weight: bold;
+            padding: 2% 4%;
+            font-size: 120%;
+            cursor: pointer;
+
+        }
+
+        /*開いているときに適用するスタイル*/
+        &[open] &_ttl {
+            background-image: url(../../asset/photo/minus.svg);
+        }
+
+        /*開いときの中身のテキスト*/
+        &_txt {
+            padding: 3%;
+            padding-top: 0;
+            margin-top: 0;
+            color: #464646;
+            animation: fadeIn 0.5s ease;
+        }
+        @keyframes fadeIn {
+            0% {
+              opacity: 0; /* 透明 */
+              transform: translateY(-10px); /* 上から表示 */
+            }
+            100% {
+              opacity: 1;
+              transform: none;
+            }
+          }
+    }
 }
 
 @include m.mq(pc) {
     .attention {
         h2 {
-            color: #c93c27;
+            color: #d6a050;
         }
 
         h3 {
@@ -166,26 +186,28 @@ details summary::-webkit-details-marker {
         }
 
         .goriyo {
-            li {
-                width: 80%;
-                margin: 0 auto;
-            }
+            // width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    // padding-left: 10%;
+    font-size: 90%;
+}
 
-            margin: 0 auto;
-            padding-left: 10%;
-            font-size: 90%;
-        }
-
-        .colona {
-            width: 60%;
-            margin: 0 26%;
-            padding-bottom: 5%;
-
-            @include m.mq(tab) {
-                margin: 0 24%;
-            }
-        }
+.colona {
+    // width: 60%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    text-align: center;
+    @include m.mq(tab) {
+        margin: 0 24%;
     }
+}
+ul{
+    
+        display: inline-block;
+        text-align: left;
+}
+}
 
     .QandA {
         margin: 5% 0;
@@ -283,24 +305,32 @@ details summary::-webkit-details-marker {
             margin: 2% 0;
         }
 
+
         .goriyo {
-            li {
-                width: 80%;
-                margin: 0 auto;
-            }
+            width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    // padding-left: 10%;
+    font-size: 90%;
+}
 
-            margin: 0 auto;
-            padding-left: 10%;
-            font-size: 80%;
-        }
+.colona {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: 90%;
 
-        .colona {
-            width: 60%;
-            margin: 0 28%;
-            padding-bottom: 5%;
-            font-size: 90%;
-        }
+    @include m.mq(tab) {
+        margin: 0 24%;
     }
+}
+ul{
+    
+        display: inline-block;
+        text-align: left;
+}
+}
 
     .QandA {
         margin: 5% 0;
@@ -395,26 +425,27 @@ details summary::-webkit-details-marker {
                 }
             }
     
-            .goriyo {
-                li {
-                    width: 90%;
-                    margin: 0 auto;
-                }
-    
-                margin: 0 auto;
-                padding-left: 5%;
-                font-size: 70%;
-            }
-    
-            .colona {
-                width: 90%;
-                margin: 0 auto;
-                padding-bottom: 5%;
-                padding-left: 10%;
+            
+        .goriyo {
+            // width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    // padding-left: 10%;
+    font-size: 90%;
+}
 
-                font-size: 70%;
-            }
-        }
+.colona {
+    // width: 60%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    text-align: center;
+}
+ul{
+    
+        display: inline-block;
+        text-align: left;
+}
+}
     
         .QandA {
             margin: 5% 0;

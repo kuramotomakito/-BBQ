@@ -289,7 +289,7 @@ h1 .catchcopy p b {
     font-size: 300%;
     font-weight: 700;
     position: absolute;
-    color: #c93c27;
+    color: #e09d3d;
     top: 15%;
     left: 44%;
   }
@@ -530,6 +530,13 @@ h1 .catchcopy p b {
   -webkit-animation: loopwave 15s linear infinite;
           animation: loopwave 15s linear infinite;
 }
+@media screen and (max-width: 900px) {
+  .situetion #wave1 {
+    -webkit-animation: loopwave 90s linear infinite;
+            animation: loopwave 90s linear infinite;
+    width: 20%;
+  }
+}
 .situetion #wave2 {
   background-image: url(../photo/nami.svg);
   background-position: 0 100%;
@@ -544,6 +551,11 @@ h1 .catchcopy p b {
   bottom: 4%;
   -webkit-animation: loopwave 10s linear infinite;
           animation: loopwave 10s linear infinite;
+}
+@media screen and (max-width: 900px) {
+  .situetion #wave2 {
+    display: none;
+  }
 }
 .situetion #wave3 {
   background-image: url(../photo/nami.svg);
@@ -588,8 +600,24 @@ h1 .catchcopy p b {
     background-position: 1000% 0; /* 画像のマイナス幅 */
   }
 }
+@-webkit-keyframes looptab {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 130% 0; /* 画像のマイナス幅 */
+  }
+}
+@keyframes looptab {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 130% 0; /* 画像のマイナス幅 */
+  }
+}
 .situetion .cruise {
-  background-image: url(/src/asset/photo/cruise.svg);
+  background-image: url("../photo/cruise.svg");
   background-position: 0 107%;
   background-size: auto 75px;
   background-repeat: no-repeat;
@@ -598,6 +626,12 @@ h1 .catchcopy p b {
           animation: loop 40s linear infinite;
   padding-bottom: 50px;
   color: transparent;
+}
+@media screen and (max-width: 900px) {
+  .situetion .cruise {
+    -webkit-animation: looptab 10s linear infinite;
+            animation: looptab 10s linear infinite;
+  }
 }
 .situetion .swiper-button-next:after, .situetion .swiper-rtl .swiper-button-prev:after {
   content: "next";
@@ -615,7 +649,7 @@ h1 .catchcopy p b {
     position: relative;
   }
   .situetion h2 {
-    color: #c9274f;
+    color: #d6a050;
   }
   .situetion h3 {
     color: #30579c;
@@ -742,7 +776,7 @@ h1 .catchcopy p b {
     position: relative;
   }
   .situetion h2 {
-    color: #c93c27;
+    color: #d6a050;
   }
   .situetion h3 {
     color: #30579c;
@@ -1382,12 +1416,12 @@ h1 .catchcopy p b {
     list-style-type: none;
   }
   .plan .plannai h2 {
-    color: #c93c27;
+    color: #d6a050;
     margin: 2% 0 0 2%;
   }
   .plan .plannai p {
     text-align: center;
-    color: #30579c;
+    color: #8f5c36;
     font-size: 110%;
   }
 }
@@ -1434,7 +1468,7 @@ h1 .catchcopy p b {
 }
 @media screen and (min-width: 1201px) {
   .plan .plannai .time .dinner dt {
-    color: #30579c;
+    color: #8f5c36;
   }
 }
 @media screen and (min-width: 1201px) {
@@ -1460,7 +1494,7 @@ h1 .catchcopy p b {
 @media screen and (min-width: 1201px) {
   .plan .plannai .threehour {
     position: relative;
-    border: 10px solid #ecdeba;
+    border: 10px solid #ebe1c8;
     width: 90%;
     margin: 5% 0;
     padding-bottom: 10%;
@@ -1498,7 +1532,7 @@ h1 .catchcopy p b {
   .plan .plannai .threehour h4 {
     font-size: 250%;
     font-weight: bold;
-    color: #ef681a;
+    color: #98592d;
     position: absolute;
     text-align: center;
     background: linear-gradient(transparent 35%, #fff 35%);
@@ -1575,7 +1609,7 @@ h1 .catchcopy p b {
 @media screen and (min-width: 1201px) {
   .plan .plannai .threehour .menu dl dt {
     font-size: 200%;
-    color: #30579c;
+    color: #8f5c36;
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 900px) {
@@ -1598,7 +1632,7 @@ h1 .catchcopy p b {
 }
 @media screen and (min-width: 1201px) {
   .plan .plannai .standard {
-    border: 10px solid #ecdeba;
+    border: 10px solid #ebe1c8;
     width: 80%;
     height: 85%;
     margin: 10% 0;
@@ -1620,14 +1654,14 @@ h1 .catchcopy p b {
   .plan .plannai .standard h4 {
     font-family: amaranth, serif;
     font-weight: 700;
-    color: #30579c;
+    color: #c89039;
     background-color: #ffffff;
     font-size: 300%;
     text-align: center;
     bottom: 25px;
-    width: 40%;
+    width: 70%;
     position: relative;
-    margin: 0 30%;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 900px) {
@@ -1640,7 +1674,7 @@ h1 .catchcopy p b {
 @media screen and (min-width: 1201px) {
   .plan .plannai .standard h5 {
     font-family: amaranth, serif;
-    color: #2c67ea;
+    color: #c89039;
     font-weight: 800;
     font-size: 350%;
     text-align: center;
@@ -1665,7 +1699,7 @@ h1 .catchcopy p b {
   .plan .plannai .standard .menu dt {
     margin: 5% 0 0 0;
     font-size: 160%;
-    color: #30579c;
+    color: #8f5c36;
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 900px) {
@@ -1686,7 +1720,7 @@ h1 .catchcopy p b {
 }
 @media screen and (min-width: 1201px) {
   .plan .plannai .premium {
-    border: 10px solid #ecdeba;
+    border: 10px solid #ebe1c8;
     width: 80%;
     height: 85%;
     margin: 10% 0;
@@ -1706,14 +1740,14 @@ h1 .catchcopy p b {
   .plan .plannai .premium h4 {
     font-family: amaranth, serif;
     font-weight: 700;
-    color: #e0ad64;
+    color: #c89039;
     background-color: #ffffff;
     font-size: 300%;
     text-align: center;
     bottom: 25px;
-    width: 40%;
+    width: 70%;
     position: relative;
-    margin: 0 30%;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 900px) {
@@ -1726,7 +1760,7 @@ h1 .catchcopy p b {
 @media screen and (min-width: 1201px) {
   .plan .plannai .premium h5 {
     font-family: amaranth, serif;
-    color: #ec8756;
+    color: #c89039;
     font-weight: 800;
     font-size: 350%;
     text-align: center;
@@ -1751,7 +1785,7 @@ h1 .catchcopy p b {
   .plan .plannai .premium .menu dt {
     margin: 5% 0 0 0;
     font-size: 160%;
-    color: #30579c;
+    color: #8f5c36;
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 900px) {
@@ -1773,7 +1807,7 @@ h1 .catchcopy p b {
 @media screen and (min-width: 1201px) {
   .plan .plannai .softalcohol h3 {
     text-align: center;
-    color: #30579c;
+    color: #8f5c36;
     margin: 4% 0 10% 0;
   }
 }
@@ -1784,7 +1818,7 @@ h1 .catchcopy p b {
 }
 @media screen and (min-width: 1201px) {
   .plan .plannai .softalcohol .drinkmenu {
-    border: 10px solid #ecdeba;
+    border: 10px solid #ebe1c8;
     width: 90%;
     margin: 0 auto;
     display: grid;
@@ -1792,7 +1826,7 @@ h1 .catchcopy p b {
     padding-bottom: 5%;
   }
   .plan .plannai .softalcohol .drinkmenu .h4 {
-    color: #e0ad64;
+    color: #98592d;
     text-align: center;
     background: linear-gradient(transparent 35%, #fff 35%);
     font-family: amaranth, serif;
@@ -1823,7 +1857,7 @@ h1 .catchcopy p b {
 @media screen and (min-width: 1201px) {
   .plan .plannai .softalcohol .drinkmenu dt {
     font-size: 200%;
-    color: #30579c;
+    color: #8f5c36;
   }
 }
 @media screen and (min-width: 1201px) {
@@ -1857,6 +1891,13 @@ h1 .catchcopy p b {
     grid-area: tyui;
     text-align: center;
   }
+  .plan .plannai .softalcohol .drinkmenu .drinktyui .tyuilist {
+    text-align: center;
+  }
+  .plan .plannai .softalcohol .drinkmenu .drinktyui .tyuilist ul {
+    display: inline-block;
+    text-align: left;
+  }
   .plan .plannai .softalcohol .drinkmenu .drinktyui p {
     margin: 5% 0 0 0;
   }
@@ -1870,21 +1911,9 @@ h1 .catchcopy p b {
     font-size: 100%;
   }
 }
-@media screen and (min-width: 1201px) {
-  .plan .plannai .softalcohol .drinkmenu .drinktyui ul {
-    margin-left: 23%;
-  }
-}
 @media screen and (min-width: 1201px) and (max-width: 900px) {
   .plan .plannai .softalcohol .drinkmenu .drinktyui ul {
     font-size: 70%;
-    margin-left: 20%;
-  }
-}
-@media screen and (min-width: 1201px) {
-  .plan .plannai .softalcohol .drinkmenu .drinktyui ul li {
-    margin-bottom: 1%;
-    text-align: left;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1904,7 +1933,7 @@ h1 .catchcopy p b {
   }
   .plan .plannai p {
     text-align: center;
-    color: #30579c;
+    color: #8f5c36;
     font-size: 100%;
   }
   .plan .plannai .time {
@@ -1923,13 +1952,13 @@ h1 .catchcopy p b {
     margin: 0 5%;
   }
   .plan .plannai .time .lunch dt {
-    color: #58c1f9;
+    color: #e0ad64;
   }
   .plan .plannai .time .afternoon dt {
-    color: #c93c27;
+    color: #ea4c33;
   }
   .plan .plannai .time .dinner dt {
-    color: #30579c;
+    color: #8f5c36;
   }
   .plan .plannai .h3menu {
     font-family: amaranth, serif;
@@ -1949,7 +1978,7 @@ h1 .catchcopy p b {
   }
   .plan .plannai .threehour {
     position: relative;
-    border: 10px solid #ecdeba;
+    border: 10px solid #ebe1c8;
     width: 90%;
     margin: 5% 0;
     padding-bottom: 10%;
@@ -2005,7 +2034,7 @@ h1 .catchcopy p b {
   }
   .plan .plannai .threehour .menu dl dt {
     font-size: 150%;
-    color: #30579c;
+    color: #8f5c36;
   }
   .plan .plannai .threehour .menu dl dd {
     font-size: 90%;
@@ -2013,7 +2042,7 @@ h1 .catchcopy p b {
     width: 100%;
   }
   .plan .plannai .standard {
-    border: 10px solid #ecdeba;
+    border: 10px solid #ebe1c8;
     width: 80%;
     height: 85%;
     margin: 10% 0;
@@ -2026,7 +2055,7 @@ h1 .catchcopy p b {
   .plan .plannai .standard h4 {
     font-family: amaranth, serif;
     font-weight: 700;
-    color: #30579c;
+    color: #c89039;
     background-color: #ffffff;
     font-size: 300%;
     text-align: center;
@@ -2037,7 +2066,7 @@ h1 .catchcopy p b {
   }
   .plan .plannai .standard h5 {
     font-family: amaranth, serif;
-    color: #2c67ea;
+    color: #c89039;
     font-weight: 800;
     font-size: 350%;
     text-align: center;
@@ -2055,14 +2084,14 @@ h1 .catchcopy p b {
   .plan .plannai .standard .menu dt {
     margin: 5% 0 0 0;
     font-size: 130%;
-    color: #30579c;
+    color: #8f5c36;
   }
   .plan .plannai .standard .menu dd {
     font-size: 100%;
     line-height: 200%;
   }
   .plan .plannai .premium {
-    border: 10px solid #ecdeba;
+    border: 10px solid #ebe1c8;
     width: 80%;
     height: 85%;
     margin: 10% 0;
@@ -2075,7 +2104,7 @@ h1 .catchcopy p b {
   .plan .plannai .premium h4 {
     font-family: amaranth, serif;
     font-weight: 700;
-    color: #e0ad64;
+    color: #c89039;
     background-color: #ffffff;
     font-size: 300%;
     text-align: center;
@@ -2086,7 +2115,7 @@ h1 .catchcopy p b {
   }
   .plan .plannai .premium h5 {
     font-family: amaranth, serif;
-    color: #ec8756;
+    color: #c89039;
     font-weight: 800;
     font-size: 350%;
     text-align: center;
@@ -2104,7 +2133,7 @@ h1 .catchcopy p b {
   .plan .plannai .premium .menu dt {
     margin: 5% 0 0 0;
     font-size: 130%;
-    color: #30579c;
+    color: #8f5c36;
   }
   .plan .plannai .premium .menu dd {
     font-size: 100%;
@@ -2112,12 +2141,12 @@ h1 .catchcopy p b {
   }
   .plan .plannai .softalcohol h3 {
     text-align: center;
-    color: #30579c;
+    color: #8f5c36;
     margin: 2% auto;
     margin-bottom: 6%;
   }
   .plan .plannai .softalcohol .drinkmenu {
-    border: 10px solid #ecdeba;
+    border: 10px solid #ebe1c8;
     width: 90%;
     margin: 0 auto;
     display: grid;
@@ -2144,7 +2173,7 @@ h1 .catchcopy p b {
   }
   .plan .plannai .softalcohol .drinkmenu dt {
     font-size: 200%;
-    color: #30579c;
+    color: #8f5c36;
   }
   .plan .plannai .softalcohol .drinkmenu dl {
     margin-left: 20%;
@@ -2170,6 +2199,13 @@ h1 .catchcopy p b {
     grid-area: tyui;
     text-align: center;
   }
+  .plan .plannai .softalcohol .drinkmenu .drinktyui .tyuilist {
+    text-align: center;
+  }
+  .plan .plannai .softalcohol .drinkmenu .drinktyui .tyuilist ul {
+    display: inline-block;
+    text-align: left;
+  }
   .plan .plannai .softalcohol .drinkmenu .drinktyui p {
     margin: 5% 0 0 0;
   }
@@ -2177,12 +2213,7 @@ h1 .catchcopy p b {
     font-size: 100%;
     margin: 2% 0;
   }
-  .plan .plannai .softalcohol .drinkmenu .drinktyui ul {
-    margin-left: 25%;
-  }
-  .plan .plannai .softalcohol .drinkmenu .drinktyui ul li {
-    margin-bottom: 1%;
-    text-align: left;
+  .plan .plannai .softalcohol .drinkmenu .drinktyui li {
     font-size: 80%;
   }
 }
@@ -2198,12 +2229,10 @@ h1 .catchcopy p b {
     list-style-type: none;
   }
   .plan .plannai h2 {
-    color: #98592d;
     margin: 2% 0 0 2%;
   }
   .plan .plannai p {
     text-align: center;
-    color: #30579c;
     font-size: 100%;
   }
   .plan .plannai .time {
@@ -2231,25 +2260,9 @@ h1 .catchcopy p b {
   }
 }
 @media screen and (max-width: 900px) {
-  .plan .plannai .time .lunch dt {
-    color: #58c1f9;
-  }
-}
-@media screen and (max-width: 900px) {
-  .plan .plannai .time .afternoon dt {
-    color: #c93c27;
-  }
-}
-@media screen and (max-width: 900px) {
-  .plan .plannai .time .dinner dt {
-    color: #30579c;
-  }
-}
-@media screen and (max-width: 900px) {
   .plan .plannai .h3menu {
     font-family: amaranth, serif;
     font-weight: 700;
-    color: #e0ad64;
     font-size: 400%;
     text-align: center;
     margin: 4% 0 0 0;
@@ -2273,7 +2286,7 @@ h1 .catchcopy p b {
 @media screen and (max-width: 900px) {
   .plan .plannai .threehour {
     position: relative;
-    border: 10px solid #ecdeba;
+    border: 10px solid #ebe1c8;
     width: 90%;
     margin: 5% 0;
     padding-bottom: 2%;
@@ -2281,7 +2294,6 @@ h1 .catchcopy p b {
   }
   .plan .plannai .threehour .new {
     position: absolute;
-    color: #de432b;
     font-weight: bold;
     font-family: amaranth, serif;
     left: 23%;
@@ -2303,7 +2315,6 @@ h1 .catchcopy p b {
   .plan .plannai .threehour h4 {
     font-size: 200%;
     font-weight: 550;
-    color: #98592d;
     position: absolute;
     text-align: center;
     background: linear-gradient(transparent 35%, #fff 35%);
@@ -2322,7 +2333,6 @@ h1 .catchcopy p b {
 @media screen and (max-width: 900px) {
   .plan .plannai .threehour h5 {
     font-family: amaranth, serif;
-    color: #aa622e;
     font-weight: 800;
     font-size: 450%;
     text-align: center;
@@ -2349,7 +2359,6 @@ h1 .catchcopy p b {
     margin-left: 10%;
   }
   .plan .plannai .threehour .menu dl dt {
-    color: #30579c;
     font-size: 140%;
   }
   .plan .plannai .threehour .menu dl dd {
@@ -2360,7 +2369,7 @@ h1 .catchcopy p b {
 }
 @media screen and (max-width: 900px) {
   .plan .plannai .standard {
-    border: 10px solid #ecdeba;
+    border: 10px solid #ebe1c8;
     width: 80%;
     margin: 10% 0;
     grid-area: stan;
@@ -2373,8 +2382,6 @@ h1 .catchcopy p b {
   .plan .plannai .standard h4 {
     font-family: amaranth, serif;
     font-weight: 700;
-    color: #30579c;
-    background-color: #ffffff;
     text-align: center;
     bottom: 25px;
     position: relative;
@@ -2384,7 +2391,6 @@ h1 .catchcopy p b {
   }
   .plan .plannai .standard h5 {
     font-family: amaranth, serif;
-    color: #2c67ea;
     font-weight: 800;
     text-align: center;
     font-size: 300%;
@@ -2402,7 +2408,6 @@ h1 .catchcopy p b {
   .plan .plannai .standard .menu dt {
     margin: 5% 0 0 0;
     font-size: 140%;
-    color: #30579c;
     font-size: 140%;
   }
   .plan .plannai .standard .menu dd {
@@ -2412,7 +2417,7 @@ h1 .catchcopy p b {
 }
 @media screen and (max-width: 900px) {
   .plan .plannai .premium {
-    border: 10px solid #ecdeba;
+    border: 10px solid #ebe1c8;
     width: 80%;
     margin: 10% 0;
     grid-area: prem;
@@ -2425,8 +2430,6 @@ h1 .catchcopy p b {
   .plan .plannai .premium h4 {
     font-family: amaranth, serif;
     font-weight: 700;
-    color: #e0ad64;
-    background-color: #ffffff;
     text-align: center;
     bottom: 25px;
     position: relative;
@@ -2436,7 +2439,6 @@ h1 .catchcopy p b {
   }
   .plan .plannai .premium h5 {
     font-family: amaranth, serif;
-    color: #ec8756;
     font-weight: 800;
     text-align: center;
     font-size: 300%;
@@ -2453,7 +2455,6 @@ h1 .catchcopy p b {
   }
   .plan .plannai .premium .menu dt {
     margin: 5% 0 0 0;
-    color: #30579c;
     font-size: 140%;
   }
   .plan .plannai .premium .menu dd {
@@ -2464,12 +2465,11 @@ h1 .catchcopy p b {
 @media screen and (max-width: 900px) {
   .plan .plannai .softalcohol h3 {
     text-align: center;
-    color: #30579c;
     margin: 4% 0 10% 0;
     font-size: 100%;
   }
   .plan .plannai .softalcohol .drinkmenu {
-    border: 10px solid #ecdeba;
+    border: 10px solid #ebe1c8;
     width: 90%;
     margin: 0 auto;
     display: grid;
@@ -2477,7 +2477,6 @@ h1 .catchcopy p b {
     padding-bottom: 5%;
   }
   .plan .plannai .softalcohol .drinkmenu .h4 {
-    color: #e0ad64;
     text-align: center;
     background: linear-gradient(transparent 35%, #fff 35%);
     font-family: amaranth, serif;
@@ -2507,7 +2506,6 @@ h1 .catchcopy p b {
 @media screen and (max-width: 900px) {
   .plan .plannai .softalcohol .drinkmenu dt {
     font-size: 200%;
-    color: #30579c;
   }
 }
 @media screen and (max-width: 900px) {
@@ -2543,6 +2541,13 @@ h1 .catchcopy p b {
     grid-area: tyui;
     text-align: center;
   }
+  .plan .plannai .softalcohol .drinkmenu .drinktyui .tyuilist {
+    text-align: center;
+  }
+  .plan .plannai .softalcohol .drinkmenu .drinktyui .tyuilist ul {
+    display: inline-block;
+    text-align: left;
+  }
   .plan .plannai .softalcohol .drinkmenu .drinktyui p {
     margin: 5% 0 0 0;
   }
@@ -2552,11 +2557,6 @@ h1 .catchcopy p b {
   }
   .plan .plannai .softalcohol .drinkmenu .drinktyui ul {
     font-size: 70%;
-    margin-left: 20%;
-  }
-  .plan .plannai .softalcohol .drinkmenu .drinktyui ul li {
-    margin-bottom: 1%;
-    text-align: left;
   }
 }
 @media screen and (max-width: 600px) {
@@ -2571,12 +2571,10 @@ h1 .catchcopy p b {
     list-style-type: none;
   }
   .plan .plannai h2 {
-    color: #98592d;
     margin: 2% 0 0 2%;
   }
   .plan .plannai p {
     text-align: center;
-    color: #30579c;
     font-size: 100%;
   }
   .plan .plannai .time {
@@ -2594,19 +2592,9 @@ h1 .catchcopy p b {
     text-align: center;
     margin: 0 5%;
   }
-  .plan .plannai .time .lunch dt {
-    color: #58c1f9;
-  }
-  .plan .plannai .time .afternoon dt {
-    color: #c93c27;
-  }
-  .plan .plannai .time .dinner dt {
-    color: #30579c;
-  }
   .plan .plannai .h3menu {
     font-family: amaranth, serif;
     font-weight: 700;
-    color: #e0ad64;
     font-size: 400%;
     text-align: center;
     margin: 25% 0;
@@ -2619,7 +2607,7 @@ h1 .catchcopy p b {
   }
   .plan .plannai .threehour {
     position: relative;
-    border: 6px solid #ecdeba;
+    border: 6px solid #ebe1c8;
     width: 90%;
     margin: 5% auto;
     grid-area: three;
@@ -2627,7 +2615,6 @@ h1 .catchcopy p b {
   }
   .plan .plannai .threehour .new {
     position: absolute;
-    color: #de432b;
     font-weight: bold;
     font-family: amaranth, serif;
     left: 0;
@@ -2637,7 +2624,6 @@ h1 .catchcopy p b {
   .plan .plannai .threehour h4 {
     font-size: 150%;
     font-weight: 550;
-    color: #98592d;
     position: absolute;
     text-align: center;
     background-color: #fff;
@@ -2649,7 +2635,6 @@ h1 .catchcopy p b {
   }
   .plan .plannai .threehour h5 {
     font-family: amaranth, serif;
-    color: #98592d;
     font-weight: 800;
     font-size: 350%;
     text-align: center;
@@ -2674,7 +2659,6 @@ h1 .catchcopy p b {
     margin-left: 0;
   }
   .plan .plannai .threehour .menu dl dt {
-    color: #30579c;
     font-size: 140%;
   }
   .plan .plannai .threehour .menu dl dd {
@@ -2683,7 +2667,7 @@ h1 .catchcopy p b {
     width: 95%;
   }
   .plan .plannai .standard {
-    border: 6px solid #ecdeba;
+    border: 6px solid #ebe1c8;
     width: 90%;
     margin: 10% auto;
     grid-area: stan;
@@ -2696,8 +2680,6 @@ h1 .catchcopy p b {
   .plan .plannai .standard h4 {
     font-family: amaranth, serif;
     font-weight: 700;
-    color: #30579c;
-    background-color: #ffffff;
     text-align: center;
     bottom: 25px;
     position: relative;
@@ -2707,7 +2689,6 @@ h1 .catchcopy p b {
   }
   .plan .plannai .standard h5 {
     font-family: amaranth, serif;
-    color: #2c67ea;
     font-weight: 800;
     text-align: center;
     font-size: 300%;
@@ -2724,7 +2705,6 @@ h1 .catchcopy p b {
   }
   .plan .plannai .standard .menu dt {
     margin: 5% 0 0 0;
-    color: #30579c;
     font-size: 140%;
   }
   .plan .plannai .standard .menu dd {
@@ -2732,7 +2712,7 @@ h1 .catchcopy p b {
     line-height: 200%;
   }
   .plan .plannai .premium {
-    border: 6px solid #ecdeba;
+    border: 6px solid #ebe1c8;
     width: 90%;
     margin: 10% auto;
     grid-area: prem;
@@ -2745,8 +2725,6 @@ h1 .catchcopy p b {
   .plan .plannai .premium h4 {
     font-family: amaranth, serif;
     font-weight: 700;
-    color: #e0ad64;
-    background-color: #ffffff;
     font-size: 250%;
     text-align: center;
     bottom: 25px;
@@ -2756,7 +2734,6 @@ h1 .catchcopy p b {
   }
   .plan .plannai .premium h5 {
     font-family: amaranth, serif;
-    color: #ec8756;
     font-weight: 800;
     font-size: 300%;
     text-align: center;
@@ -2774,7 +2751,6 @@ h1 .catchcopy p b {
   .plan .plannai .premium .menu dt {
     margin: 5% 0 0 0;
     font-size: 140%;
-    color: #30579c;
   }
   .plan .plannai .premium .menu dd {
     font-size: 90%;
@@ -2782,19 +2758,17 @@ h1 .catchcopy p b {
   }
   .plan .plannai .softalcohol h3 {
     text-align: center;
-    color: #30579c;
     margin: 4% 0 10% 0;
     font-size: 80%;
   }
   .plan .plannai .softalcohol .drinkmenu {
-    border: 6px solid #ecdeba;
+    border: 6px solid #ebe1c8;
     width: 90%;
     margin: 5% auto;
     display: block;
     padding-bottom: 5%;
   }
   .plan .plannai .softalcohol .drinkmenu .h4 {
-    color: #e0ad64;
     text-align: center;
     background: linear-gradient(transparent 35%, #fff 35%);
     font-family: amaranth, serif;
@@ -2813,7 +2787,6 @@ h1 .catchcopy p b {
   }
   .plan .plannai .softalcohol .drinkmenu dt {
     font-size: 200%;
-    color: #30579c;
   }
   .plan .plannai .softalcohol .drinkmenu dl {
     margin-left: 5%;
@@ -2857,6 +2830,13 @@ h1 .catchcopy p b {
     grid-area: tyui;
     text-align: center;
   }
+  .plan .plannai .softalcohol .drinkmenu .drinktyui .tyuilist {
+    text-align: center;
+  }
+  .plan .plannai .softalcohol .drinkmenu .drinktyui .tyuilist ul {
+    display: inline-block;
+    text-align: left;
+  }
   .plan .plannai .softalcohol .drinkmenu .drinktyui p {
     margin: 5% 0 0 0;
   }
@@ -2867,11 +2847,6 @@ h1 .catchcopy p b {
   }
   .plan .plannai .softalcohol .drinkmenu .drinktyui ul {
     font-size: 60%;
-    margin-left: 0%;
-  }
-  .plan .plannai .softalcohol .drinkmenu .drinktyui ul li {
-    margin-bottom: 1%;
-    text-align: left;
   }
 }
 details summary::-webkit-details-marker {
@@ -2879,17 +2854,15 @@ details summary::-webkit-details-marker {
 }
 
 @media screen and (min-width: 1201px) {
-  .attention {
-    /*アコーディオン全体のスタイル*/
-  }
   .attention h2 {
-    color: #c93c27;
+    color: #d6a050;
   }
   .attention h3 {
     text-align: center;
     color: #30579c;
-    font-size: 150%;
     margin: 0 0 2% 0;
+    margin-top: 3%;
+    font-size: 120%;
   }
   .attention summary {
     font-weight: normal;
@@ -2910,7 +2883,7 @@ details summary::-webkit-details-marker {
   .attention p strong {
     font-family: amaranth, serif;
     font-weight: 700;
-    font-size: 350%;
+    font-size: 300%;
     color: #e0ad64;
     margin: 0 3% 0 0.5%;
   }
@@ -2921,25 +2894,35 @@ details summary::-webkit-details-marker {
     margin: 2% 0;
   }
   .attention .goriyo {
-    padding-left: 5%;
-    font-size: 90%;
-    width: 80%;
+    text-align: center;
     margin: 0 auto;
-  }
-  .attention .goriyo li {
-    min-width: 625px;
-    margin: 0 20%;
+    font-size: 90%;
   }
   .attention .colona {
-    width: 60%;
-    margin: 0 35%;
+    margin: 0 auto;
     padding-bottom: 5%;
-    font-size: 90%;
+    text-align: center;
   }
-  .attention .QandA {
+  /*アコーディオン全体のスタイル*/
+}
+@media screen and (min-width: 1201px) and (max-width: 900px) {
+  .attention .colona {
+    margin: 0 24%;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .attention ul {
+    display: inline-block;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .QandA {
     margin: 5% 0;
   }
-  .attention .c-accordion {
+}
+@media screen and (min-width: 1201px) {
+  .c-accordion {
     width: 100%;
     max-width: 700px;
     margin-left: auto;
@@ -2952,30 +2935,54 @@ details summary::-webkit-details-marker {
     /*開いているときに適用するスタイル*/
     /*開いときの中身のテキスト*/
   }
-  .attention .c-accordion_ttl {
+  .c-accordion_ttl {
     background-image: url(../../asset/photo/prass.svg);
     background-position: right 24px center;
     background-size: 28px;
     background-repeat: no-repeat;
     list-style: none;
-    padding: 3% 5%;
     cursor: pointer;
-    font-size: 18px;
     color: #464646;
     font-weight: bold;
+    padding: 2% 4%;
+    font-size: 120%;
+    cursor: pointer;
   }
-  .attention .c-accordion[open] .attention .c-accordion_ttl {
+  .c-accordion[open] .c-accordion_ttl {
     background-image: url(../../asset/photo/minus.svg);
   }
-  .attention .c-accordion_txt {
+  .c-accordion_txt {
+    padding: 3%;
     padding-top: 0;
     margin-top: 0;
     color: #464646;
+    -webkit-animation: fadeIn 0.5s ease;
+            animation: fadeIn 0.5s ease;
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0; /* 透明 */
+      transform: translateY(-10px); /* 上から表示 */
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; /* 透明 */
+      transform: translateY(-10px); /* 上から表示 */
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
   }
 }
 @media screen and (max-width: 1200px) {
   .attention h2 {
-    color: #c93c27;
+    color: #d6a050;
   }
   .attention h3 {
     text-align: center;
@@ -3014,24 +3021,26 @@ details summary::-webkit-details-marker {
     margin: 2% 0;
   }
   .attention .goriyo {
+    text-align: center;
     margin: 0 auto;
-    padding-left: 10%;
     font-size: 90%;
   }
-  .attention .goriyo li {
-    width: 80%;
-    margin: 0 auto;
-  }
   .attention .colona {
-    width: 60%;
-    margin: 0 26%;
+    margin: 0 auto;
     padding-bottom: 5%;
+    text-align: center;
   }
   /*アコーディオン全体のスタイル*/
 }
 @media screen and (max-width: 1200px) and (max-width: 900px) {
   .attention .colona {
     margin: 0 24%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .attention ul {
+    display: inline-block;
+    text-align: left;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -3117,24 +3126,37 @@ details summary::-webkit-details-marker {
     margin: 2% 0;
   }
   .attention .goriyo {
+    width: 90%;
+    text-align: center;
     margin: 0 auto;
-    padding-left: 10%;
-    font-size: 80%;
-  }
-  .attention .goriyo li {
-    width: 80%;
-    margin: 0 auto;
-  }
-  .attention .colona {
-    width: 60%;
-    margin: 0 28%;
-    padding-bottom: 5%;
     font-size: 90%;
   }
+  .attention .colona {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: 90%;
+  }
+  /*アコーディオン全体のスタイル*/
+}
+@media screen and (max-width: 900px) and (max-width: 900px) {
+  .attention .colona {
+    margin: 0 24%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .attention ul {
+    display: inline-block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 900px) {
   .QandA {
     margin: 5% 0;
   }
-  /*アコーディオン全体のスタイル*/
+}
+@media screen and (max-width: 900px) {
   .c-accordion {
     width: 100%;
     margin-left: auto;
@@ -3207,22 +3229,22 @@ details summary::-webkit-details-marker {
 }
 @media screen and (max-width: 600px) {
   .attention .goriyo {
+    text-align: center;
     margin: 0 auto;
-    padding-left: 5%;
-    font-size: 70%;
-  }
-  .attention .goriyo li {
-    width: 90%;
-    margin: 0 auto;
+    font-size: 90%;
   }
 }
 @media screen and (max-width: 600px) {
   .attention .colona {
-    width: 90%;
     margin: 0 auto;
     padding-bottom: 5%;
-    padding-left: 10%;
-    font-size: 70%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .attention ul {
+    display: inline-block;
+    text-align: left;
   }
 }
 @media screen and (max-width: 600px) {
@@ -3307,7 +3329,7 @@ details summary::-webkit-details-marker {
   }
 }
 .access h2 {
-  color: #c93c27;
+  color: #d6a050;
 }
 .access div {
   width: 80%;
@@ -3418,7 +3440,7 @@ details summary::-webkit-details-marker {
 }
 @media screen and (min-width: 1201px) {
   .access h2 {
-    color: #c93c27;
+    color: #d6a050;
   }
 }
 @media screen and (min-width: 1201px) {
@@ -3540,7 +3562,7 @@ details summary::-webkit-details-marker {
     padding-bottom: 8%;
   }
   .access h2 {
-    color: #c93c27;
+    color: #d6a050;
   }
   .access div {
     width: 80%;
@@ -3609,7 +3631,7 @@ details summary::-webkit-details-marker {
 }
 @media screen and (max-width: 900px) {
   .access h2 {
-    color: #c93c27;
+    color: #d6a050;
   }
 }
 @media screen and (max-width: 900px) {
@@ -3727,8 +3749,7 @@ details summary::-webkit-details-marker {
   .access {
     background-image: url(../../asset/photo/backmarina.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding-bottom: 8%;
+    background-size: 130%;
   }
 }
 @media screen and (max-width: 700px) and (max-width: 900px) {
@@ -3738,7 +3759,7 @@ details summary::-webkit-details-marker {
 }
 @media screen and (max-width: 700px) {
   .access h2 {
-    color: #c93c27;
+    color: #d6a050;
   }
 }
 @media screen and (max-width: 700px) {
@@ -3942,7 +3963,10 @@ details summary::-webkit-details-marker {
   }
 }
 .content h2 {
-  color: #c93c27;
+  color: #d6a050;
+}
+.content li {
+  list-style-type: none;
 }
 @media screen and (min-width: 1201px) {
   .content h3 {

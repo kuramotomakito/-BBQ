@@ -13,6 +13,11 @@
             top: 4%;
             z-index: 99;
             animation: loopwave 15s linear infinite;
+            @include m.mq(tab) {
+                animation: loopwave 90s linear infinite;
+                width: 20%;
+
+            }
         }
 #wave2{
     background-image: url(../photo/nami.svg);
@@ -27,7 +32,9 @@
     z-index: 99;
         bottom: 4%;
         animation: loopwave 10s linear infinite;
-
+        @include m.mq(tab) {
+        display: none;
+        }
 }
 #wave3{
     background-image: url(../photo/nami.svg);
@@ -38,6 +45,7 @@
     animation: loopwave 20s linear infinite;
     margin-bottom: 2%;
     color: transparent;
+
 }
 @keyframes loop {
     from {
@@ -55,8 +63,16 @@
         background-position: 1000% 0; /* 画像のマイナス幅 */
     }
 }
+@keyframes looptab {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 130% 0; /* 画像のマイナス幅 */
+    }
+}
 .cruise{
-    background-image: url(/src/asset/photo/cruise.svg);
+    background-image: url("../photo/cruise.svg");
     background-position: 0 107%;
     background-size: auto 75px;
     background-repeat: no-repeat;
@@ -64,6 +80,9 @@
     animation: loop 40s linear infinite;
     padding-bottom: 50px;
     color: transparent;
+    @include m.mq(tab) {
+        animation: looptab 10s linear infinite;
+    }
 }
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
     content: 'next';
@@ -85,7 +104,7 @@
         position: relative;
 
         h2 {
-            color: #c9274f;  
+            color: #d6a050;  
             }
 
         h3 {
@@ -408,7 +427,7 @@
         position: relative;
 
         h2 {
-            color: #c93c27;  
+            color: #d6a050;  
         }
 
         h3 {

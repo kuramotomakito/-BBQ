@@ -45,15 +45,17 @@ const attention = () => {
                     return (
                         <>
                             <h4>{list.h4}</h4>
-                            <ul className={list.class}>
-                                {list.li.map((li, index) => {
-                                    return (
-                                        <>
-                                            <li>{li}</li>
-                                        </>
-                                    )
-                                })}
-                            </ul>
+                            <div className={list.class}>
+                                <ul>
+                                    {list.li.map((li, index) => {
+                                        return (
+                                            <>
+                                                <li>{li}</li>
+                                            </>
+                                        )
+                                    })}
+                                </ul>
+                            </div>
                         </>
                     )
                 })}
