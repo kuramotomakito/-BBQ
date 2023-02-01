@@ -348,9 +348,7 @@ background-size: 120%;}
         padding-bottom: 8%;
         @include m.mq(tab) {
     background-size: 120%;}
-        h2 {
-            color: #d6a050;
-        }
+
     
         div {
             width: 80%;
@@ -576,9 +574,7 @@ background-size: 120%;}
         // padding-bottom: %;
         @include m.mq(tab) {
     background-size: 120%;}
-        h2 {
-            color: #d6a050;
-        }
+
     
         div {
             width: 80%;
@@ -692,7 +688,8 @@ background-size: 120%;}
     @include m.mq(sps) {
         background-size: 390%;
     }
-h2{padding-top: 10%;
+h2{
+    // padding-top: 10%;
     @include m.mq(sps) {
         padding-top: 30%;
     }}

@@ -161,9 +161,6 @@ h1 .catchcopy p b {
   h1 .catchcopy p {
     font-size: 80%;
   }
-  h1 .catchcopy p .enosima {
-    color: #58c1f9;
-  }
 }
 @media screen and (max-width: 500px) {
   h1 .catchcopy p {
@@ -2855,7 +2852,7 @@ details summary::-webkit-details-marker {
 
 @media screen and (min-width: 1201px) {
   .attention h2 {
-    color: #d6a050;
+    color: #30579c;
   }
   .attention h3 {
     text-align: center;
@@ -2982,7 +2979,7 @@ details summary::-webkit-details-marker {
 }
 @media screen and (max-width: 1200px) {
   .attention h2 {
-    color: #d6a050;
+    color: #30579c;
   }
   .attention h3 {
     text-align: center;
@@ -3086,12 +3083,8 @@ details summary::-webkit-details-marker {
   }
 }
 @media screen and (max-width: 900px) {
-  .attention h2 {
-    color: #e09d3d;
-  }
   .attention h3 {
     text-align: center;
-    color: #30579c;
     font-size: 120%;
     margin: 0 0 2% 0;
     margin-top: 3%;
@@ -3105,7 +3098,6 @@ details summary::-webkit-details-marker {
     font-family: amaranth, serif;
     font-weight: 700;
     font-size: 250%;
-    color: #30579c;
     margin-right: 5%;
   }
   .attention p {
@@ -3116,13 +3108,11 @@ details summary::-webkit-details-marker {
     font-family: amaranth, serif;
     font-weight: 700;
     font-size: 280%;
-    color: #e0ad64;
     margin: 0 3% 0 0.5%;
   }
   .attention h4 {
     text-align: center;
     font-size: 120%;
-    color: #30579c;
     margin: 2% 0;
   }
   .attention .goriyo {
@@ -3630,11 +3620,6 @@ details summary::-webkit-details-marker {
   }
 }
 @media screen and (max-width: 900px) {
-  .access h2 {
-    color: #d6a050;
-  }
-}
-@media screen and (max-width: 900px) {
   .access div {
     width: 80%;
     display: flex;
@@ -3755,11 +3740,6 @@ details summary::-webkit-details-marker {
 @media screen and (max-width: 700px) and (max-width: 900px) {
   .access {
     background-size: 120%;
-  }
-}
-@media screen and (max-width: 700px) {
-  .access h2 {
-    color: #d6a050;
   }
 }
 @media screen and (max-width: 700px) {
@@ -3885,11 +3865,6 @@ details summary::-webkit-details-marker {
 @media screen and (max-width: 600px) and (max-width: 320px) {
   .access {
     background-size: 390%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .access h2 {
-    padding-top: 10%;
   }
 }
 @media screen and (max-width: 600px) and (max-width: 320px) {

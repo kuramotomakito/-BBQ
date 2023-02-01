@@ -118,9 +118,6 @@ h1 {
         font-size: 80%;
       }
       @include m.mq(sp) {
-        .enosima {
-            color: #58c1f9;
-          }
         font-size: 80%;
       }
       @include m.mq(spll) {
