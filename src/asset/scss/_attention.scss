@@ -18,7 +18,7 @@ details summary::-webkit-details-marker {
             color: #30579c;
             margin: 0 0 2% 0;
             margin-top: 3%;
-            font-size: 120%;
+            font-size: 140%;
         }
 
         summary {
@@ -148,7 +148,7 @@ details summary::-webkit-details-marker {
             color: #30579c;
             margin: 0 0 2% 0;
             margin-top: 3%;
-            font-size: 120%;
+            font-size: 140%;
         }
 
         summary {
@@ -197,11 +197,7 @@ details summary::-webkit-details-marker {
     // width: 60%;
     margin: 0 auto;
     padding-bottom: 5%;
-    text-align: center;
-    @include m.mq(tab) {
-        margin: 0 24%;
-    }
-}
+    text-align: center;}
 ul{
     
         display: inline-block;
@@ -216,7 +212,7 @@ ul{
     /*アコーディオン全体のスタイル*/
     .c-accordion {
         width: 100%;
-        max-width: 500px;
+        max-width: 600px;
         margin-left: auto;
         margin-right: auto;
         // margin-top: 80px;
@@ -282,6 +278,8 @@ ul{
         p {
             display: flex;
             align-items: center;
+            line-height: 240%;
+
 
             strong {
                 font-family: amaranth, serif;
@@ -293,7 +291,7 @@ ul{
 
         h4 {
             text-align: center;
-            font-size: 120%;
+            font-size: 110%;
             margin: 2% 0;
         }
 
@@ -312,10 +310,6 @@ ul{
     padding-bottom: 5%;
     text-align: center;
     font-size: 90%;
-
-    @include m.mq(tab) {
-        margin: 0 24%;
-    }
 }
 ul{
     
@@ -399,7 +393,7 @@ ul{
     
             p {
 
-    
+                list-style: 240%;
                 strong {
                     font-family: amaranth, serif;
                     font-weight: 700;
@@ -409,7 +403,7 @@ ul{
             }
     
             h4 {
-                font-size: 120%;
+                font-size: 110%;
                 margin: 2% 0;
 
                 @include m.mq(sps) {
@@ -419,7 +413,7 @@ ul{
     
             
         .goriyo {
-            // width: 50%;
+            width: 85%;
     text-align: center;
     margin: 0 auto;
     // padding-left: 10%;
@@ -427,7 +421,7 @@ ul{
 }
 
 .colona {
-    // width: 60%;
+    // width: 8%;
     margin: 0 auto;
     padding-bottom: 5%;
     text-align: center;

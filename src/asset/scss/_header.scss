@@ -18,6 +18,9 @@ header {
     @include m.mq(pc) {
       left: 82%;
     }
+    @include m.mq(tabi) {
+      left: 80%;
+    }
 
     @include m.mq(sp) {
       display: none;
@@ -121,7 +124,7 @@ h1 {
         font-size: 80%;
       }
       @include m.mq(spll) {
-        font-size: 70%;
+        font-size: 65%;
       }
       @include m.mq(spm) {
         font-size: 55%;

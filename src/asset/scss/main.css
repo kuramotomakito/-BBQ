@@ -67,6 +67,11 @@ header button a {
     left: 82%;
   }
 }
+@media screen and (max-width: 768px) {
+  header button {
+    left: 80%;
+  }
+}
 @media screen and (max-width: 600px) {
   header button {
     display: none;
@@ -164,7 +169,7 @@ h1 .catchcopy p b {
 }
 @media screen and (max-width: 500px) {
   h1 .catchcopy p {
-    font-size: 70%;
+    font-size: 65%;
   }
 }
 @media screen and (max-width: 375px) {
@@ -1418,7 +1423,7 @@ h1 .catchcopy p b {
   }
   .plan .plannai p {
     text-align: center;
-    color: #8f5c36;
+    color: #000;
     font-size: 110%;
   }
 }
@@ -1823,7 +1828,7 @@ h1 .catchcopy p b {
     padding-bottom: 5%;
   }
   .plan .plannai .softalcohol .drinkmenu .h4 {
-    color: #98592d;
+    color: #d8af6f;
     text-align: center;
     background: linear-gradient(transparent 35%, #fff 35%);
     font-family: amaranth, serif;
@@ -1831,33 +1836,19 @@ h1 .catchcopy p b {
     font-weight: bold;
     grid-area: title;
     position: relative;
-    width: 38%;
+    width: 50%;
     bottom: 70%;
     margin: 0 auto;
   }
-}
-@media screen and (min-width: 1201px) and (max-width: 900px) {
-  .plan .plannai .softalcohol .drinkmenu .h4 {
-    font-size: 400%;
-    top: 71.5%;
-    width: 44%;
-    margin: 0 14%;
-  }
-}
-@media screen and (min-width: 1201px) {
   .plan .plannai .softalcohol .drinkmenu img {
     width: 60%;
     margin: 0 20%;
-    margin-top: 20%;
+    margin-top: 5%;
   }
-}
-@media screen and (min-width: 1201px) {
   .plan .plannai .softalcohol .drinkmenu dt {
     font-size: 200%;
     color: #8f5c36;
   }
-}
-@media screen and (min-width: 1201px) {
   .plan .plannai .softalcohol .drinkmenu dl {
     margin-left: 20%;
   }
@@ -1930,7 +1921,7 @@ h1 .catchcopy p b {
   }
   .plan .plannai p {
     text-align: center;
-    color: #8f5c36;
+    color: #000;
     font-size: 100%;
   }
   .plan .plannai .time {
@@ -2481,14 +2472,14 @@ h1 .catchcopy p b {
     grid-area: title;
     position: absolute;
     font-size: 400%;
-    top: 69.5%;
+    top: 71%;
     width: 44%;
     margin: 0 14%;
   }
 }
 @media screen and (max-width: 900px) and (max-width: 768px) {
   .plan .plannai .softalcohol .drinkmenu .h4 {
-    top: 71.5%;
+    top: 72.5%;
     width: 50%;
     margin: 0 12%;
   }
@@ -2780,7 +2771,7 @@ h1 .catchcopy p b {
   .plan .plannai .softalcohol .drinkmenu img {
     width: 90%;
     margin: 0 5%;
-    margin-top: 20%;
+    margin-top: 2%;
   }
   .plan .plannai .softalcohol .drinkmenu dt {
     font-size: 200%;
@@ -2859,7 +2850,7 @@ details summary::-webkit-details-marker {
     color: #30579c;
     margin: 0 0 2% 0;
     margin-top: 3%;
-    font-size: 120%;
+    font-size: 140%;
   }
   .attention summary {
     font-weight: normal;
@@ -2986,7 +2977,7 @@ details summary::-webkit-details-marker {
     color: #30579c;
     margin: 0 0 2% 0;
     margin-top: 3%;
-    font-size: 120%;
+    font-size: 140%;
   }
   .attention summary {
     font-weight: normal;
@@ -3027,28 +3018,17 @@ details summary::-webkit-details-marker {
     padding-bottom: 5%;
     text-align: center;
   }
-  /*アコーディオン全体のスタイル*/
-}
-@media screen and (max-width: 1200px) and (max-width: 900px) {
-  .attention .colona {
-    margin: 0 24%;
-  }
-}
-@media screen and (max-width: 1200px) {
   .attention ul {
     display: inline-block;
     text-align: left;
   }
-}
-@media screen and (max-width: 1200px) {
   .QandA {
     margin: 5% 0;
   }
-}
-@media screen and (max-width: 1200px) {
+  /*アコーディオン全体のスタイル*/
   .c-accordion {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     border-style: solid;
@@ -3103,6 +3083,7 @@ details summary::-webkit-details-marker {
   .attention p {
     display: flex;
     align-items: center;
+    line-height: 240%;
   }
   .attention p strong {
     font-family: amaranth, serif;
@@ -3112,7 +3093,7 @@ details summary::-webkit-details-marker {
   }
   .attention h4 {
     text-align: center;
-    font-size: 120%;
+    font-size: 110%;
     margin: 2% 0;
   }
   .attention .goriyo {
@@ -3128,25 +3109,14 @@ details summary::-webkit-details-marker {
     text-align: center;
     font-size: 90%;
   }
-  /*アコーディオン全体のスタイル*/
-}
-@media screen and (max-width: 900px) and (max-width: 900px) {
-  .attention .colona {
-    margin: 0 24%;
-  }
-}
-@media screen and (max-width: 900px) {
   .attention ul {
     display: inline-block;
     text-align: left;
   }
-}
-@media screen and (max-width: 900px) {
   .QandA {
     margin: 5% 0;
   }
-}
-@media screen and (max-width: 900px) {
+  /*アコーディオン全体のスタイル*/
   .c-accordion {
     width: 100%;
     margin-left: auto;
@@ -3200,6 +3170,9 @@ details summary::-webkit-details-marker {
     color: #30579c;
     margin-right: 5%;
   }
+  .attention p {
+    list-style: 240%;
+  }
   .attention p strong {
     font-family: amaranth, serif;
     font-weight: 700;
@@ -3207,7 +3180,7 @@ details summary::-webkit-details-marker {
     margin: 0 3% 0 0.5%;
   }
   .attention h4 {
-    font-size: 120%;
+    font-size: 110%;
     margin: 2% 0;
   }
   /*アコーディオン全体のスタイル*/
@@ -3219,6 +3192,7 @@ details summary::-webkit-details-marker {
 }
 @media screen and (max-width: 600px) {
   .attention .goriyo {
+    width: 85%;
     text-align: center;
     margin: 0 auto;
     font-size: 90%;
