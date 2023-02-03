@@ -225,6 +225,7 @@
             #Spring {
                 h4 {
                     right: 62.5%;
+                    color: #fd6d6d;
                 }
 
                 // @include m.mq(tab) {
@@ -232,9 +233,9 @@
                 //         right: 62.3%;
                 //     }
 
-                //     h5 {
-                //         width: 70%;
-                //     }
+                    h5 {
+                        width: 70%;
+                    }
 
                 //     .point div {
                 //         width: 85%;
@@ -245,6 +246,8 @@
             #Summer {
                 h4 {
                     right: 60.8%;
+                    color: #2cdf14;
+
 
                     dl div {
                         margin: 5% 0;
@@ -266,6 +269,8 @@
             #Autumn {
                 h4 {
                     right: 60.8%;
+                    color: #cea25d;
+
                 }
 
                 // @include m.mq(tab) {
@@ -282,6 +287,7 @@
             #Winter {
                 h4 {
                     right: 62%;
+                    color: #5392f0;
                 }
 
                 // @include m.mq(tab) {
@@ -298,6 +304,7 @@
             #Company {
                 h4 {
                     right: 59.5%;
+                    color: #c93c27;
 
                     // @include m.mq(tab) {
                     //     right: 58%;
@@ -308,6 +315,7 @@
             #Family {
                 h4 {
                     right: 62.2%;
+                    color: #328327;
                 }
 
                 // @include m.mq(tab) {
@@ -324,6 +332,7 @@
             #Woman {
                 h4 {
                     right: 59.8%;
+                    color: #d64595;
 
                     dl div {
                         margin: 10% 0;

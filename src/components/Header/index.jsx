@@ -19,7 +19,7 @@ function index() {
         <div className='firstview'><img src={FirstView} alt='江ノ島マリーナBBQサイト' /></div>
         <div className='firstviewsp'><img src={firstviewsp} alt="江ノ島マリーナBBQサイト" /></div>
         <div className='logo'><img src={logo} alt='江ノ島マリーナBBQサイト' /></div>
-        <div className='catchcopy'><p><b className='enosima'>江ノ島</b>でちょっとかわった<b className='BBQ'>BBQ</b>を</p></div>
+        <div className='catchcopy'><p>今しか味わえない<b className='enoshima'>BBQ</b>を<b className='BBQ'>江の島</b>でしませんか？</p></div>
       </h1>
 
       <button className='yoyaku' onClick={returncon}><a href='#'>予約する</a></button>

@@ -716,27 +716,37 @@ h1 .catchcopy p b {
   }
   .situetion .mySwiper #Spring h4 {
     right: 62.5%;
+    color: #fd6d6d;
+  }
+  .situetion .mySwiper #Spring h5 {
+    width: 70%;
   }
   .situetion .mySwiper #Summer h4 {
     right: 60.8%;
+    color: #2cdf14;
   }
   .situetion .mySwiper #Summer h4 dl div {
     margin: 5% 0;
   }
   .situetion .mySwiper #Autumn h4 {
     right: 60.8%;
+    color: #cea25d;
   }
   .situetion .mySwiper #Winter h4 {
     right: 62%;
+    color: #5392f0;
   }
   .situetion .mySwiper #Company h4 {
     right: 59.5%;
+    color: #c93c27;
   }
   .situetion .mySwiper #Family h4 {
     right: 62.2%;
+    color: #328327;
   }
   .situetion .mySwiper #Woman h4 {
     right: 59.8%;
+    color: #d64595;
   }
   .situetion .mySwiper #Woman h4 dl div {
     margin: 10% 0;
