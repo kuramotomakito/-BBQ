@@ -160,7 +160,7 @@
           width: 50%;
           margin: 5% auto;
           left: 25%;
-          top: -110px;
+          top: -100px;
 
           @include m.mq(tab) {
             background: linear-gradient(transparent 35%, #fff 35%);
@@ -386,9 +386,6 @@
             font-weight: 700;
           }
 
-          @include m.mq(tab) {
-            font-size: 300%;
-          }
         }
 
         .menu {
@@ -422,10 +419,7 @@
           text-align: center;
           color: #8f5c36;
           margin: 4% 0 10% 0;
-
-          @include m.mq(tab) {
-            font-size: 100%;
-          }
+          font-size: 150%;
         }
 
         .drinkmenu {

@@ -523,7 +523,8 @@ h1 .catchcopy p b {
   background-size: auto 50px;
   background-repeat: repeat-x;
   text-decoration: none;
-  width: 12%;
+  width: 100px;
+  height: 20px;
   color: transparent;
   position: absolute;
   right: 10%;
@@ -545,7 +546,8 @@ h1 .catchcopy p b {
   background-size: auto 50px;
   background-repeat: repeat-x;
   text-decoration: none;
-  width: 12%;
+  width: 100px;
+  height: 20px;
   color: transparent;
   position: absolute;
   left: 10%;
@@ -1542,7 +1544,7 @@ h1 .catchcopy p b {
     width: 50%;
     margin: 5% auto;
     left: 25%;
-    top: -110px;
+    top: -100px;
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 900px) {
@@ -1773,11 +1775,6 @@ h1 .catchcopy p b {
     font-weight: 700;
   }
 }
-@media screen and (min-width: 1201px) and (max-width: 900px) {
-  .plan .plannai .premium h5 {
-    font-size: 300%;
-  }
-}
 @media screen and (min-width: 1201px) {
   .plan .plannai .premium .menu {
     width: 80%;
@@ -1811,14 +1808,8 @@ h1 .catchcopy p b {
     text-align: center;
     color: #8f5c36;
     margin: 4% 0 10% 0;
+    font-size: 150%;
   }
-}
-@media screen and (min-width: 1201px) and (max-width: 900px) {
-  .plan .plannai .softalcohol h3 {
-    font-size: 100%;
-  }
-}
-@media screen and (min-width: 1201px) {
   .plan .plannai .softalcohol .drinkmenu {
     border: 10px solid #ebe1c8;
     width: 90%;
@@ -3936,17 +3927,21 @@ details summary::-webkit-details-marker {
   .content .tyui {
     text-align: center;
   }
-  .content div {
+  .content button {
+    background-color: #d6a050;
+    border: none;
     width: 20%;
-    max-width: 600px;
-    max-height: 100px;
-    border-radius: 50px;
-    background-color: #e0ad64;
-    padding: 2% 3%;
+    min-width: 200px;
+    max-width: 400px;
+    height: 10%;
+    min-height: 60px;
+    max-width: 200px;
+    border-radius: 40px;
+    display: block;
     margin: 2% auto;
-    text-align: center;
+    margin-bottom: 4%;
   }
-  .content div a {
+  .content button a {
     color: #fff;
     font-size: 90%;
   }

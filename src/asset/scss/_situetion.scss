@@ -6,7 +6,8 @@
         background-size: auto 50px;
         background-repeat: repeat-x;
         text-decoration: none;
-        width: 12%;
+        width: 100px;
+        height: 20px;
         color: transparent;
         position: absolute;
         right:10%;
@@ -25,8 +26,9 @@
     background-size: auto 50px;
     background-repeat: repeat-x;
     text-decoration: none;
-    width: 12%;
-    color: transparent;
+    width: 100px;
+    height: 20px;
+        color: transparent;
     position: absolute;
     left:10%;
     z-index: 99;
@@ -80,6 +82,7 @@
     animation: loop 40s linear infinite;
     padding-bottom: 50px;
     color: transparent;
+    
     @include m.mq(tab) {
         animation: looptab 10s linear infinite;
     }

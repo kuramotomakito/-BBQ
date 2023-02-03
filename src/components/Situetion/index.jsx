@@ -53,8 +53,8 @@ const Situetion = () => {
               M 0 5 Q 10 10 20 5 Q 30  0 40 5" />
           </path>
         </svg> */}
-        <div id="wave1">aaaaaaaaaa</div>
-        <div id="wave2">aaaaaaaaaa</div>
+        <div id="wave1">    </div>
+        <div id="wave2">    </div>
 
         <h2><b>S</b>ituetion</h2>
         <section>
@@ -103,7 +103,7 @@ const Situetion = () => {
             })}
           </Swiper>
         </section>
-        <div className="cruise">aaaa</div>
+        <div className="cruise">a</div>
         {/* <div id="wave3">aaaa</div> */}
         <section>
           <h3><b>P</b>arty</h3>
