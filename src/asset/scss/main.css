@@ -23,6 +23,7 @@ p {
 }
 
 h2 {
+  padding: 2% 0;
   margin-left: 10%;
   font-family: amaranth, serif;
   font-size: 4em;
@@ -159,22 +160,27 @@ h1 .catchcopy p b {
 }
 @media screen and (max-width: 900px) {
   h1 .catchcopy p {
-    font-size: 80%;
+    font-size: 70%;
   }
 }
 @media screen and (max-width: 600px) {
   h1 .catchcopy p {
-    font-size: 80%;
+    font-size: 60%;
   }
 }
 @media screen and (max-width: 500px) {
   h1 .catchcopy p {
-    font-size: 65%;
+    font-size: 50%;
   }
 }
 @media screen and (max-width: 375px) {
   h1 .catchcopy p {
-    font-size: 55%;
+    font-size: 45%;
+  }
+}
+@media screen and (max-width: 320px) {
+  h1 .catchcopy p {
+    font-size: 40%;
   }
 }
 h1 .catchcopy p b {
@@ -210,27 +216,21 @@ h1 .catchcopy p b {
   }
   .servise .suncafe .SuncafeParadise {
     display: flex;
-    align-items: center;
-    font-size: 32px;
+    align-items: flex-end;
     margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
   }
   .servise .suncafe .SuncafeParadise .Suncafe_img {
     width: 55%;
     min-width: 400px;
-    height: auto;
-    max-height: 400px;
-    margin-right: 1%;
-    padding-left: 10%;
   }
   .servise .suncafe .SuncafeParadise .Suncafe_p {
-    position: absolute;
-    margin-top: 8%;
-    left: 70%;
-    font-size: 16px;
-    max-width: 50%;
+    margin-left: 1%;
     width: 40%;
   }
   .servise .suncafe .SuncafeParadise .Suncafe_p p {
+    font-size: min(100%, 2.4rem);
     color: #fff;
   }
   .servise .suncafecharm h3 {
@@ -266,7 +266,7 @@ h1 .catchcopy p b {
   }
   .servise .suncafecharm .Features .feature dt {
     font-size: 130%;
-    margin-bottom: 1%;
+    margin-bottom: 5%;
   }
   .servise .suncafecharm .Features .feature dd {
     font-size: 80%;
@@ -529,7 +529,7 @@ h1 .catchcopy p b {
   position: absolute;
   right: 10%;
   top: 4%;
-  z-index: 99;
+  z-index: 3;
   -webkit-animation: loopwave 15s linear infinite;
           animation: loopwave 15s linear infinite;
 }
@@ -538,6 +538,11 @@ h1 .catchcopy p b {
     -webkit-animation: loopwave 90s linear infinite;
             animation: loopwave 90s linear infinite;
     width: 20%;
+  }
+}
+@media screen and (max-width: 900px) and (max-width: 600px) {
+  .situetion #wave1 {
+    display: none;
   }
 }
 .situetion #wave2 {
@@ -659,21 +664,18 @@ h1 .catchcopy p b {
     color: #30579c;
     font-family: amaranth, serif;
     font-weight: bold;
-    background: linear-gradient(transparent 40%, #fff 40%);
-    font-size: 337%;
-    position: absolute;
-    width: 13%;
-    left: 30%;
-    margin-top: 26%;
+    font-size: 3.37rem;
     z-index: 99;
+    text-align: left;
   }
   .situetion h3 b {
     font-family: amaranth, serif;
     font-weight: bold;
     font-size: 130%;
+    letter-spacing: -7px;
   }
   .situetion .mySwiper {
-    max-width: 1400px;
+    max-width: 1200px;
   }
   .situetion .mySwiper .swiper-wrapper {
     width: 80%;
@@ -684,7 +686,6 @@ h1 .catchcopy p b {
     display: flex;
     align-items: center;
     width: 50%;
-    padding: 0 0 5% 0;
     position: relative;
   }
   .situetion .mySwiper .seasonslide .slideimg,
@@ -708,18 +709,12 @@ h1 .catchcopy p b {
     font-weight: 700;
     font-size: 240%;
     color: #6299f8;
-    background: linear-gradient(transparent 0%, #fff 0%);
-    position: absolute;
-    top: 80%;
     z-index: 99;
-    align-items: center;
+    text-align: left;
   }
   .situetion .mySwiper #Spring h4 {
     right: 62.5%;
     color: #fd6d6d;
-  }
-  .situetion .mySwiper #Spring h5 {
-    width: 70%;
   }
   .situetion .mySwiper #Summer h4 {
     right: 60.8%;
@@ -738,15 +733,12 @@ h1 .catchcopy p b {
   }
   .situetion .mySwiper #Company h4 {
     right: 59.5%;
-    color: #c93c27;
   }
   .situetion .mySwiper #Family h4 {
     right: 62.2%;
-    color: #328327;
   }
   .situetion .mySwiper #Woman h4 {
     right: 59.8%;
-    color: #d64595;
   }
   .situetion .mySwiper #Woman h4 dl div {
     margin: 10% 0;
@@ -762,8 +754,8 @@ h1 .catchcopy p b {
     align-items: center;
   }
   .situetion .mySwiper dl div dd {
-    color: #c93c27;
-    font-size: 110%;
+    color: #30579c;
+    font-size: 1.2rem;
   }
   .situetion .mySwiper .point div {
     background: linear-gradient(transparent 60%, #fff 60%);
@@ -796,14 +788,8 @@ h1 .catchcopy p b {
     color: #30579c;
     font-family: amaranth, serif;
     font-weight: bold;
-    background: linear-gradient(transparent 40%, #fff 40%);
-    font-size: 337%;
-    position: relative;
-    width: 16%;
-    left: 30%;
-    z-index: 99;
-    top: 20rem;
-    font-size: 300%;
+    font-size: 3.37rem;
+    text-align: left;
   }
   .situetion h3 b {
     font-family: amaranth, serif;
@@ -848,20 +834,18 @@ h1 .catchcopy p b {
   .situetion .mySwiper h4 {
     font-family: amaranth, serif;
     font-weight: 700;
+    font-size: 240%;
     color: #6299f8;
-    background: linear-gradient(transparent 0%, #fff 0%);
-    position: absolute;
     z-index: 99;
-    align-items: center;
-    top: 20rem;
-    font-size: 200%;
-    padding: 0 1% 0 0;
+    text-align: left;
   }
   .situetion .mySwiper #Spring h4 {
     right: 59.8%;
+    color: #fd6d6d;
   }
   .situetion .mySwiper #Summer h4 {
     right: 57.7%;
+    color: #2cdf14;
   }
   .situetion .mySwiper #Summer h4 dl div {
     margin: 4% 0;
@@ -871,6 +855,7 @@ h1 .catchcopy p b {
   }
   .situetion .mySwiper #Winter h4 {
     right: 59.3%;
+    color: #5392f0;
   }
   .situetion .mySwiper #Company h4 {
     right: 56.2%;
@@ -931,14 +916,8 @@ h1 .catchcopy p b {
     color: #30579c;
     font-family: amaranth, serif;
     font-weight: bold;
-    background: linear-gradient(transparent 40%, #fff 40%);
-    font-size: 337%;
-    position: relative;
-    z-index: 99;
-    width: 15%;
+    text-align: left;
     font-size: 250%;
-    top: 290px;
-    left: 25%;
   }
 }
 @media screen and (max-width: 900px) and (max-width: 768px) {
@@ -1015,13 +994,7 @@ h1 .catchcopy p b {
   .situetion .mySwiper h4 {
     font-family: amaranth, serif;
     font-weight: 700;
-    font-size: 240%;
-    color: #6299f8;
-    background: linear-gradient(transparent 0%, #fff 0%);
-    position: absolute;
     z-index: 99;
-    align-items: center;
-    top: 290px;
     font-size: 220%;
   }
 }
@@ -1044,6 +1017,7 @@ h1 .catchcopy p b {
 @media screen and (max-width: 900px) {
   .situetion .mySwiper #Summer h4 {
     right: 60%;
+    color: #cea25d;
   }
   .situetion .mySwiper #Summer .point div {
     width: 100%;
@@ -1052,6 +1026,7 @@ h1 .catchcopy p b {
 @media screen and (max-width: 900px) {
   .situetion .mySwiper #Autumn h4 {
     right: 59.5%;
+    color: #d6a050;
   }
   .situetion .mySwiper #Autumn h5 {
     width: 100%;
@@ -1164,30 +1139,31 @@ h1 .catchcopy p b {
     z-index: 3;
     width: 30%;
     min-width: 160px;
-    top: 430px;
+    top: 500px;
     left: 25%;
+    background: linear-gradient(transparent 0%, #fff 0%);
   }
 }
 @media screen and (max-width: 600px) and (max-width: 500px) {
   .situetion h3 {
-    top: 375px;
+    top: 425px;
   }
 }
 @media screen and (max-width: 600px) and (max-width: 428px) {
   .situetion h3 {
-    top: 330px;
+    top: 400px;
   }
 }
 @media screen and (max-width: 600px) and (max-width: 375px) {
   .situetion h3 {
     font-size: 270%;
-    top: 290px;
+    top: 330px;
     left: 20%;
   }
 }
 @media screen and (max-width: 600px) and (max-width: 320px) {
   .situetion h3 {
-    top: 250px;
+    top: 300px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1252,21 +1228,24 @@ h1 .catchcopy p b {
   .situetion .mySwiper h4 {
     font-family: amaranth, serif;
     font-weight: 700;
+    color: #6299f8;
+    background: linear-gradient(transparent 0%, #fff 0%);
+    position: absolute;
     z-index: 999;
     align-items: center;
-    top: 400px;
+    top: 470px;
     font-size: 220%;
-    font-size: 220%;
+    z-index: 99;
   }
 }
 @media screen and (max-width: 600px) and (max-width: 500px) {
   .situetion .mySwiper h4 {
-    top: 370px;
+    top: 390px;
   }
 }
 @media screen and (max-width: 600px) and (max-width: 428px) {
   .situetion .mySwiper h4 {
-    top: 330px;
+    top: 360px;
   }
 }
 @media screen and (max-width: 600px) and (max-width: 375px) {
@@ -1276,7 +1255,7 @@ h1 .catchcopy p b {
 }
 @media screen and (max-width: 600px) and (max-width: 320px) {
   .situetion .mySwiper h4 {
-    top: 250px;
+    top: 270px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1431,7 +1410,7 @@ h1 .catchcopy p b {
   }
   .plan .plannai h2 {
     color: #8f5c36;
-    margin: 2% 0 0 2%;
+    margin-left: 2%;
   }
   .plan .plannai p {
     text-align: center;
@@ -1527,8 +1506,9 @@ h1 .catchcopy p b {
     font-weight: bold;
     font-size: 200%;
     font-family: amaranth, serif;
-    bottom: 100%;
+    bottom: 110%;
     left: 23%;
+    z-index: 999;
   }
 }
 @media screen and (min-width: 1201px) and (max-width: 900px) {
@@ -1823,6 +1803,7 @@ h1 .catchcopy p b {
   .plan .plannai .softalcohol .drinkmenu {
     border: 10px solid #ebe1c8;
     width: 90%;
+    max-width: 1400px;
     margin: 0 auto;
     display: grid;
     grid-template-areas: "title title" "alc sof" "tyui tyui";
@@ -2941,7 +2922,7 @@ details summary::-webkit-details-marker {
     background-image: url(../../asset/photo/minus.svg);
   }
   .c-accordion_txt {
-    padding: 3%;
+    padding: 4%;
     padding-top: 0;
     margin-top: 0;
     color: #464646;
@@ -3057,7 +3038,7 @@ details summary::-webkit-details-marker {
     background-image: url(../../asset/photo/minus.svg);
   }
   .c-accordion_txt {
-    padding: 3%;
+    padding: 4%;
     padding-top: 0;
     margin-top: 0;
     color: #464646;
@@ -3150,7 +3131,7 @@ details summary::-webkit-details-marker {
     padding-top: 0;
     margin-top: 0;
     color: #464646;
-    padding: 2%;
+    padding: 4%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -3254,7 +3235,7 @@ details summary::-webkit-details-marker {
     padding-top: 0;
     margin-top: 0;
     color: #464646;
-    padding: 2%;
+    padding: 4%;
   }
 }
 @media screen and (max-width: 600px) and (max-width: 375px) {
@@ -3298,6 +3279,7 @@ details summary::-webkit-details-marker {
 }
 .access div {
   width: 80%;
+  max-width: 1400px;
   display: flex;
 }
 @media screen and (max-width: 900px) {
@@ -3306,7 +3288,6 @@ details summary::-webkit-details-marker {
   }
 }
 .access div .googlemap {
-  margin-left: 10%;
   width: 60%;
   height: 450px;
 }
@@ -3353,7 +3334,8 @@ details summary::-webkit-details-marker {
   border-collapse: collapse;
   height: 20%;
   width: 70%;
-  margin: 2% 15%;
+  max-width: 1400px;
+  margin: 2% auto;
   /* セルの線を重ねる */
 }
 @media screen and (max-width: 900px) {
@@ -3412,16 +3394,10 @@ details summary::-webkit-details-marker {
   .access div {
     width: 80%;
     display: flex;
-  }
-}
-@media screen and (min-width: 1201px) and (max-width: 900px) {
-  .access div {
+    max-width: 1400px;
     margin: 0 auto;
   }
-}
-@media screen and (min-width: 1201px) {
   .access div .googlemap {
-    margin-left: 10%;
     width: 60%;
     height: 450px;
   }
@@ -3476,7 +3452,7 @@ details summary::-webkit-details-marker {
     border-collapse: collapse;
     height: 20%;
     width: 70%;
-    margin: 2% 15%;
+    margin: 2% auto;
     /* セルの線を重ねる */
   }
 }
@@ -3958,6 +3934,8 @@ details summary::-webkit-details-marker {
   .content .banner {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    max-width: 1400px;
   }
   .content .banner li {
     width: 20%;

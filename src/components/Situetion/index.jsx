@@ -57,101 +57,101 @@ const Situetion = () => {
         <div id="wave2">    </div>
 
         <h2><b>S</b>ituetion</h2>
-        <section>
-          <h3><b>S</b>eason</h3>
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={30}
-            loop={true}
-            pagination={{
-              clickable: true,
-            }}
-            navigation={true}
-            modules={[Pagination, Navigation, EffectFade]}
-            effect="fade"
-            className="mySwiper">
-            {Situ.season.map((item, index) => {
-              return (
-                <>
-                  <SwiperSlide className="seasonslide" id={item.name}>
-                    <div className="slideimg">
-                      <img src={item.src} alt={item.alt} />
-                      <img src={nami} alt="波" className="wave" />
-                    </div>
-                    <div className="slidetext">
-                      <h4>{item.name}</h4>
-                      <h5>{item.h5}</h5>
-                      <dl>
-                        <div>
-                          <dt>プラン・・・</dt>
-                          <dd>{item.plan}</dd>
-                        </div>
-                        <div>
-                          <dt>時間帯・・・</dt>
-                          <dd>{item.time}</dd>
-                        </div>
-                      </dl>
-                      <dl className="point"><div><dt>Point:</dt><dd>{item.point}</dd></div></dl>
-                      <ul>
-                        <li>#{item.hash1}</li>
-                        <li>#{item.hash2}</li>
-                      </ul>
-                    </div>
-                  </SwiperSlide>
-                </>
-              )
-            })}
-          </Swiper>
-        </section>
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation, EffectFade]}
+          effect="fade"
+          className="mySwiper">
+          {Situ.season.map((item, index) => {
+            return (
+              <>
+                <SwiperSlide className="seasonslide" id={item.name}>
+                  <div className="slideimg">
+                    <h3><b>S</b>eason</h3>
+                    <h4>{item.name}</h4>
+                    <img src={item.src} alt={item.alt} />
+                    <img src={nami} alt="波" className="wave" />
+                  </div>
+                  <div className="slidetext">
+                    <h5>{item.h5}</h5>
+
+                    <dl>
+                      <div>
+                        <dt>プラン・・・</dt>
+                        <dd>{item.plan}</dd>
+                      </div>
+                      <div>
+                        <dt>時間帯・・・</dt>
+                        <dd>{item.time}</dd>
+                      </div>
+                    </dl>
+                    <dl className="point"><div><dt>Point:</dt><dd>{item.point}</dd></div></dl>
+                    <ul>
+                      <li>#{item.hash1}</li>
+                      <li>#{item.hash2}</li>
+                    </ul>
+                  </div>
+                </SwiperSlide>
+              </>
+            )
+          })}
+        </Swiper>
         <div className="cruise">a</div>
         {/* <div id="wave3">aaaa</div> */}
-        <section>
-          <h3><b>P</b>arty</h3>
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={30}
-            loop={true}
-            pagination={{
-              clickable: true,
-            }}
-            navigation={true}
-            modules={[Pagination, Navigation, EffectFade]}
-            effect="fade"
-            className="mySwiper">
-            {Situ.party.map((item, index) => {
-              return (
-                <>
-                  <SwiperSlide className="partyslide" id={item.id}>
-                    <div className="slideimg">
-                      <img src={item.src} alt={item.alt} />
-                      <img src={nami} alt="波" className="wave" />
-                    </div>
-                    <div className="slidetext">
+
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation, EffectFade]}
+          effect="fade"
+          className="mySwiper">
+          {Situ.party.map((item, index) => {
+            return (
+              <>
+                <SwiperSlide className="partyslide" id={item.id}>
+                  <div className="slideimg">
+                    <div>
+                      <h3><b>P</b>arty</h3>
                       <h4>{item.name}</h4>
-                      <h5>{item.h5}</h5>
-                      <dl>
-                        <div>
-                          <dt>プラン・・・</dt>
-                          <dd>{item.plan}</dd></div>
-                        <div>
-                          <dt>時間帯・・・</dt>
-                          <dd>{item.time}</dd></div>
-                      </dl>
-                      <dl className="point"><div><dt>Point:</dt><dd>{item.point}</dd></div></dl>
-                      <ul>
-                        <li>#{item.hash1}</li>
-                        <li>#{item.hash2}</li>
-                      </ul>
                     </div>
+                    <img src={item.src} alt={item.alt} />
+                    <img src={nami} alt="波" className="wave" />
+                  </div>
+                  <div className="slidetext">
+                    <h5>{item.h5}</h5>
+                    <dl>
+                      <div>
+                        <dt>プラン・・・</dt>
+                        <dd>{item.plan}</dd></div>
+                      <div>
+                        <dt>時間帯・・・</dt>
+                        <dd>{item.time}</dd></div>
+                    </dl>
+                    <dl className="point"><div><dt>Point:</dt><dd>{item.point}</dd></div></dl>
+                    <ul>
+                      <li>#{item.hash1}</li>
+                      <li>#{item.hash2}</li>
+                    </ul>
+                  </div>
 
-                  </SwiperSlide>
-                </>
-              )
-            })}
-          </Swiper>
+                </SwiperSlide>
+              </>
+            )
+          })}
+        </Swiper>
 
 
-        </section>
       </section>
 
     </>

@@ -118,7 +118,7 @@ details summary::-webkit-details-marker {
 
         /*開いときの中身のテキスト*/
         &_txt {
-            padding: 3%;
+            padding: 4%;
             padding-top: 0;
             margin-top: 0;
             color: #464646;
@@ -244,7 +244,7 @@ ul{
 
         /*開いときの中身のテキスト*/
         &_txt {
-            padding: 3%;
+            padding: 4%;
             padding-top: 0;
             margin-top: 0;
             color: #464646;
@@ -279,6 +279,7 @@ ul{
             display: flex;
             align-items: center;
             line-height: 240%;
+
 
 
             strong {
@@ -360,7 +361,7 @@ ul{
             padding-top: 0;
             margin-top: 0;
             color: #464646;
-            padding: 2%;
+            padding: 4%;
         }
     }
 }
@@ -473,7 +474,7 @@ ul{
                 padding-top: 0;
                 margin-top: 0;
                 color: #464646;
-                padding: 2%;
+                padding: 4%;
                 @include m.mq(spm) {
                     font-size: 12px;
             }

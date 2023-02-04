@@ -48,7 +48,7 @@ const plan = () => {
                                         <>
                                             <div className={item.name}>
                                                 {/* <div className='h4set'> */}
-                                                <p className='new'>NEW!!</p>
+                                                <span className='new'>NEW!!</span>
                                                 <h4>{item.h4}</h4>
                                                 {/* </div> */}
                                                 <h5>{item.prise}<b>yen</b></h5>

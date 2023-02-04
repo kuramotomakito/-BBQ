@@ -13,6 +13,7 @@ background-size: 120%;}
 
     div {
         width: 80%;
+        max-width: 1400px;
         display: flex;
 
         @include m.mq(tab) {
@@ -21,7 +22,7 @@ background-size: 120%;}
 
         .googlemap {
             // position: relative;
-            margin-left: 10%;
+            // margin-left: 10%;
             width: 60%;
             height: 450px;
 
@@ -71,7 +72,9 @@ background-size: 120%;}
         border-collapse: collapse;
         height: 20%;
         width: 70%;
-        margin: 2% 15%;
+        max-width: 1400px;
+
+        margin: 2% auto;
         @include m.mq(tab) {
             width: 80%;
             margin: 2% auto;
@@ -142,14 +145,13 @@ background-size: 120%;}
         div {
             width: 80%;
             display: flex;
-    
-            @include m.mq(tab) {
+            max-width: 1400px;
                 margin: 0 auto;
-            }
+            
     
             .googlemap {
                 // position: relative;
-                margin-left: 10%;
+                // margin-left: 10%;
                 width: 60%;
                 height: 450px;
     
@@ -199,7 +201,7 @@ background-size: 120%;}
             border-collapse: collapse;
             height: 20%;
             width: 70%;
-            margin: 2% 15%;
+            margin: 2% auto;
             @include m.mq(tab) {
                 width: 80%;
                 margin: 2% auto;

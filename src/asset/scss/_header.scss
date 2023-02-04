@@ -118,16 +118,19 @@ h1 {
       // }
 
       @include m.mq(tab) {
-        font-size: 80%;
+        font-size: 70%;
       }
       @include m.mq(sp) {
-        font-size: 80%;
+        font-size: 60%;
       }
       @include m.mq(spll) {
-        font-size: 65%;
+        font-size: 50%;
       }
       @include m.mq(spm) {
-        font-size: 55%;
+        font-size: 45%;
+      }
+      @include m.mq(sps) {
+        font-size: 40%;
       }
 
       b {

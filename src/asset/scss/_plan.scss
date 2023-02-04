@@ -41,7 +41,7 @@
 
       h2 {
         color: #8f5c36;
-        margin: 2% 0 0 2%;
+        margin-left: 2%;
       }
 
       p {
@@ -135,8 +135,9 @@
           font-weight: bold;
           font-size: 200%;
           font-family: amaranth, serif;
-          bottom: 100%;
+          bottom: 110%;
           left: 23%;
+          z-index: 999;
 
           @include m.mq(tab) {
             font-size: 130%;
@@ -428,6 +429,8 @@
           // background-size: 90%;
           border: 10px solid #ebe1c8;
           width: 90%;
+          max-width: 1400px;
+
           margin: 0 auto;
           // padding-bottom: 20%;
           // margin: 0 0 0 10%;

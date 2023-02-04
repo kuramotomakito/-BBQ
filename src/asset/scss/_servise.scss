@@ -37,33 +37,37 @@
 
             .SuncafeParadise {
                 display: flex;
+                align-items: flex-end;
                 // justify-content: center;
-                align-items: center;
-                font-size: 32px;
+                // align-items: center;
+                // font-size: 32px;
                 margin: 0 auto;
+                width: 80%;
+                max-width: 1200px;
 
 
                 .Suncafe_img {
                     width: 55%;
                     min-width: 400px;
-                    height: auto;
-                    max-height: 400px;
-                    margin-right: 1%;
-                    padding-left: 10%;
+                    // height: auto;
+                    // max-height: 400px;
+                    // margin-right: 1%;
+                    // padding-left: 10%;
                 }
 
                 .Suncafe_p {
-                    position: absolute;
+                    // position: absolute;
 
                     p {
+                        font-size:min(100%,2.4rem);
 
                         color: #fff;
                     }
 
-                    margin-top: 8%;
-                    left: 70%;
-                    font-size:16px;
-                    max-width: 50%;
+                    // margin-top: 8%;
+                    margin-left: 1%;
+                    // left: 70%;
+                    // max-width: 50%;
                     width: 40%;
                 }
             }
@@ -164,7 +168,7 @@
 
                     dt {
                         font-size: 130%;
-                        margin-bottom: 1%;
+                        margin-bottom: 5%;
 
                         //     @include m.mq(pc) {
                         //         font-size: 150%;
